@@ -34,15 +34,11 @@ const FAQ = () => {
         {
           question: "Are your products environmentally friendly?",
           answer: "Absolutely! We're committed to environmental responsibility. Our products are designed to be eco-friendly whilst maintaining the highest safety standards."
-        },
-        {
-          question: "What makes your products unique?",
-          answer: "Our products combine cutting-edge safety technology with educational value, helping to create a new generation of fire safety heroes whilst providing reliable protection for your property."
         }
       ]
     },
     {
-      title: "🔥 Ruben's Corner - Orders, Return & Education Info",
+      title: "🔥 Orders, Returns & Delivery Info",
       badge: "Orders & Info",
       questions: [
         {
@@ -72,23 +68,11 @@ const FAQ = () => {
         {
           question: "How can I get in touch for more help?",
           answer: "You can reach our friendly support team via email, phone, or through our contact form. We're here to help with any questions or concerns."
-        },
-        {
-          question: "Can you advise how many extinguishers we need for our school or business?",
-          answer: "Absolutely! Our fire safety experts can assess your space and recommend the right number and type of extinguishers based on your specific needs and regulations."
-        },
-        {
-          question: "Do you offer servicing and maintenance options?",
-          answer: "Yes, we provide comprehensive servicing and maintenance programmes to ensure your fire safety equipment remains in perfect working condition."
-        },
-        {
-          question: "Do you provide bulk or institutional discounts?",
-          answer: "Yes! We offer competitive pricing for schools, businesses, and bulk orders. Contact us for a customised quote based on your requirements."
         }
       ]
     },
     {
-      title: "🧯 Sofia's Safety Station - Product, Checkout & Community Info",
+      title: "🧯 Products, Checkout & Community Info",
       badge: "Products & Community",
       questions: [
         {
@@ -98,10 +82,6 @@ const FAQ = () => {
         {
           question: "How do I know which fire extinguisher is right for my space?",
           answer: "Our product descriptions include detailed guidance on the best applications for each extinguisher. You can also contact our experts for personalised recommendations."
-        },
-        {
-          question: "Do your products require maintenance or replacement?",
-          answer: "Like all safety equipment, our products benefit from regular checks and eventual replacement. We provide clear guidance on maintenance schedules and offer servicing support."
         },
         {
           question: "What payment methods do you accept?",
@@ -155,7 +135,7 @@ const FAQ = () => {
         <div className="container mx-auto px-4">
           <div className="space-y-16">
             
-            {/* First Section - General Questions with Ruben */}
+            {/* First Section - General Questions with Ruben on left */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - Ruben's Image */}
               <div className="lg:col-span-2">
@@ -246,33 +226,9 @@ const FAQ = () => {
               </div>
             </div>
 
-            {/* Third Section - Products with Sofia */}
+            {/* Third Section - Products with Sofia on right */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
-              {/* Left Column - Sofia's Image */}
-              <div className="lg:col-span-2">
-                <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
-                    <div className="h-full flex items-center justify-center p-4">
-                      <div className="text-center">
-                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
-                          <img 
-                            src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
-                            alt="Sofia - Products & Community Expert"
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                        <h3 className="font-bold text-purple-800 text-sm mb-1">Sofia</h3>
-                        <p className="text-purple-600 text-sm">Community</p>
-                      </div>
-                    </div>
-                    <div className="absolute top-2 right-2 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                      Community
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Column - FAQ Content */}
+              {/* Left Column - FAQ Content */}
               <div className="lg:col-span-10">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
@@ -300,6 +256,30 @@ const FAQ = () => {
                         </AccordionItem>
                       ))}
                     </Accordion>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Sofia's Image */}
+              <div className="lg:col-span-2">
+                <div className="sticky top-24">
+                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
+                    <div className="h-full flex items-center justify-center p-4">
+                      <div className="text-center">
+                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
+                          <img 
+                            src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
+                            alt="Sofia - Products & Community Expert"
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <h3 className="font-bold text-purple-800 text-sm mb-1">Sofia</h3>
+                        <p className="text-purple-600 text-sm">Community</p>
+                      </div>
+                    </div>
+                    <div className="absolute top-2 right-2 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                      Community
+                    </div>
                   </div>
                 </div>
               </div>
