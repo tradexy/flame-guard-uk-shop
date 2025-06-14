@@ -11,6 +11,7 @@ import ShopFor from "./pages/ShopFor";
 import AboutUs from "./pages/AboutUs";
 import OurMission from "./pages/OurMission";
 import ServicingSupport from "./pages/ServicingSupport";
+import ContactUs from "./pages/ContactUs";
 import ProductCategoryAerosol from "./pages/ProductCategoryAerosol";
 import ProductCategoryAlarms from "./pages/ProductCategoryAlarms";
 import ProductCategorySachets from "./pages/ProductCategorySachets";
