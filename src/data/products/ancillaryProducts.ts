@@ -1,0 +1,135 @@
+
+import { Product } from '../productsData';
+
+export const ancillaryProducts: Product[] = [
+  {
+    id: 1,
+    name: 'Fire Extinguisher Wall Mount Bracket',
+    price: 12.99,
+    originalPrice: 15.99,
+    image: '/placeholder.svg',
+    rating: 4.6,
+    reviews: 89,
+    inStock: true,
+    tags: ['Wall Mount', 'Steel'],
+    category: 'Mounting & Brackets',
+    description: 'Heavy-duty steel wall mount bracket for fire extinguishers'
+  },
+  {
+    id: 2,
+    name: 'Fire Safety Signs Pack - 10 Signs',
+    price: 24.99,
+    originalPrice: null,
+    image: '/placeholder.svg',
+    rating: 4.8,
+    reviews: 156,
+    inStock: true,
+    tags: ['Safety Signs', 'Pack'],
+    category: 'Safety Signs',
+    description: 'Complete pack of 10 essential fire safety signs for workplace compliance'
+  },
+  {
+    id: 3,
+    name: 'Fire Extinguisher Service Kit',
+    price: 45.99,
+    originalPrice: 52.99,
+    image: '/placeholder.svg',
+    rating: 4.7,
+    reviews: 73,
+    inStock: true,
+    tags: ['Service Kit', 'Maintenance'],
+    category: 'Maintenance Kits',
+    description: 'Complete service kit for annual fire extinguisher maintenance'
+  },
+  {
+    id: 4,
+    name: 'Emergency Exit Light LED',
+    price: 34.99,
+    originalPrice: null,
+    image: '/placeholder.svg',
+    rating: 4.5,
+    reviews: 42,
+    inStock: true,
+    tags: ['LED', 'Emergency Exit'],
+    category: 'Emergency Lighting',
+    description: 'Energy-efficient LED emergency exit light with battery backup'
+  },
+  {
+    id: 5,
+    name: 'Fire Blanket 1.2m x 1.8m',
+    price: 28.99,
+    originalPrice: 34.99,
+    image: '/placeholder.svg',
+    rating: 4.9,
+    reviews: 124,
+    inStock: false,
+    tags: ['Fire Blanket', 'Emergency'],
+    category: 'Fire Blankets',
+    description: 'High-quality fire blanket for kitchen and workplace safety'
+  },
+  {
+    id: 6,
+    name: 'Fire Extinguisher Cabinet with Lock',
+    price: 89.99,
+    originalPrice: null,
+    image: '/placeholder.svg',
+    rating: 4.6,
+    reviews: 67,
+    inStock: true,
+    tags: ['Cabinet', 'Lockable'],
+    category: 'Storage & Cabinets',
+    description: 'Secure lockable cabinet for fire extinguisher storage and protection'
+  },
+  {
+    id: 7,
+    name: 'Fire Safety Training Manual',
+    price: 16.99,
+    originalPrice: 19.99,
+    image: '/placeholder.svg',
+    rating: 4.4,
+    reviews: 38,
+    inStock: true,
+    tags: ['Training', 'Manual'],
+    category: 'Training Materials',
+    description: 'Comprehensive fire safety training manual for workplace education'
+  },
+  {
+    id: 8,
+    name: 'Smoke Detector Test Spray 250ml',
+    price: 8.99,
+    originalPrice: null,
+    image: '/placeholder.svg',
+    rating: 4.3,
+    reviews: 95,
+    inStock: true,
+    tags: ['Test Spray', 'Maintenance'],
+    category: 'Testing Equipment',
+    description: 'Professional test spray for smoke detector functionality testing'
+  },
+  {
+    id: 9,
+    name: 'Fire Action Notice Board A4',
+    price: 7.99,
+    originalPrice: 9.99,
+    image: '/placeholder.svg',
+    rating: 4.7,
+    reviews: 186,
+    inStock: true,
+    tags: ['Action Notice', 'A4'],
+    category: 'Safety Signs',
+    description: 'Clear fire action instructions board for emergency procedures'
+  },
+  {
+    id: 10,
+    name: 'Heat Detector Tester Aerosol',
+    price: 18.99,
+    originalPrice: null,
+    image: '/placeholder.svg',
+    rating: 4.5,
+    reviews: 52,
+    inStock: true,
+    tags: ['Heat Tester', 'Aerosol'],
+    category: 'Testing Equipment',
+    description: 'Specialist aerosol for testing heat detector sensitivity and response'
+  }
+];
