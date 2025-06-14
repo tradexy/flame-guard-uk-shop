@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -78,7 +79,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Story Section with Image Placeholder */}
+      {/* Our Story Section with Image */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -104,15 +105,13 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="relative">
-              {/* Image Placeholder 1 - Sofia & Ruben */}
+              {/* Sofia & Ruben Image */}
               <div className="relative bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
-                <div className="aspect-[4/3] flex items-center justify-center bg-gradient-to-br from-red-500/10 to-orange-500/10 backdrop-blur-sm">
-                  <div className="text-center text-gray-500">
-                    <div className="text-6xl mb-4">📸</div>
-                    <p className="text-lg font-medium">Sofia & Ruben Image</p>
-                    <p className="text-sm opacity-70">Placeholder for founders photo</p>
-                  </div>
-                </div>
+                <img 
+                  src="/lovable-uploads/622fe07f-7ce1-44de-9deb-04e04590a732.png" 
+                  alt="Sofia & Ruben - Co-Founders of Little Fire Heroes"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <p className="font-semibold text-lg">Sofia & Ruben</p>
@@ -129,15 +128,13 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              {/* Image Placeholder 3 - Why It Matters */}
+              {/* Why It Matters Image */}
               <div className="relative bg-gradient-to-br from-amber-100 to-yellow-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
-                <div className="aspect-[4/3] flex items-center justify-center bg-gradient-to-br from-amber-500/10 to-yellow-500/10 backdrop-blur-sm">
-                  <div className="text-center text-gray-500">
-                    <div className="text-6xl mb-4">🔥</div>
-                    <p className="text-lg font-medium">Why It Matters Image</p>
-                    <p className="text-sm opacity-70">Placeholder for impact/mission photo</p>
-                  </div>
-                </div>
+                <img 
+                  src="/lovable-uploads/4d4752d2-ef63-47c2-a268-81554a68db6f.png" 
+                  alt="Fire safety in action - Why it matters"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <p className="font-semibold text-lg">Making Fire Safety Matter</p>
@@ -228,7 +225,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Team Section with Second Image Placeholder */}
+      {/* Our Team Section with Team Photo */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -239,16 +236,14 @@ const AboutUs = () => {
             </p>
           </div>
           
-          {/* Second Image Placeholder - Team Photo */}
+          {/* Team Photo */}
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
-              <div className="aspect-[16/9] flex items-center justify-center bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm">
-                <div className="text-center text-gray-500">
-                  <div className="text-8xl mb-4">🏢</div>
-                  <p className="text-xl font-medium">Team & Office Photo</p>
-                  <p className="text-sm opacity-70">Placeholder for Sofia, Ruben & team image</p>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/9558bcf3-3d6b-4fa6-b6a0-c9879452038c.png" 
+                alt="Sofia and Ruben - The Little Fire Heroes Team"
+                className="w-full h-full object-cover aspect-[16/9]"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <p className="font-semibold text-xl">The Little Fire Heroes Team</p>
