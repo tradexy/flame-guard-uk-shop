@@ -109,83 +109,172 @@ const FAQ = () => {
       {/* Main FAQ Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="space-y-16">
             
-            {/* Left Column - Ruben's Image */}
-            <div className="lg:col-span-3">
-              <div className="sticky top-24">
-                {/* Cartoon Ruben Placeholder */}
-                <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                  <div className="aspect-[3/4] flex items-center justify-center p-6">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-blue-200 rounded-full mb-4 mx-auto flex items-center justify-center">
-                        <span className="text-4xl">👨‍🚒</span>
+            {/* First Section - Ruben on Left */}
+            <div className="grid lg:grid-cols-12 gap-12 items-start">
+              {/* Left Column - Ruben's Image */}
+              <div className="lg:col-span-3">
+                <div className="sticky top-24">
+                  <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                    <div className="aspect-[3/4] flex items-center justify-center p-6">
+                      <div className="text-center">
+                        <div className="w-24 h-24 bg-blue-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                          <span className="text-4xl">👨‍🚒</span>
+                        </div>
+                        <h3 className="font-bold text-blue-800 text-lg mb-2">Ruben</h3>
+                        <p className="text-blue-600 text-sm">Fire Safety Expert</p>
+                        <p className="text-xs text-blue-500 mt-2">[Cartoon image placeholder]</p>
                       </div>
-                      <h3 className="font-bold text-blue-800 text-lg mb-2">Ruben</h3>
-                      <p className="text-blue-600 text-sm">Fire Safety Expert</p>
-                      <p className="text-xs text-blue-500 mt-2">[Cartoon image placeholder]</p>
+                    </div>
+                    <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                      Expert
                     </div>
                   </div>
-                  <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    Expert
+                </div>
+              </div>
+
+              {/* Right Column - FAQ Content */}
+              <div className="lg:col-span-9">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                    <div className="flex items-center gap-3">
+                      <h2 className="text-2xl font-bold text-gray-800">{faqCategories[0].title}</h2>
+                      <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                        {faqCategories[0].badge}
+                      </Badge>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <Accordion type="single" collapsible className="space-y-4">
+                      {faqCategories[0].questions.map((faq, index) => (
+                        <AccordionItem 
+                          key={index} 
+                          value={`0-${index}`}
+                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colors"
+                        >
+                          <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                            {faq.question}
+                          </AccordionTrigger>
+                          <AccordionContent className="text-gray-600 leading-relaxed pt-2">
+                            {faq.answer}
+                          </AccordionContent>
+                        </AccordionItem>
+                      ))}
+                    </Accordion>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Center Column - FAQ Content */}
-            <div className="lg:col-span-6">
-              <div className="space-y-8">
-                {faqCategories.map((category, categoryIndex) => (
-                  <div key={categoryIndex} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-                    <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
-                      <div className="flex items-center gap-3">
-                        <h2 className="text-2xl font-bold text-gray-800">{category.title}</h2>
-                        <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
-                          {category.badge}
-                        </Badge>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <Accordion type="single" collapsible className="space-y-4">
-                        {category.questions.map((faq, index) => (
-                          <AccordionItem 
-                            key={index} 
-                            value={`${categoryIndex}-${index}`}
-                            className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colors"
-                          >
-                            <AccordionTrigger className="text-left hover:text-red-600 font-medium">
-                              {faq.question}
-                            </AccordionTrigger>
-                            <AccordionContent className="text-gray-600 leading-relaxed pt-2">
-                              {faq.answer}
-                            </AccordionContent>
-                          </AccordionItem>
-                        ))}
-                      </Accordion>
+            {/* Second Section - Sofia on Right */}
+            <div className="grid lg:grid-cols-12 gap-12 items-start">
+              {/* Left Column - FAQ Content */}
+              <div className="lg:col-span-9">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                    <div className="flex items-center gap-3">
+                      <h2 className="text-2xl font-bold text-gray-800">{faqCategories[1].title}</h2>
+                      <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                        {faqCategories[1].badge}
+                      </Badge>
                     </div>
                   </div>
-                ))}
+                  <div className="p-6">
+                    <Accordion type="single" collapsible className="space-y-4">
+                      {faqCategories[1].questions.map((faq, index) => (
+                        <AccordionItem 
+                          key={index} 
+                          value={`1-${index}`}
+                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colors"
+                        >
+                          <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                            {faq.question}
+                          </AccordionTrigger>
+                          <AccordionContent className="text-gray-600 leading-relaxed pt-2">
+                            {faq.answer}
+                          </AccordionContent>
+                        </AccordionItem>
+                      ))}
+                    </Accordion>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Sofia's Image */}
+              <div className="lg:col-span-3">
+                <div className="sticky top-24">
+                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                    <div className="aspect-[3/4] flex items-center justify-center p-6">
+                      <div className="text-center">
+                        <div className="w-24 h-24 bg-pink-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                          <span className="text-4xl">👩‍🚒</span>
+                        </div>
+                        <h3 className="font-bold text-purple-800 text-lg mb-2">Sofia</h3>
+                        <p className="text-purple-600 text-sm">Safety Specialist</p>
+                        <p className="text-xs text-purple-500 mt-2">[Cartoon image placeholder]</p>
+                      </div>
+                    </div>
+                    <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                      Specialist
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Right Column - Sofia's Image */}
-            <div className="lg:col-span-3">
-              <div className="sticky top-24">
-                {/* Cartoon Sofia Placeholder */}
-                <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                  <div className="aspect-[3/4] flex items-center justify-center p-6">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-pink-200 rounded-full mb-4 mx-auto flex items-center justify-center">
-                        <span className="text-4xl">👩‍🚒</span>
+            {/* Third Section - Ruben on Left Again */}
+            <div className="grid lg:grid-cols-12 gap-12 items-start">
+              {/* Left Column - Ruben's Image */}
+              <div className="lg:col-span-3">
+                <div className="sticky top-24">
+                  <div className="relative bg-gradient-to-br from-green-100 to-emerald-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                    <div className="aspect-[3/4] flex items-center justify-center p-6">
+                      <div className="text-center">
+                        <div className="w-24 h-24 bg-green-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                          <span className="text-4xl">👨‍🚒</span>
+                        </div>
+                        <h3 className="font-bold text-green-800 text-lg mb-2">Ruben</h3>
+                        <p className="text-green-600 text-sm">Logistics Expert</p>
+                        <p className="text-xs text-green-500 mt-2">[Cartoon image placeholder]</p>
                       </div>
-                      <h3 className="font-bold text-purple-800 text-lg mb-2">Sofia</h3>
-                      <p className="text-purple-600 text-sm">Safety Specialist</p>
-                      <p className="text-xs text-purple-500 mt-2">[Cartoon image placeholder]</p>
+                    </div>
+                    <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                      Support
                     </div>
                   </div>
-                  <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    Specialist
+                </div>
+              </div>
+
+              {/* Right Column - FAQ Content */}
+              <div className="lg:col-span-9">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                    <div className="flex items-center gap-3">
+                      <h2 className="text-2xl font-bold text-gray-800">{faqCategories[2].title}</h2>
+                      <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                        {faqCategories[2].badge}
+                      </Badge>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <Accordion type="single" collapsible className="space-y-4">
+                      {faqCategories[2].questions.map((faq, index) => (
+                        <AccordionItem 
+                          key={index} 
+                          value={`2-${index}`}
+                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colors"
+                        >
+                          <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                            {faq.question}
+                          </AccordionTrigger>
+                          <AccordionContent className="text-gray-600 leading-relaxed pt-2">
+                            {faq.answer}
+                          </AccordionContent>
+                        </AccordionContent>
+                        </AccordionItem>
+                      ))}
+                    </Accordion>
                   </div>
                 </div>
               </div>
