@@ -17,11 +17,18 @@ interface SearchDialogProps {
   onOpenChange: (open: boolean) => void;
 }
 
+interface SearchResult {
+  title: string;
+  path: string;
+  type: string;
+  price?: string;
+}
+
 const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   // Sample search results - you can replace this with actual search logic
-  const searchableContent = [
+  const searchableContent: SearchResult[] = [
     { title: 'Aerosol Products', path: '/product-category/aerosol', type: 'Product Category' },
     { title: 'Fire Alarms', path: '/product-category/alarms', type: 'Product Category' },
     { title: 'Fire Sachets', path: '/product-category/sachets', type: 'Product Category' },
@@ -38,7 +45,7 @@ const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
   ];
 
   // Add products to searchable content
-  const allProducts = Object.entries(productsData).flatMap(([categoryKey, products]) =>
+  const allProducts: SearchResult[] = Object.entries(productsData).flatMap(([categoryKey, products]) =>
     products.map(product => {
       const getCategoryKey = () => {
         const categoryMap: { [key: string]: string } = {
@@ -159,7 +166,7 @@ const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
                         </h4>
                         <div className="flex items-center space-x-2">
                           <p className="text-sm text-gray-600">{result.type}</p>
-                          {result.type === 'Product' && 'price' in result && (
+                          {result.type === 'Product' && result.price && (
                             <>
                               <span className="text-gray-400">•</span>
                               <p className="text-sm font-medium text-red-600">{result.price}</p>
