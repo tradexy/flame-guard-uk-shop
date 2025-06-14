@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import ShopByCategory from "./pages/ShopByCategory";
 import ProductCategoryAerosol from "./pages/ProductCategoryAerosol";
 import ProductCategoryAlarms from "./pages/ProductCategoryAlarms";
+import ProductCategorySachets from "./pages/ProductCategorySachets";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/shop-by-category" element={<ShopByCategory />} />
           <Route path="/product-category/aerosol" element={<ProductCategoryAerosol />} />
           <Route path="/product-category/alarms" element={<ProductCategoryAlarms />} />
+          <Route path="/product-category/sachets" element={<ProductCategorySachets />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
