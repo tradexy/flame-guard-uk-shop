@@ -158,23 +158,23 @@ const FAQ = () => {
             {/* First Section - General Questions with Ruben */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - Ruben's Image */}
-              <div className="lg:col-span-4">
+              <div className="lg:col-span-3">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-square flex items-center justify-center p-8">
+                  <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl overflow-hidden shadow-lg border-2 border-white">
+                    <div className="aspect-square flex items-center justify-center p-4">
                       <div className="text-center">
-                        <div className="w-48 h-48 mb-6 mx-auto flex items-center justify-center">
+                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
                           <img 
                             src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
                             alt="Ruben - Fire Safety Expert"
                             className="w-full h-full object-contain"
                           />
                         </div>
-                        <h3 className="font-bold text-blue-800 text-2xl mb-2">Ruben</h3>
-                        <p className="text-blue-600 text-lg">Fire Safety Expert</p>
+                        <h3 className="font-bold text-blue-800 text-lg mb-1">Ruben</h3>
+                        <p className="text-blue-600 text-sm">Fire Safety Expert</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
                       Expert
                     </div>
                   </div>
@@ -182,7 +182,7 @@ const FAQ = () => {
               </div>
 
               {/* Right Column - FAQ Content */}
-              <div className="lg:col-span-8">
+              <div className="lg:col-span-9">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
@@ -217,7 +217,7 @@ const FAQ = () => {
             {/* Second Section - Orders with Hero Image */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - FAQ Content */}
-              <div className="lg:col-span-8">
+              <div className="lg:col-span-9">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
@@ -249,23 +249,23 @@ const FAQ = () => {
               </div>
 
               {/* Right Column - Hero Image */}
-              <div className="lg:col-span-4">
+              <div className="lg:col-span-3">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-square flex items-center justify-center p-8">
+                  <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-2xl overflow-hidden shadow-lg border-2 border-white">
+                    <div className="aspect-square flex items-center justify-center p-4">
                       <div className="text-center">
-                        <div className="w-48 h-48 mb-6 mx-auto flex items-center justify-center">
+                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
                           <img 
-                            src="/lovable-uploads/137c71ea-6b22-405a-8768-4dbafb00015a.png" 
-                            alt="Fire Safety Hero"
+                            src="/lovable-uploads/0ae35d17-2db3-4124-a758-39fd05ca39cb.png" 
+                            alt="Fire Safety Heroes"
                             className="w-full h-full object-contain"
                           />
                         </div>
-                        <h3 className="font-bold text-orange-800 text-2xl mb-2">Little Hero</h3>
-                        <p className="text-orange-600 text-lg">Orders & Support</p>
+                        <h3 className="font-bold text-orange-800 text-lg mb-1">Little Heroes</h3>
+                        <p className="text-orange-600 text-sm">Orders & Support</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
                       Support
                     </div>
                   </div>
@@ -276,23 +276,23 @@ const FAQ = () => {
             {/* Third Section - Products with Sofia */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - Sofia's Image */}
-              <div className="lg:col-span-4">
+              <div className="lg:col-span-3">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-square flex items-center justify-center p-8">
+                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl overflow-hidden shadow-lg border-2 border-white">
+                    <div className="aspect-square flex items-center justify-center p-4">
                       <div className="text-center">
-                        <div className="w-48 h-48 mb-6 mx-auto flex items-center justify-center">
+                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
                           <img 
                             src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
                             alt="Sofia - Products & Community Expert"
                             className="w-full h-full object-contain"
                           />
                         </div>
-                        <h3 className="font-bold text-purple-800 text-2xl mb-2">Sofia</h3>
-                        <p className="text-purple-600 text-lg">Products & Community</p>
+                        <h3 className="font-bold text-purple-800 text-lg mb-1">Sofia</h3>
+                        <p className="text-purple-600 text-sm">Products & Community</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute top-2 right-2 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
                       Community
                     </div>
                   </div>
@@ -300,7 +300,7 @@ const FAQ = () => {
               </div>
 
               {/* Right Column - FAQ Content */}
-              <div className="lg:col-span-8">
+              <div className="lg:col-span-9">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
