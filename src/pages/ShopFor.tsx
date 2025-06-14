@@ -107,6 +107,17 @@ const ShopFor = () => {
           </div>
         </div>
       </section>
+      
+      {/* Section Divider: Firetruck Mascot */}
+      <div className="flex justify-center my-4 fade-in-up delay-250" aria-hidden="true">
+        <img
+          src="/lovable-uploads/fc2eea39-bf52-4e85-84f7-b9a3181a054b.png"
+          alt="" 
+          className="w-20 h-12 md:w-32 md:h-16 object-contain opacity-60 mx-auto animate-bounce"
+          style={{ filter: "drop-shadow(0 1px 2px rgba(255,100,0,0.08))" }}
+        />
+      </div>
+
       {/* Best Selling Products */}
       <div className="fade-in-up delay-300">
         <BestSellingCarousel />
