@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, Search, ChevronDown } from 'lucide-react';
@@ -76,7 +75,7 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             <Link to="/shop-for" className="text-gray-700 hover:text-red-600 transition-colors">Shop For</Link>
-            <a href="#about" className="text-gray-700 hover:text-red-600 transition-colors">About Us</a>
+            <Link to="/about-us" className="text-gray-700 hover:text-red-600 transition-colors">About Us</Link>
             <a href="#faq" className="text-gray-700 hover:text-red-600 transition-colors">FAQ</a>
             <a href="#mission" className="text-gray-700 hover:text-red-600 transition-colors">Our Mission</a>
             <a href="#support" className="text-gray-700 hover:text-red-600 transition-colors">Servicing Support</a>
@@ -125,7 +124,7 @@ const Header = () => {
                 </div>
               </div>
               <Link to="/shop-for" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Shop For</Link>
-              <a href="#about" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">About Us</a>
+              <Link to="/about-us" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">About Us</Link>
               <a href="#faq" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">FAQ</a>
               <a href="#mission" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Our Mission</a>
               <a href="#support" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Servicing Support</a>

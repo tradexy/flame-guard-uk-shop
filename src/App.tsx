@@ -8,6 +8,7 @@ import { BasketProvider } from "@/contexts/BasketContext";
 import Index from "./pages/Index";
 import ShopByCategory from "./pages/ShopByCategory";
 import ShopFor from "./pages/ShopFor";
+import AboutUs from "./pages/AboutUs";
 import ProductCategoryAerosol from "./pages/ProductCategoryAerosol";
 import ProductCategoryAlarms from "./pages/ProductCategoryAlarms";
 import ProductCategorySachets from "./pages/ProductCategorySachets";
