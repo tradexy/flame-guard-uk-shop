@@ -18,8 +18,8 @@ const CategoryHero = () => {
     { name: 'Alarms', path: '/product-category/alarms' }, 
     { name: 'Sachets', path: '/product-category/sachets' },
     { name: 'Extinguishers', path: '/product-category/extinguishers' },
-    { name: 'Ancillary Products', path: '/product-category/ancillary' },
-    { name: 'Servicing Products', path: '/product-category/servicing' }
+    { name: 'Ancillary Products', path: '/product-category/ancillary-products' },
+    { name: 'Servicing Products', path: '/product-category/servicing-products' }
   ];
 
   const handleCategorySelect = (category: { name: string; path: string }) => {
