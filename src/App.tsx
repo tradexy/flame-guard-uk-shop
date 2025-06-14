@@ -12,6 +12,7 @@ import ProductCategoryAlarms from "./pages/ProductCategoryAlarms";
 import ProductCategorySachets from "./pages/ProductCategorySachets";
 import ProductCategoryExtinguishers from "./pages/ProductCategoryExtinguishers";
 import ProductCategoryAncillaryProducts from "./pages/ProductCategoryAncillaryProducts";
+import ProductCategoryServicingProducts from "./pages/ProductCategoryServicingProducts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/product-category/sachets" element={<ProductCategorySachets />} />
             <Route path="/product-category/extinguishers" element={<ProductCategoryExtinguishers />} />
             <Route path="/product-category/ancillary-products" element={<ProductCategoryAncillaryProducts />} />
+            <Route path="/product-category/servicing-products" element={<ProductCategoryServicingProducts />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
