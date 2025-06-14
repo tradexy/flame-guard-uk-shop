@@ -79,7 +79,7 @@ const Header = () => {
             <Link to="/about-us" className="text-gray-700 hover:text-red-600 transition-colors">About Us</Link>
             <Link to="/faqs" className="text-gray-700 hover:text-red-600 transition-colors">FAQ</Link>
             <Link to="/our-mission" className="text-gray-700 hover:text-red-600 transition-colors">Our Mission</Link>
-            <a href="#support" className="text-gray-700 hover:text-red-600 transition-colors">Servicing Support</a>
+            <Link to="/servicing-support" className="text-gray-700 hover:text-red-600 transition-colors">Servicing Support</Link>
             <a href="#contact" className="text-gray-700 hover:text-red-600 transition-colors">Contact Us</a>
           </nav>
 
@@ -128,7 +128,7 @@ const Header = () => {
               <Link to="/about-us" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">About Us</Link>
               <Link to="/faqs" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">FAQ</Link>
               <Link to="/our-mission" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Our Mission</Link>
-              <a href="#support" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Servicing Support</a>
+              <Link to="/servicing-support" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Servicing Support</Link>
               <a href="#contact" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Contact Us</a>
             </nav>
           </div>

@@ -10,6 +10,7 @@ import ShopByCategory from "./pages/ShopByCategory";
 import ShopFor from "./pages/ShopFor";
 import AboutUs from "./pages/AboutUs";
 import OurMission from "./pages/OurMission";
+import ServicingSupport from "./pages/ServicingSupport";
 import ProductCategoryAerosol from "./pages/ProductCategoryAerosol";
 import ProductCategoryAlarms from "./pages/ProductCategoryAlarms";
 import ProductCategorySachets from "./pages/ProductCategorySachets";
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/shop-for" element={<ShopFor />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/our-mission" element={<OurMission />} />
+            <Route path="/servicing-support" element={<ServicingSupport />} />
             <Route path="/faqs" element={<FAQ />} />
             <Route path="/product-category/aerosol" element={<ProductCategoryAerosol />} />
             <Route path="/product-category/alarms" element={<ProductCategoryAlarms />} />
