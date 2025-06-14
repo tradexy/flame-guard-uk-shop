@@ -25,12 +25,12 @@ const Footer = () => {
             <div>
               <h3 className="font-bold mb-4">Quick Links</h3>
               <div className="space-y-2 text-sm">
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Shop By Category</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Shop For</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">About Us</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Contact Us</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">FAQs</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Servicing Support</a>
+                <a href="/shop-by-category" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Shop By Category</a>
+                <a href="/shop-for" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Shop For</a>
+                <a href="#about" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">About Us</a>
+                <a href="#contact" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Contact Us</a>
+                <a href="#faq" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">FAQs</a>
+                <a href="#support" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Servicing Support</a>
               </div>
             </div>
 

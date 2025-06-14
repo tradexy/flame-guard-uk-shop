@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BasketProvider } from "@/contexts/BasketContext";
 import Index from "./pages/Index";
 import ShopByCategory from "./pages/ShopByCategory";
+import ShopFor from "./pages/ShopFor";
 import ProductCategoryAerosol from "./pages/ProductCategoryAerosol";
 import ProductCategoryAlarms from "./pages/ProductCategoryAlarms";
 import ProductCategorySachets from "./pages/ProductCategorySachets";
@@ -27,6 +28,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/shop-by-category" element={<ShopByCategory />} />
+            <Route path="/shop-for" element={<ShopFor />} />
             <Route path="/product-category/aerosol" element={<ProductCategoryAerosol />} />
             <Route path="/product-category/alarms" element={<ProductCategoryAlarms />} />
             <Route path="/product-category/sachets" element={<ProductCategorySachets />} />
