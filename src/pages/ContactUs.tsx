@@ -114,12 +114,17 @@ const ContactUs = () => {
             <div className="lg:w-1/2">
               <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
                 <div className="flex items-center mb-6">
-                  <img 
-                    src="/lovable-uploads/b01391ef-222e-42bc-b8fc-3803981d0447.png" 
-                    alt="Little Fire Heroes Logo" 
-                    className="h-12 w-auto mr-4"
-                  />
-                  <h2 className="text-2xl font-bold text-gray-900">Get In Touch</h2>
+                  <div className="w-16 h-16 mr-4 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/356e71d1-edfd-4980-b017-784222eb87ff.png" 
+                      alt="Fire Safety Assistant" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold text-gray-900">Get In Touch</h2>
+                    <p className="text-orange-600 text-sm font-medium">Hi! I'm here to assist you.</p>
+                  </div>
                 </div>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
