@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +9,7 @@ import Index from "./pages/Index";
 import ShopByCategory from "./pages/ShopByCategory";
 import ShopFor from "./pages/ShopFor";
 import AboutUs from "./pages/AboutUs";
+import OurMission from "./pages/OurMission";
 import ProductCategoryAerosol from "./pages/ProductCategoryAerosol";
 import ProductCategoryAlarms from "./pages/ProductCategoryAlarms";
 import ProductCategorySachets from "./pages/ProductCategorySachets";
@@ -31,6 +33,7 @@ const App = () => (
             <Route path="/shop-by-category" element={<ShopByCategory />} />
             <Route path="/shop-for" element={<ShopFor />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/our-mission" element={<OurMission />} />
             <Route path="/faqs" element={<FAQ />} />
             <Route path="/product-category/aerosol" element={<ProductCategoryAerosol />} />
             <Route path="/product-category/alarms" element={<ProductCategoryAlarms />} />
