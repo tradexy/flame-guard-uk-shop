@@ -1,43 +1,44 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
+import { Zap, Bell, Package, Flame, Wrench, Settings } from 'lucide-react';
 
 const CategoryGrid = () => {
   const categories = [
     {
       title: 'Aerosols',
       description: 'Advanced aerosol fire suppression systems for automatic fire protection',
-      image: '/placeholder.svg',
+      icon: Zap,
       path: '/product-category/aerosol'
     },
     {
       title: 'Alarms',
       description: 'Fire detection and alarm systems for early warning and safety',
-      image: '/placeholder.svg',
+      icon: Bell,
       path: '/product-category/alarms'
     },
     {
       title: 'Sachets',
       description: 'Portable fire suppression sachets for immediate response',
-      image: '/placeholder.svg',
+      icon: Package,
       path: '/product-category/sachets'
     },
     {
       title: 'Extinguishers',
       description: 'Traditional and modern fire extinguishers for all fire classes',
-      image: '/placeholder.svg',
+      icon: Flame,
       path: '/product-category/extinguishers'
     },
     {
       title: 'Ancillary Products',
       description: 'Supporting equipment and accessories for fire safety systems',
-      image: '/placeholder.svg',
+      icon: Wrench,
       path: '/product-category/ancillary-products'
     },
     {
       title: 'Servicing Products',
       description: 'Maintenance and servicing equipment for fire safety systems',
-      image: '/placeholder.svg',
+      icon: Settings,
       path: '/product-category/servicing-products'
     }
   ];
@@ -55,28 +56,29 @@ const CategoryGrid = () => {
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {categories.map((category, index) => (
-            <Link key={index} to={category.path}>
-              <Card className="group hover:shadow-lg transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80 h-full">
-                <CardContent className="p-4 text-center">
-                  <div className="relative overflow-hidden mb-3">
-                    <img 
-                      src={category.image} 
-                      alt={category.title}
-                      className="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300 rounded-md"
-                    />
-                  </div>
-                  <h3 className="text-sm font-bold mb-2 text-gray-800">{category.title}</h3>
-                  <div className="flex items-center justify-center text-red-600 text-xs font-medium group-hover:text-red-700 transition-colors">
-                    View Products
-                    <svg className="ml-1 h-3 w-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+          {categories.map((category, index) => {
+            const IconComponent = category.icon;
+            return (
+              <Link key={index} to={category.path}>
+                <Card className="group hover:shadow-lg transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80 h-full">
+                  <CardContent className="p-4 text-center">
+                    <div className="relative overflow-hidden mb-3 flex justify-center">
+                      <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
+                        <IconComponent className="w-8 h-8 text-red-600" />
+                      </div>
+                    </div>
+                    <h3 className="text-sm font-bold mb-2 text-gray-800">{category.title}</h3>
+                    <div className="flex items-center justify-center text-red-600 text-xs font-medium group-hover:text-red-700 transition-colors">
+                      View Products
+                      <svg className="ml-1 h-3 w-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

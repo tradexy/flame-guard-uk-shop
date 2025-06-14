@@ -1,7 +1,14 @@
 
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleShopByCategoryClick = () => {
+    navigate('/shop-by-category');
+  };
+
   return (
     <section className="relative bg-gradient-to-r from-orange-100 to-red-100 py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent"></div>
@@ -20,7 +27,10 @@ const HeroSection = () => {
               Explore life-saving products, join our mission, and shop with purpose.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-red-600/90 backdrop-blur-sm hover:bg-red-700/90 text-white px-8 py-3 shadow-lg">
+              <Button 
+                onClick={handleShopByCategoryClick}
+                className="bg-red-600/90 backdrop-blur-sm hover:bg-red-700/90 text-white px-8 py-3 shadow-lg"
+              >
                 SHOP BY CATEGORY
               </Button>
               <Button variant="outline" className="border-red-600/50 bg-white/50 backdrop-blur-sm text-red-600 hover:bg-red-50/80 px-8 py-3 shadow-lg">
