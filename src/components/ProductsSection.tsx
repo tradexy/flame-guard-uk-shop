@@ -43,11 +43,11 @@ const ProductsSection = memo(() => {
           {products.map((product) => (
             <Card key={product.id} className="group hover:shadow-xl transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80">
               <CardContent className="p-6">
-                <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100/50 backdrop-blur-sm rounded-lg mb-4 overflow-hidden border border-white/30">
+                <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100/50 backdrop-blur-sm rounded-lg mb-4 overflow-hidden border border-white/30 flex items-center justify-center p-4">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>

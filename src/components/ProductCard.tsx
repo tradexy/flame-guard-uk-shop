@@ -83,11 +83,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <Card className="group hover:shadow-xl transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80">
       <CardContent className="p-0">
         <div className="relative overflow-hidden">
-          <img 
-            src={product.image} 
-            alt={product.name}
-            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-          />
+          <div className="h-48 bg-gradient-to-br from-gray-50 to-gray-100/50 flex items-center justify-center p-4">
+            <img 
+              src={product.image} 
+              alt={product.name}
+              className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
           {!product.inStock && (
             <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-xs rounded">
               Out of Stock
