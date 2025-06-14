@@ -32,7 +32,7 @@ const Footer = () => {
                 <Link to="/faqs" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">FAQs</Link>
                 <Link to="/our-mission" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Our Mission</Link>
                 <Link to="/servicing-support" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Servicing Support</Link>
-                <a href="#contact" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Contact Us</a>
+                <Link to="/contact-us" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Contact Us</Link>
               </div>
             </div>
 
