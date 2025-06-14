@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
@@ -131,7 +130,7 @@ const OurMission = () => {
             <div className="grid md:grid-cols-12 gap-8 items-start">
               {/* Left Column - Both Characters Placeholder */}
               <div className="md:col-span-3">
-                <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                <div className="bg-gradient-to-br from-gray-200 via-gray-50 to-white rounded-xl p-6 text-center shadow-lg border border-gray-200">
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                     <div className="flex justify-center gap-1">
                       <div className="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center">
@@ -142,8 +141,8 @@ const OurMission = () => {
                       </div>
                     </div>
                   </div>
-                  <h3 className="font-bold text-green-800 text-lg mb-2">Ruben & Sofia</h3>
-                  <p className="text-green-600 text-sm mb-3">Innovation Team</p>
+                  <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben & Sofia</h3>
+                  <p className="text-gray-600 text-sm mb-3">Innovation Team</p>
                   <Badge className="bg-green-500 text-white text-xs">Innovation</Badge>
                 </div>
               </div>
