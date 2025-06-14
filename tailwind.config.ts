@@ -89,7 +89,13 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+				serif: ['var(--font-serif)', 'ui-serif', 'serif'],
+				mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
