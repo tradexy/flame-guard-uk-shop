@@ -16,64 +16,108 @@ const FAQ = () => {
       badge: "Popular",
       questions: [
         {
-          question: "What makes Firexo different from traditional fire extinguishers?",
-          answer: "Firexo is a revolutionary all-in-one fire extinguisher that works on all types of fires (Class A, B, C, D, E, F and lithium fires). Unlike traditional extinguishers that are specific to certain fire types, Firexo uses a unique aqueous mist technology that is safe, non-toxic, and environmentally friendly. It's also much lighter and easier to use than conventional extinguishers."
+          question: "Who are Ruben and Sofia?",
+          answer: "Ruben and Sofia are the young faces of the Little Hero Fire Project. They are passionate about promoting fire safety and empowering communities to stay protected."
         },
         {
-          question: "How long do your products last?",
-          answer: "Our Firexo extinguishers have a 5-year warranty and are designed to last much longer with proper maintenance. The sachets have a shelf life of 15 years, making them extremely cost-effective. All our products are built to the highest quality standards to ensure long-lasting protection."
+          question: "What kind of products do you sell?",
+          answer: "We sell a comprehensive range of fire safety products including fire extinguishers, fire blankets, smoke alarms, and educational materials designed to keep homes, schools, and businesses safe."
         },
         {
-          question: "Do you offer training on how to use fire safety equipment?",
-          answer: "Yes! We provide comprehensive training programs for individuals, schools, and businesses. Our training covers proper use of fire extinguishers, fire safety awareness, emergency procedures, and hands-on practice with our equipment. Contact us to arrange training sessions tailored to your needs."
+          question: "Are your products suitable for home and school use?",
+          answer: "Yes! Our products are specifically designed for both home and educational environments. They're user-friendly, safe, and perfect for teaching fire safety to children and adults alike."
         },
         {
-          question: "Can I get a quote for bulk purchases?",
-          answer: "Absolutely! We offer competitive pricing for bulk orders and can provide customized quotes based on your specific requirements. Whether you're a school, business, or organization, we'll work with you to find the most cost-effective solution. Simply contact us with your needs and we'll prepare a detailed quote."
-        }
-      ]
-    },
-    {
-      title: "Product Information",
-      badge: "Technical",
-      questions: [
-        {
-          question: "What types of fires can Firexo extinguish?",
-          answer: "Firexo can extinguish all classes of fires: Class A (ordinary combustibles like wood, paper), Class B (flammable liquids), Class C (electrical fires), Class D (combustible metals), Class E (electrical equipment), Class F (cooking oils), and even lithium battery fires. This makes it the most versatile fire extinguisher available."
+          question: "Do your extinguishers work on all types of fires?",
+          answer: "Many of our extinguishers are designed to handle multiple fire classes, including electrical, cooking oil, and solid combustibles. Always refer to the product label for specifics."
         },
         {
           question: "Are your products environmentally friendly?",
-          answer: "Yes! All our products are designed with environmental responsibility in mind. Firexo is non-toxic, biodegradable, and leaves no harmful residue. Our sachets are also eco-friendly and safe for use around people, pets, and the environment."
+          answer: "Absolutely! We're committed to environmental responsibility. Our products are designed to be eco-friendly while maintaining the highest safety standards."
         },
         {
-          question: "How do I maintain my fire safety equipment?",
-          answer: "Our products require minimal maintenance compared to traditional equipment. We provide detailed maintenance guides with each purchase and offer servicing support. Regular visual inspections and occasional professional servicing will keep your equipment in optimal condition."
-        },
-        {
-          question: "What's the difference between aerosols and extinguishers?",
-          answer: "Our aerosols are perfect for smaller fires and immediate response situations - they're lightweight, easy to use, and ideal for cars, boats, or small spaces. Our extinguishers are designed for larger fires and provide more coverage. Both use the same revolutionary Firexo technology but are sized for different applications."
+          question: "What makes your products unique?",
+          answer: "Our products combine cutting-edge safety technology with educational value, helping to create a new generation of fire safety heroes while providing reliable protection for your property."
         }
       ]
     },
     {
-      title: "Ordering & Delivery",
-      badge: "Logistics",
+      title: "🔥 Ruben's Corner - Orders, Return & Education Info",
+      badge: "Orders & Support",
       questions: [
         {
-          question: "How quickly can you deliver products?",
-          answer: "We offer next-day delivery for most products in stock across the UK. For bulk orders or specialized products, delivery times may vary between 2-5 working days. We'll always provide you with accurate delivery estimates at the time of ordering."
+          question: "How long does delivery take?",
+          answer: "Delivery times vary by location but generally range from 3–5 business days within the UK."
         },
         {
-          question: "Do you deliver internationally?",
-          answer: "Currently, we focus on delivering within the UK to ensure the fastest and most reliable service. However, we're exploring international shipping options. Please contact us if you're interested in international delivery and we'll do our best to accommodate your needs."
+          question: "Do you ship internationally?",
+          answer: "Currently we focus on UK deliveries to ensure the fastest and most reliable service. Please contact us for international shipping inquiries."
         },
         {
-          question: "What if I'm not satisfied with my purchase?",
-          answer: "We stand behind the quality of our products 100%. If you're not completely satisfied, we offer a 30-day return policy for unused products. Our customer service team is always ready to help resolve any issues and ensure you're happy with your purchase."
+          question: "What are your shipping fees?",
+          answer: "Shipping fees depend on your location and order size. You'll see the exact shipping cost at checkout before completing your purchase."
         },
         {
           question: "Can I track my order?",
-          answer: "Yes! Once your order is dispatched, you'll receive tracking information via email. You can track your order's progress and estimated delivery time through our courier's tracking system."
+          answer: "Yes! Once your order ships, you'll receive tracking information via email so you can monitor your delivery progress."
+        },
+        {
+          question: "Can I return or exchange a product?",
+          answer: "Yes, we offer returns and exchanges within 30 days of purchase for unused items in original packaging. Contact our support team to arrange a return."
+        },
+        {
+          question: "What if my product arrives damaged?",
+          answer: "If your product arrives damaged, please contact us immediately with photos of the damage. We'll arrange a replacement or full refund right away."
+        },
+        {
+          question: "How can I get in touch for more help?",
+          answer: "You can reach our friendly support team via email, phone, or through our contact form. We're here to help with any questions or concerns."
+        },
+        {
+          question: "Can you advise how many extinguishers we need for our school or business?",
+          answer: "Absolutely! Our fire safety experts can assess your space and recommend the right number and type of extinguishers based on your specific needs and regulations."
+        },
+        {
+          question: "Do you offer servicing and maintenance options?",
+          answer: "Yes, we provide comprehensive servicing and maintenance programs to ensure your fire safety equipment remains in perfect working condition."
+        },
+        {
+          question: "Do you provide bulk or institutional discounts?",
+          answer: "Yes! We offer competitive pricing for schools, businesses, and bulk orders. Contact us for a customized quote based on your requirements."
+        }
+      ]
+    },
+    {
+      title: "🧯 Sofia's Safety Station - Product, Checkout & Community Info",
+      badge: "Products & Community",
+      questions: [
+        {
+          question: "Are your fire extinguishers suitable for children or elderly users?",
+          answer: "Yes. Our extinguishers are designed with simplicity in mind — lightweight, intuitive, and quick to deploy in an emergency."
+        },
+        {
+          question: "How do I know which fire extinguisher is right for my space?",
+          answer: "Our product descriptions include detailed guidance on the best applications for each extinguisher. You can also contact our experts for personalized recommendations."
+        },
+        {
+          question: "Do your products require maintenance or replacement?",
+          answer: "Like all safety equipment, our products benefit from regular checks and eventual replacement. We provide clear guidance on maintenance schedules and offer servicing support."
+        },
+        {
+          question: "What payment methods do you accept?",
+          answer: "We accept all major credit cards, debit cards, PayPal, and bank transfers. All payments are processed securely through our encrypted checkout system."
+        },
+        {
+          question: "Can I check out as a guest?",
+          answer: "Yes! While creating an account helps track orders and speeds up future purchases, you can complete your purchase as a guest if you prefer."
+        },
+        {
+          question: "How does my purchase support schools or community programs?",
+          answer: "Every purchase helps fund our Little Hero Fire Project initiatives, providing fire safety education and equipment to schools and communities in need."
+        },
+        {
+          question: "Can schools apply for support from Little Hero Fire Project?",
+          answer: "Yes! Schools can apply for our community support program. We provide fire safety education, equipment donations, and training sessions. Contact us to learn about application requirements."
         }
       ]
     }
@@ -235,7 +279,7 @@ const FAQ = () => {
                           <span className="text-4xl">👨‍🚒</span>
                         </div>
                         <h3 className="font-bold text-green-800 text-lg mb-2">Ruben</h3>
-                        <p className="text-green-600 text-sm">Logistics Expert</p>
+                        <p className="text-green-600 text-sm">Orders & Support</p>
                         <p className="text-xs text-green-500 mt-2">[Cartoon image placeholder]</p>
                       </div>
                     </div>
