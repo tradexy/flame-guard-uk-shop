@@ -26,12 +26,12 @@ const OurStorySection = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            {/* Sofia & Ruben Image - Square */}
-            <div className="relative bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50 w-80 h-72">
+            {/* Sofia & Ruben Image - Square with full image visible */}
+            <div className="relative bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50 w-80 h-80">
               <img 
                 src="/lovable-uploads/622fe07f-7ce1-44de-9deb-04e04590a732.png" 
                 alt="Sofia & Ruben - Co-Founders of Little Fire Heroes"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 text-white">
