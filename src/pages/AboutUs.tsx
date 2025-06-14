@@ -31,21 +31,21 @@ const AboutUs = () => {
 
   const team = [
     {
-      name: 'Fire Safety Expert',
-      role: 'Product Development',
-      description: 'Leading our mission to create innovative fire safety solutions',
+      name: 'Sofia',
+      role: 'Co-Founder & Vision Leader',
+      description: 'Sofia\'s passion for safety and community drives our mission to make fire safety accessible to all',
+      icon: '👩‍🚒'
+    },
+    {
+      name: 'Ruben',
+      role: 'Co-Founder & Innovation Leader',
+      description: 'Ruben leads our product development, ensuring every solution meets real-world safety needs',
       icon: '👨‍🚒'
     },
     {
-      name: 'Community Outreach',
-      role: 'Education & Training',
-      description: 'Bringing fire safety education to schools and communities',
-      icon: '👩‍🏫'
-    },
-    {
-      name: 'Safety Innovation',
+      name: 'Safety Innovation Team',
       role: 'Research & Development',
-      description: 'Developing next-generation fire safety technologies',
+      description: 'Supporting Sofia and Ruben in developing next-generation fire safety technologies',
       icon: '🔬'
     }
   ];
@@ -61,9 +61,13 @@ const AboutUs = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
               About Little Fire Heroes
             </h1>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We're on a mission to make fire safety accessible, understandable, and effective for everyone. 
-              From innovative products to community education, we believe everyone can be a fire hero.
+            <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+              Founded by <strong>Sofia and Ruben</strong>, we're on a mission to make fire safety accessible, 
+              understandable, and effective for everyone. From innovative products to community education, 
+              we believe everyone can be a fire hero.
+            </p>
+            <p className="text-md text-gray-500 mb-8">
+              <em>Inspired by Sofia and Ruben's vision for safer communities</em>
             </p>
             <div className="flex justify-center space-x-4 text-6xl">
               <span>🚒</span>
@@ -83,18 +87,20 @@ const AboutUs = () => {
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Little Fire Heroes was born from a simple belief: fire safety shouldn't be complicated, 
-                  expensive, or intimidating. We started with a vision to create products and education 
-                  that empower individuals, families, and communities to protect themselves.
+                  Little Fire Heroes was born from <strong>Sofia and Ruben's</strong> simple belief: 
+                  fire safety shouldn't be complicated, expensive, or intimidating. Together, they started 
+                  with a vision to create products and education that empower individuals, families, 
+                  and communities to protect themselves.
                 </p>
                 <p>
-                  Our journey began with recognizing that traditional fire safety solutions often fell 
-                  short of meeting real-world needs. We set out to change that by developing innovative, 
-                  accessible products that anyone can use effectively.
+                  <strong>Sofia and Ruben's</strong> journey began with recognizing that traditional fire 
+                  safety solutions often fell short of meeting real-world needs. They set out to change 
+                  that by developing innovative, accessible products that anyone can use effectively.
                 </p>
                 <p>
-                  Today, we're proud to serve homes, boats, caravans, schools, factories, and offices 
-                  across the UK, making fire safety a priority that's both achievable and affordable.
+                  Today, thanks to <strong>Sofia and Ruben's</strong> leadership, we're proud to serve homes, 
+                  boats, caravans, schools, factories, and offices across the UK, making fire safety a 
+                  priority that's both achievable and affordable.
                 </p>
               </div>
             </div>
@@ -102,10 +108,11 @@ const AboutUs = () => {
               <Card className="bg-gradient-to-br from-red-500/90 to-orange-500/90 text-white border border-white/20 shadow-2xl">
                 <CardContent className="p-8 text-center">
                   <div className="text-6xl mb-4">🏆</div>
-                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                  <h3 className="text-2xl font-bold mb-4">Sofia & Ruben's Mission</h3>
                   <p className="text-lg opacity-90">
                     To make every person a fire hero through accessible products, 
-                    education, and community support.
+                    education, and community support - driven by their shared vision 
+                    for safer communities.
                   </p>
                 </CardContent>
               </Card>
@@ -120,7 +127,8 @@ const AboutUs = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Values</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              These core values guide everything we do, from product development to community engagement.
+              These core values, established by Sofia and Ruben, guide everything we do, 
+              from product development to community engagement.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -149,11 +157,12 @@ const AboutUs = () => {
           <div className="text-center max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/20 shadow-2xl">
               <div className="text-6xl mb-6">🎓</div>
-              <h2 className="text-3xl font-bold mb-6">Making a Difference</h2>
+              <h2 className="text-3xl font-bold mb-6">Making a Difference - Sofia & Ruben's Promise</h2>
               <p className="text-lg mb-8 opacity-90 leading-relaxed">
-                We're proud to donate 3% of our profits to help schools across the UK access essential 
-                sports kits, uniforms, and safety education tools. Because building safer communities 
-                starts with empowering our children.
+                True to <strong>Sofia and Ruben's</strong> commitment to community, we're proud to donate 3% 
+                of our profits to help schools across the UK access essential sports kits, uniforms, and safety 
+                education tools. Because building safer communities starts with empowering our children - 
+                a principle that Sofia and Ruben hold dear.
               </p>
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div>
@@ -178,9 +187,10 @@ const AboutUs = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Team</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Meet Sofia & Ruben</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Meet the passionate individuals behind Little Fire Heroes, dedicated to keeping communities safe.
+              Meet the passionate founders behind Little Fire Heroes, <strong>Sofia and Ruben</strong>, 
+              dedicated to keeping communities safe through their innovative vision.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -201,10 +211,10 @@ const AboutUs = () => {
       {/* Contact CTA Section */}
       <section className="py-16 bg-gradient-to-r from-orange-100 to-red-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Become a Fire Hero?</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Join Sofia & Ruben's Mission?</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Join thousands of people who trust Little Fire Heroes to keep their homes, 
-            workplaces, and communities safe. Explore our products or get in touch with our team.
+            Join thousands of people who trust <strong>Sofia and Ruben's</strong> vision at Little Fire Heroes 
+            to keep their homes, workplaces, and communities safe. Explore our products or get in touch with our team.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-red-600/90 backdrop-blur-sm hover:bg-red-700/90 text-white px-8 py-3 shadow-lg">
