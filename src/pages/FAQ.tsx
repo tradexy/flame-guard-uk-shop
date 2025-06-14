@@ -30,10 +30,6 @@ const FAQ = () => {
         {
           question: "Do your extinguishers work on all types of fires?",
           answer: "Many of our extinguishers are designed to handle multiple fire classes, including electrical, cooking oil, and solid combustibles. Always refer to the product label for specifics."
-        },
-        {
-          question: "Are your products environmentally friendly?",
-          answer: "Absolutely! We're committed to environmental responsibility. Our products are designed to be eco-friendly whilst maintaining the highest safety standards."
         }
       ]
     },
@@ -60,19 +56,11 @@ const FAQ = () => {
         {
           question: "Can I return or exchange a product?",
           answer: "Yes, we offer returns and exchanges within 30 days of purchase for unused items in original packaging. Contact our support team to arrange a return."
-        },
-        {
-          question: "What if my product arrives damaged?",
-          answer: "If your product arrives damaged, please contact us immediately with photos of the damage. We'll arrange a replacement or full refund straightaway."
-        },
-        {
-          question: "How can I get in touch for more help?",
-          answer: "You can reach our friendly support team via email, phone, or through our contact form. We're here to help with any questions or concerns."
         }
       ]
     },
     {
-      title: "🧯 Products, Checkout & Community Info",
+      title: "🧯 Products & Community Info",
       badge: "Products & Community",
       questions: [
         {
@@ -88,16 +76,8 @@ const FAQ = () => {
           answer: "We accept all major credit cards, debit cards, PayPal, and bank transfers. All payments are processed securely through our encrypted checkout system."
         },
         {
-          question: "Can I check out as a guest?",
-          answer: "Yes! Whilst creating an account helps track orders and speeds up future purchases, you can complete your purchase as a guest if you prefer."
-        },
-        {
           question: "How does my purchase support schools or community programmes?",
           answer: "Every purchase helps fund our Little Hero Fire Project initiatives, providing fire safety education and equipment to schools and communities in need."
-        },
-        {
-          question: "Can schools apply for support from Little Hero Fire Project?",
-          answer: "Yes! Schools can apply for our community support programme. We provide fire safety education, equipment donations, and training sessions. Contact us to learn about application requirements."
         }
       ]
     }
@@ -133,36 +113,28 @@ const FAQ = () => {
       {/* Main FAQ Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="space-y-16">
+          <div className="max-w-4xl mx-auto space-y-12">
             
-            {/* First Section - General Questions with Ruben on left */}
-            <div className="grid lg:grid-cols-12 gap-12 items-start">
-              {/* Left Column - Ruben's Image */}
-              <div className="lg:col-span-2">
-                <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
-                    <div className="h-full flex items-center justify-center p-4">
-                      <div className="text-center">
-                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
-                          <img 
-                            src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
-                            alt="Ruben - Fire Safety Expert"
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                        <h3 className="font-bold text-blue-800 text-sm mb-1">Ruben</h3>
-                        <p className="text-blue-600 text-sm">Expert</p>
-                      </div>
-                    </div>
-                    <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                      Expert
-                    </div>
+            {/* First Section - General Questions with Expert */}
+            <div className="grid md:grid-cols-12 gap-8 items-start">
+              {/* Left Column - Expert Image */}
+              <div className="md:col-span-3">
+                <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
+                      alt="Ruben - Fire Safety Expert"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
+                  <h3 className="font-bold text-blue-800 text-lg mb-2">Ruben</h3>
+                  <p className="text-blue-600 text-sm mb-3">Fire Safety Expert</p>
+                  <Badge className="bg-blue-500 text-white text-xs">Expert</Badge>
                 </div>
               </div>
 
               {/* Right Column - FAQ Content */}
-              <div className="lg:col-span-10">
+              <div className="md:col-span-9">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
@@ -195,41 +167,39 @@ const FAQ = () => {
             </div>
 
             {/* Second Section - Orders without image */}
-            <div className="max-w-6xl mx-auto">
-              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
-                  <div className="flex items-center gap-3">
-                    <h2 className="text-2xl font-bold text-gray-800">{faqCategories[1].title}</h2>
-                    <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
-                      {faqCategories[1].badge}
-                    </Badge>
-                  </div>
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                <div className="flex items-center gap-3">
+                  <h2 className="text-2xl font-bold text-gray-800">{faqCategories[1].title}</h2>
+                  <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                    {faqCategories[1].badge}
+                  </Badge>
                 </div>
-                <div className="p-6">
-                  <Accordion type="single" collapsible className="space-y-4">
-                    {faqCategories[1].questions.map((faq, index) => (
-                      <AccordionItem 
-                        key={index} 
-                        value={`1-${index}`}
-                        className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
-                      >
-                        <AccordionTrigger className="text-left hover:text-red-600 font-medium">
-                          {faq.question}
-                        </AccordionTrigger>
-                        <AccordionContent className="text-gray-600 leading-relaxed pt-2">
-                          {faq.answer}
-                        </AccordionContent>
-                      </AccordionItem>
-                    ))}
-                  </Accordion>
-                </div>
+              </div>
+              <div className="p-6">
+                <Accordion type="single" collapsible className="space-y-4">
+                  {faqCategories[1].questions.map((faq, index) => (
+                    <AccordionItem 
+                      key={index} 
+                      value={`1-${index}`}
+                      className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
+                    >
+                      <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-gray-600 leading-relaxed pt-2">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
               </div>
             </div>
 
-            {/* Third Section - Products with Sofia on right */}
-            <div className="grid lg:grid-cols-12 gap-12 items-start">
+            {/* Third Section - Products with Community */}
+            <div className="grid md:grid-cols-12 gap-8 items-start">
               {/* Left Column - FAQ Content */}
-              <div className="lg:col-span-10">
+              <div className="md:col-span-9">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
@@ -260,27 +230,19 @@ const FAQ = () => {
                 </div>
               </div>
 
-              {/* Right Column - Sofia's Image */}
-              <div className="lg:col-span-2">
-                <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
-                    <div className="h-full flex items-center justify-center p-4">
-                      <div className="text-center">
-                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
-                          <img 
-                            src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
-                            alt="Sofia - Products & Community Expert"
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                        <h3 className="font-bold text-purple-800 text-sm mb-1">Sofia</h3>
-                        <p className="text-purple-600 text-sm">Community</p>
-                      </div>
-                    </div>
-                    <div className="absolute top-2 right-2 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                      Community
-                    </div>
+              {/* Right Column - Community Image */}
+              <div className="md:col-span-3">
+                <div className="bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
+                      alt="Sofia - Community Expert"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
+                  <h3 className="font-bold text-purple-800 text-lg mb-2">Sofia</h3>
+                  <p className="text-purple-600 text-sm mb-3">Community Expert</p>
+                  <Badge className="bg-purple-500 text-white text-xs">Community</Badge>
                 </div>
               </div>
             </div>
