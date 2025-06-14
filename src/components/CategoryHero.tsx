@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -10,15 +11,21 @@ import {
 
 const CategoryHero = () => {
   const [selectedCategory, setSelectedCategory] = useState('Choose your Category');
+  const navigate = useNavigate();
   
   const categories = [
-    'Aerosols',
-    'Alarms', 
-    'Sachets',
-    'Extinguishers',
-    'Ancillary Products',
-    'Servicing Products'
+    { name: 'Aerosols', path: '/product-category/aerosol' },
+    { name: 'Alarms', path: '/product-category/alarms' }, 
+    { name: 'Sachets', path: '/product-category/sachets' },
+    { name: 'Extinguishers', path: '/product-category/extinguishers' },
+    { name: 'Ancillary Products', path: '/product-category/ancillary' },
+    { name: 'Servicing Products', path: '/product-category/servicing' }
   ];
+
+  const handleCategorySelect = (category: { name: string; path: string }) => {
+    setSelectedCategory(category.name);
+    navigate(category.path);
+  };
 
   return (
     <section className="relative py-20 bg-gradient-to-br from-orange-400 via-red-500 to-red-600 overflow-hidden">
@@ -44,11 +51,11 @@ const CategoryHero = () => {
               <DropdownMenuContent className="bg-white/90 backdrop-blur-md border border-white/20">
                 {categories.map((category) => (
                   <DropdownMenuItem 
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className="hover:bg-red-50"
+                    key={category.name}
+                    onClick={() => handleCategorySelect(category)}
+                    className="hover:bg-red-50 cursor-pointer"
                   >
-                    {category}
+                    {category.name}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
