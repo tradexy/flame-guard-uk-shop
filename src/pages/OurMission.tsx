@@ -38,139 +38,134 @@ const OurMission = () => {
       {/* Main Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="space-y-16">
+          <div className="max-w-5xl mx-auto space-y-12">
             
-            {/* First Section - Fire Safety Education */}
-            <div className="grid lg:grid-cols-12 gap-12 items-center">
+            {/* First Section - Fire Safety Education with Ruben */}
+            <div className="grid md:grid-cols-12 gap-8 items-start">
               {/* Left Column - Ruben's Image */}
-              <div className="lg:col-span-4">
-                <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                  <div className="aspect-[4/5] flex items-center justify-center p-12">
-                    <div className="text-center">
-                      <div className="w-48 h-48 bg-blue-200 rounded-full mb-8 mx-auto flex items-center justify-center">
-                        <span className="text-8xl">👨‍🚒</span>
-                      </div>
-                      <h3 className="font-bold text-blue-800 text-3xl mb-4">Ruben</h3>
-                      <p className="text-blue-600 text-xl mb-2">Fire Safety Hero</p>
-                      <p className="text-base text-blue-500 mt-4">[Teaching fire safety to children]</p>
-                    </div>
+              <div className="md:col-span-3">
+                <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
+                      alt="Ruben - Fire Safety Expert"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
-                  <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Educator
-                  </div>
+                  <h3 className="font-bold text-blue-800 text-lg mb-2">Ruben</h3>
+                  <p className="text-blue-600 text-sm mb-3">Fire Safety Expert</p>
+                  <Badge className="bg-blue-500 text-white text-xs">Expert</Badge>
                 </div>
               </div>
 
               {/* Right Column - Content */}
-              <div className="lg:col-span-8">
-                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                    Fire Safety Education for All Ages
-                  </h2>
-                  <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
-                    <p>
-                      At Little Heroes, we believe that fire safety education should be accessible, engaging, and fun for everyone. Our mission begins with empowering children, families, and communities with the knowledge they need to stay safe.
-                    </p>
-                    <p>
-                      Through interactive workshops, educational materials, and hands-on demonstrations, we're creating a new generation of fire safety heroes who understand the importance of prevention and know how to respond in emergencies.
-                    </p>
-                    <p>
-                      Every child deserves to feel confident and prepared. That's why we've developed age-appropriate programmes that make learning about fire safety an adventure rather than a frightening experience.
-                    </p>
+              <div className="md:col-span-9">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                    <h2 className="text-2xl font-bold text-gray-800">Fire Safety Education for All Ages</h2>
+                  </div>
+                  <div className="p-6">
+                    <div className="space-y-4 text-gray-600 leading-relaxed">
+                      <p>
+                        At Little Heroes, we believe that fire safety education should be accessible, engaging, and fun for everyone. Our mission begins with empowering children, families, and communities with the knowledge they need to stay safe.
+                      </p>
+                      <p>
+                        Through interactive workshops, educational materials, and hands-on demonstrations, we're creating a new generation of fire safety heroes who understand the importance of prevention and know how to respond in emergencies.
+                      </p>
+                      <p>
+                        Every child deserves to feel confident and prepared. That's why we've developed age-appropriate programmes that make learning about fire safety an adventure rather than a frightening experience.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Second Section - Community Impact */}
-            <div className="grid lg:grid-cols-12 gap-12 items-center">
+            {/* Second Section - Community Impact with Sofia */}
+            <div className="grid md:grid-cols-12 gap-8 items-start">
               {/* Left Column - Content */}
-              <div className="lg:col-span-8">
-                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                    Supporting Schools & Communities
-                  </h2>
-                  <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
-                    <p>
-                      We're proud to donate 3% of our profits to help schools across the UK access essential safety equipment, sports kits, and educational resources. This isn't just business for us – it's about building stronger, safer communities.
-                    </p>
-                    <p>
-                      Our Little Hero Fire Project works directly with schools to provide fire safety education programmes, equipment donations, and training sessions for teachers and pupils alike.
-                    </p>
-                    <p>
-                      When you purchase from Little Heroes, you're not just protecting your own family – you're helping us extend that protection to schools and communities that need it most.
-                    </p>
+              <div className="md:col-span-9">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                    <h2 className="text-2xl font-bold text-gray-800">Supporting Schools & Communities</h2>
                   </div>
-                  <div className="mt-6">
-                    <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3">
-                      Apply for School Support
-                    </Button>
+                  <div className="p-6">
+                    <div className="space-y-4 text-gray-600 leading-relaxed">
+                      <p>
+                        We're proud to donate 3% of our profits to help schools across the UK access essential safety equipment, sports kits, and educational resources. This isn't just business for us – it's about building stronger, safer communities.
+                      </p>
+                      <p>
+                        Our Little Hero Fire Project works directly with schools to provide fire safety education programmes, equipment donations, and training sessions for teachers and pupils alike.
+                      </p>
+                      <p>
+                        When you purchase from Little Heroes, you're not just protecting your own family – you're helping us extend that protection to schools and communities that need it most.
+                      </p>
+                    </div>
+                    <div className="mt-6">
+                      <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3">
+                        Apply for School Support
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Right Column - Sofia's Image */}
-              <div className="lg:col-span-4">
-                <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                  <div className="aspect-[4/5] flex items-center justify-center p-12">
-                    <div className="text-center">
-                      <div className="w-48 h-48 bg-pink-200 rounded-full mb-8 mx-auto flex items-center justify-center">
-                        <span className="text-8xl">👩‍🚒</span>
-                      </div>
-                      <h3 className="font-bold text-purple-800 text-3xl mb-4">Sofia</h3>
-                      <p className="text-purple-600 text-xl mb-2">Community Champion</p>
-                      <p className="text-base text-purple-500 mt-4">[Supporting schools and communities]</p>
-                    </div>
+              <div className="md:col-span-3">
+                <div className="bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
+                      alt="Sofia - Community Expert"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
-                  <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Champion
-                  </div>
+                  <h3 className="font-bold text-purple-800 text-lg mb-2">Sofia</h3>
+                  <p className="text-purple-600 text-sm mb-3">Community Expert</p>
+                  <Badge className="bg-purple-500 text-white text-xs">Community</Badge>
                 </div>
               </div>
             </div>
 
-            {/* Third Section - Innovation & Quality */}
-            <div className="grid lg:grid-cols-12 gap-12 items-center">
-              {/* Left Column - Both Characters */}
-              <div className="lg:col-span-4">
-                <div className="relative bg-gradient-to-br from-green-100 to-emerald-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                  <div className="aspect-[4/5] flex items-center justify-center p-12">
-                    <div className="text-center">
-                      <div className="flex justify-center gap-4 mb-6">
-                        <div className="w-24 h-24 bg-green-200 rounded-full flex items-center justify-center">
-                          <span className="text-4xl">👨‍🚒</span>
-                        </div>
-                        <div className="w-24 h-24 bg-green-200 rounded-full flex items-center justify-center">
-                          <span className="text-4xl">👩‍🚒</span>
-                        </div>
+            {/* Third Section - Innovation & Quality with Placeholder */}
+            <div className="grid md:grid-cols-12 gap-8 items-start">
+              {/* Left Column - Both Characters Placeholder */}
+              <div className="md:col-span-3">
+                <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <div className="flex justify-center gap-1">
+                      <div className="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center">
+                        <span className="text-xs">👨‍🚒</span>
                       </div>
-                      <h3 className="font-bold text-green-800 text-3xl mb-4">Ruben & Sofia</h3>
-                      <p className="text-green-600 text-xl mb-2">Innovation Team</p>
-                      <p className="text-base text-green-500 mt-4">[Working together for safer futures]</p>
+                      <div className="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center">
+                        <span className="text-xs">👩‍🚒</span>
+                      </div>
                     </div>
                   </div>
-                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Innovation
-                  </div>
+                  <h3 className="font-bold text-green-800 text-lg mb-2">Ruben & Sofia</h3>
+                  <p className="text-green-600 text-sm mb-3">Innovation Team</p>
+                  <Badge className="bg-green-500 text-white text-xs">Innovation</Badge>
                 </div>
               </div>
 
               {/* Right Column - Content */}
-              <div className="lg:col-span-8">
-                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                    Innovation Meets Environmental Responsibility
-                  </h2>
-                  <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
-                    <p>
-                      Our commitment to innovation drives us to develop cutting-edge fire safety products that are not only highly effective but also environmentally responsible. We believe that protecting lives shouldn't come at the cost of our planet.
-                    </p>
-                    <p>
-                      Every product we create is designed with multiple fire classes in mind – from electrical fires to cooking oil incidents – ensuring that families and businesses have comprehensive protection with fewer products.
-                    </p>
-                    <p>
-                      We're constantly researching and developing new technologies to make fire safety more accessible, more effective, and more sustainable for future generations.
-                    </p>
+              <div className="md:col-span-9">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                    <h2 className="text-2xl font-bold text-gray-800">Innovation Meets Environmental Responsibility</h2>
+                  </div>
+                  <div className="p-6">
+                    <div className="space-y-4 text-gray-600 leading-relaxed">
+                      <p>
+                        Our commitment to innovation drives us to develop cutting-edge fire safety products that are not only highly effective but also environmentally responsible. We believe that protecting lives shouldn't come at the cost of our planet.
+                      </p>
+                      <p>
+                        Every product we create is designed with multiple fire classes in mind – from electrical fires to cooking oil incidents – ensuring that families and businesses have comprehensive protection with fewer products.
+                      </p>
+                      <p>
+                        We're constantly researching and developing new technologies to make fire safety more accessible, more effective, and more sustainable for future generations.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
