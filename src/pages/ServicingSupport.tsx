@@ -79,11 +79,12 @@ const ServicingSupport = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🛡️</div>
-                  <p className="text-lg text-gray-700 font-medium">Professional Fire Safety Products</p>
-                </div>
+              <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&h=300&fit=crop&crop=center"
+                  alt="Professional Fire Safety Products"
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
@@ -111,11 +112,12 @@ const ServicingSupport = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-gradient-to-br from-yellow-100 to-red-100 rounded-2xl p-8 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">⚠️</div>
-                  <p className="text-lg text-gray-700 font-medium">Overcoming Industry Challenges</p>
-                </div>
+              <div className="bg-gradient-to-br from-yellow-100 to-red-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop&crop=center"
+                  alt="Overcoming Industry Challenges"
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
@@ -241,11 +243,12 @@ const ServicingSupport = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl p-8 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🤝</div>
-                  <p className="text-lg text-gray-700 font-medium">Certified Service Network</p>
-                </div>
+              <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=400&h=300&fit=crop&crop=center"
+                  alt="Certified Service Network"
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
