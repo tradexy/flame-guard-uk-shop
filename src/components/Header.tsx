@@ -45,7 +45,7 @@ const Header = () => {
                 <img 
                   src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
                   alt="Little Fire Heroes Logo" 
-                  className="h-12 w-auto"
+                  className="h-14 w-auto"
                 />
               </Link>
             </div>
