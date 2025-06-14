@@ -76,7 +76,7 @@ const Header = () => {
             </DropdownMenu>
             <Link to="/shop-for" className="text-gray-700 hover:text-red-600 transition-colors">Shop For</Link>
             <Link to="/about-us" className="text-gray-700 hover:text-red-600 transition-colors">About Us</Link>
-            <a href="#faq" className="text-gray-700 hover:text-red-600 transition-colors">FAQ</a>
+            <Link to="/faqs" className="text-gray-700 hover:text-red-600 transition-colors">FAQ</Link>
             <a href="#mission" className="text-gray-700 hover:text-red-600 transition-colors">Our Mission</a>
             <a href="#support" className="text-gray-700 hover:text-red-600 transition-colors">Servicing Support</a>
             <a href="#contact" className="text-gray-700 hover:text-red-600 transition-colors">Contact Us</a>
@@ -125,7 +125,7 @@ const Header = () => {
               </div>
               <Link to="/shop-for" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Shop For</Link>
               <Link to="/about-us" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">About Us</Link>
-              <a href="#faq" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">FAQ</a>
+              <Link to="/faqs" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">FAQ</Link>
               <a href="#mission" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Our Mission</a>
               <a href="#support" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Servicing Support</a>
               <a href="#contact" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Contact Us</a>

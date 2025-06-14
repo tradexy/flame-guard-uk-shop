@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -16,6 +15,7 @@ import ProductCategoryExtinguishers from "./pages/ProductCategoryExtinguishers";
 import ProductCategoryAncillaryProducts from "./pages/ProductCategoryAncillaryProducts";
 import ProductCategoryServicingProducts from "./pages/ProductCategoryServicingProducts";
 import NotFound from "./pages/NotFound";
+import FAQ from "./pages/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +31,7 @@ const App = () => (
             <Route path="/shop-by-category" element={<ShopByCategory />} />
             <Route path="/shop-for" element={<ShopFor />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/faqs" element={<FAQ />} />
             <Route path="/product-category/aerosol" element={<ProductCategoryAerosol />} />
             <Route path="/product-category/alarms" element={<ProductCategoryAlarms />} />
             <Route path="/product-category/sachets" element={<ProductCategorySachets />} />
