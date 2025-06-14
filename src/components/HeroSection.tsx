@@ -42,12 +42,12 @@ const HeroSection = () => {
             <div className="bg-gradient-to-br from-red-500/90 to-orange-500/90 backdrop-blur-sm rounded-lg p-8 text-white shadow-2xl border border-white/20">
               <div className="text-center">
                 <h2 className="text-2xl font-bold mb-4">Fire Station</h2>
-                <div className="space-y-4">
-                  <div className="text-6xl">🚒</div>
-                  <div className="flex justify-center space-x-4">
-                    <div className="text-4xl">👨‍🚒</div>
-                    <div className="text-4xl">👩‍🚒</div>
-                  </div>
+                <div className="flex justify-center">
+                  <img 
+                    src="/lovable-uploads/0edc10e2-e969-4d97-a761-3f3ebd65fc00.png" 
+                    alt="Fire Station with Little Fire Heroes"
+                    className="w-full h-auto max-w-sm rounded-lg"
+                  />
                 </div>
               </div>
             </div>
