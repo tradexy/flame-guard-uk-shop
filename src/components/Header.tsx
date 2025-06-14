@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ShoppingCart, Search, ChevronDown } from 'lucide-react';
+import { Menu, X, Search, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import BasketSidebar from '@/components/BasketSidebar';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,9 +71,7 @@ const Header = () => {
             <Button variant="ghost" size="sm" className="hover:bg-white/50 backdrop-blur-sm">
               <Search className="h-4 w-4" />
             </Button>
-            <Button variant="ghost" size="sm" className="hover:bg-white/50 backdrop-blur-sm">
-              <ShoppingCart className="h-4 w-4" />
-            </Button>
+            <BasketSidebar />
             <span className="hidden md:inline text-sm text-gray-600">Help & Advice</span>
           </div>
 

@@ -1,6 +1,8 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ShoppingCart, Eye, Star } from 'lucide-react';
+import { ShoppingCart, Eye, Star, Zap } from 'lucide-react';
+import { useBasket } from '@/contexts/BasketContext';
+import { useToast } from '@/hooks/use-toast';
 
 interface ProductGridProps {
   category: string;
@@ -12,6 +14,9 @@ interface ProductGridProps {
 }
 
 const ProductGrid = ({ category, sortBy, priceRange, selectedTags, selectedCategories, inStockOnly }: ProductGridProps) => {
+  const { addToBasket, setIsBasketOpen } = useBasket();
+  const { toast } = useToast();
+
   // Sample products data - in real implementation, this would come from your database
   const allProducts = {
     aerosols: [
@@ -286,6 +291,29 @@ const ProductGrid = ({ category, sortBy, priceRange, selectedTags, selectedCateg
       break;
   }
 
+  const handleAddToBasket = (product: any) => {
+    addToBasket({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      category: product.category
+    });
+    toast({
+      title: "Added to basket",
+      description: `${product.name} has been added to your basket.`,
+    });
+  };
+
+  const handleBuyNow = (product: any) => {
+    handleAddToBasket(product);
+    setIsBasketOpen(true);
+    toast({
+      title: "Ready to checkout",
+      description: "Item added to basket. Complete your purchase in the basket.",
+    });
+  };
+
   return (
     <div>
       <div className="mb-4 text-sm text-gray-600">
@@ -316,9 +344,6 @@ const ProductGrid = ({ category, sortBy, priceRange, selectedTags, selectedCateg
                   <Button size="sm" className="bg-white/20 backdrop-blur-sm hover:bg-white/30">
                     <Eye className="h-4 w-4" />
                   </Button>
-                  <Button size="sm" className="bg-red-500 hover:bg-red-600" disabled={!product.inStock}>
-                    <ShoppingCart className="h-4 w-4" />
-                  </Button>
                 </div>
               </div>
               
@@ -342,7 +367,7 @@ const ProductGrid = ({ category, sortBy, priceRange, selectedTags, selectedCateg
                   <span className="text-xs text-gray-500 ml-1">({product.reviews})</span>
                 </div>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
                     <span className="text-lg font-bold text-red-600">
                       £{product.price}
@@ -360,6 +385,29 @@ const ProductGrid = ({ category, sortBy, priceRange, selectedTags, selectedCateg
                       </span>
                     ))}
                   </div>
+                </div>
+
+                {/* Prominent Add to Basket and Buy Now Buttons */}
+                <div className="space-y-2">
+                  <Button 
+                    onClick={() => handleAddToBasket(product)}
+                    disabled={!product.inStock}
+                    className="w-full bg-red-600 hover:bg-red-700 text-white"
+                    size="sm"
+                  >
+                    <ShoppingCart className="h-4 w-4 mr-2" />
+                    Add to Basket
+                  </Button>
+                  <Button 
+                    onClick={() => handleBuyNow(product)}
+                    disabled={!product.inStock}
+                    variant="outline"
+                    className="w-full border-red-600 text-red-600 hover:bg-red-50"
+                    size="sm"
+                  >
+                    <Zap className="h-4 w-4 mr-2" />
+                    Buy Now
+                  </Button>
                 </div>
               </div>
             </CardContent>
