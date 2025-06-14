@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, ShoppingCart, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -12,19 +13,21 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/b01391ef-222e-42bc-b8fc-3803981d0447.png" 
-              alt="Little Fire Heroes Logo" 
-              className="h-12 w-auto"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/b01391ef-222e-42bc-b8fc-3803981d0447.png" 
+                alt="Little Fire Heroes Logo" 
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
-              <button className="text-gray-700 hover:text-red-600 transition-colors">
+              <Link to="/shop-by-category" className="text-gray-700 hover:text-red-600 transition-colors">
                 Shop By Category
-              </button>
+              </Link>
             </div>
             <a href="#shop" className="text-gray-700 hover:text-red-600 transition-colors">Shop For</a>
             <a href="#about" className="text-gray-700 hover:text-red-600 transition-colors">About Us</a>
@@ -58,7 +61,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-white/20 bg-white/90 backdrop-blur-md rounded-b-lg">
             <nav className="flex flex-col space-y-2">
-              <a href="#shop" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Shop By Category</a>
+              <Link to="/shop-by-category" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Shop By Category</Link>
               <a href="#shop" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Shop For</a>
               <a href="#about" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">About Us</a>
               <a href="#faq" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">FAQ</a>
