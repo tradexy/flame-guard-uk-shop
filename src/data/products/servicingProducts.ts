@@ -4,6 +4,84 @@ import { Product } from '../productsData';
 export const servicingProducts: Product[] = [
   {
     id: 1,
+    name: 'Firexo Liquid Refill 5L with Accessories',
+    price: 89.99,
+    originalPrice: 99.99,
+    image: '/lovable-uploads/74348d1f-3d63-446e-b8ec-3eaac9948777.png',
+    rating: 4.8,
+    reviews: 32,
+    inStock: true,
+    tags: ['Liquid Refill', '5L', 'Complete Kit'],
+    category: 'Refill Systems',
+    description: '5L Firexo liquid refill with funnel and tube accessories for servicing fire extinguisher systems'
+  },
+  {
+    id: 2,
+    name: 'Firexo Liquid Refill 5L - Professional',
+    price: 84.99,
+    originalPrice: null,
+    image: '/lovable-uploads/137c71ea-6b22-405a-8768-4dbafb00015a.png',
+    rating: 4.7,
+    reviews: 28,
+    inStock: true,
+    tags: ['Liquid Refill', '5L', 'Professional'],
+    category: 'Refill Systems',
+    description: 'Professional grade 5L Firexo liquid refill with complete accessory kit for maintenance services'
+  },
+  {
+    id: 3,
+    name: 'Firexo Liquid Refill 5L - Standard Kit',
+    price: 79.99,
+    originalPrice: null,
+    image: '/lovable-uploads/216c92fa-74bb-4cb7-a665-b27b9c7a41a8.png',
+    rating: 4.6,
+    reviews: 24,
+    inStock: true,
+    tags: ['Liquid Refill', '5L', 'Standard'],
+    category: 'Refill Systems',
+    description: 'Standard 5L Firexo liquid refill kit with essential accessories for routine servicing'
+  },
+  {
+    id: 4,
+    name: 'Firexo Service Sachet - Single Pack',
+    price: 12.99,
+    originalPrice: null,
+    image: '/lovable-uploads/e6420728-4082-430d-9b30-ff0b48f95830.png',
+    rating: 4.9,
+    reviews: 45,
+    inStock: true,
+    tags: ['Service Sachet', 'Single Pack', 'Portable'],
+    category: 'Service Sachets',
+    description: 'Single Firexo service sachet for emergency servicing and maintenance applications'
+  },
+  {
+    id: 5,
+    name: 'Firexo Service Sachet - Professional Pack',
+    price: 11.99,
+    originalPrice: 14.99,
+    image: '/lovable-uploads/4b9532cf-99c4-4164-8a93-e592d0c24a63.png',
+    rating: 4.8,
+    reviews: 38,
+    inStock: true,
+    tags: ['Service Sachet', 'Professional', 'Maintenance'],
+    category: 'Service Sachets',
+    description: 'Professional grade Firexo service sachet for comprehensive maintenance and servicing'
+  },
+  {
+    id: 6,
+    name: 'Firexo Service Sachet - Technician Pack',
+    price: 13.49,
+    originalPrice: null,
+    image: '/lovable-uploads/826eea0f-bfaf-4943-8cdf-353f03d4e551.png',
+    rating: 4.7,
+    reviews: 31,
+    inStock: true,
+    tags: ['Service Sachet', 'Technician', 'Field Service'],
+    category: 'Service Sachets',
+    description: 'Technician grade Firexo service sachet designed for field service and emergency repairs'
+  },
+  {
+    id: 7,
     name: 'Annual Fire Extinguisher Service Kit',
     price: 149.99,
     originalPrice: 179.99,
@@ -16,7 +94,7 @@ export const servicingProducts: Product[] = [
     description: 'Complete annual service kit for fire extinguisher maintenance'
   },
   {
-    id: 2,
+    id: 8,
     name: 'Fire Alarm System Testing Equipment',
     price: 299.99,
     originalPrice: null,
@@ -29,7 +107,7 @@ export const servicingProducts: Product[] = [
     description: 'Professional fire alarm testing and calibration equipment'
   },
   {
-    id: 3,
+    id: 9,
     name: 'Emergency Lighting Test Kit',
     price: 199.99,
     originalPrice: 249.99,
@@ -42,7 +120,7 @@ export const servicingProducts: Product[] = [
     description: 'Complete kit for emergency lighting system testing'
   },
   {
-    id: 4,
+    id: 10,
     name: 'Fire Safety Inspection Checklist Software',
     price: 79.99,
     originalPrice: null,
@@ -55,7 +133,7 @@ export const servicingProducts: Product[] = [
     description: 'Digital fire safety inspection and compliance software'
   },
   {
-    id: 5,
+    id: 11,
     name: 'Professional Servicing Tool Set',
     price: 459.99,
     originalPrice: 529.99,
@@ -68,7 +146,7 @@ export const servicingProducts: Product[] = [
     description: 'Complete professional tool set for fire safety equipment servicing'
   },
   {
-    id: 6,
+    id: 12,
     name: 'Fire Door Inspection Kit',
     price: 129.99,
     originalPrice: null,
@@ -81,7 +159,7 @@ export const servicingProducts: Product[] = [
     description: 'Comprehensive fire door inspection and maintenance kit'
   },
   {
-    id: 7,
+    id: 13,
     name: 'Sprinkler System Maintenance Tools',
     price: 349.99,
     originalPrice: 399.99,
@@ -94,7 +172,7 @@ export const servicingProducts: Product[] = [
     description: 'Specialized tools for sprinkler system servicing and maintenance'
   },
   {
-    id: 8,
+    id: 14,
     name: 'Compliance Documentation Templates',
     price: 49.99,
     originalPrice: null,
