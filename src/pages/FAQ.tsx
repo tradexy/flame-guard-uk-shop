@@ -155,7 +155,7 @@ const FAQ = () => {
         <div className="container mx-auto px-4">
           <div className="space-y-16">
             
-            {/* First Section - Ruben on Left */}
+            {/* First Section - General Questions with Ruben */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - Ruben's Image */}
               <div className="lg:col-span-4">
@@ -214,7 +214,7 @@ const FAQ = () => {
               </div>
             </div>
 
-            {/* Second Section - Sofia on Right */}
+            {/* Second Section - Orders with Hero Image */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - FAQ Content */}
               <div className="lg:col-span-8">
@@ -248,7 +248,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              {/* Right Column - Ruben's Image for Orders */}
+              {/* Right Column - Hero Image */}
               <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
@@ -256,12 +256,12 @@ const FAQ = () => {
                       <div className="text-center">
                         <div className="w-48 h-48 mb-6 mx-auto flex items-center justify-center">
                           <img 
-                            src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
-                            alt="Ruben - Orders & Support Expert"
+                            src="/lovable-uploads/137c71ea-6b22-405a-8768-4dbafb00015a.png" 
+                            alt="Fire Safety Hero"
                             className="w-full h-full object-contain"
                           />
                         </div>
-                        <h3 className="font-bold text-orange-800 text-2xl mb-2">Ruben</h3>
+                        <h3 className="font-bold text-orange-800 text-2xl mb-2">Little Hero</h3>
                         <p className="text-orange-600 text-lg">Orders & Support</p>
                       </div>
                     </div>
@@ -273,7 +273,7 @@ const FAQ = () => {
               </div>
             </div>
 
-            {/* Third Section - Sofia on Left */}
+            {/* Third Section - Products with Sofia */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - Sofia's Image */}
               <div className="lg:col-span-4">
@@ -324,7 +324,6 @@ const FAQ = () => {
                           <AccordionContent className="text-gray-600 leading-relaxed pt-2">
                             {faq.answer}
                           </AccordionContent>
-                        </AccordionContent>
                         </AccordionItem>
                       ))}
                     </Accordion>
