@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -244,9 +245,9 @@ const ServicingSupport = () => {
             <div className="lg:w-1/2">
               <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=400&h=300&fit=crop&crop=center"
-                  alt="Certified Service Network"
-                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                  src="/lovable-uploads/5ad85333-4e3f-4432-8ec4-e1a693b5bf73.png"
+                  alt="Little Fire Heroes - Keeping Us Safe"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
