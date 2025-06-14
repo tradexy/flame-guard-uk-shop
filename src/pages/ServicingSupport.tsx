@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -64,7 +63,7 @@ const ServicingSupport = () => {
               <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
                 <div className="flex items-center mb-6">
                   <img 
-                    src="/lovable-uploads/b01391ef-222e-42bc-b8fc-3803981d0447.png" 
+                    src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
                     alt="Little Fire Heroes Logo" 
                     className="h-12 w-auto mr-4"
                   />
@@ -97,7 +96,7 @@ const ServicingSupport = () => {
               <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
                 <div className="flex items-center mb-6">
                   <img 
-                    src="/lovable-uploads/b01391ef-222e-42bc-b8fc-3803981d0447.png" 
+                    src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
                     alt="Little Fire Heroes Logo" 
                     className="h-12 w-auto mr-4"
                   />
@@ -214,7 +213,7 @@ const ServicingSupport = () => {
               <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
                 <div className="flex items-center mb-6">
                   <img 
-                    src="/lovable-uploads/b01391ef-222e-42bc-b8fc-3803981d0447.png" 
+                    src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
                     alt="Little Fire Heroes Logo" 
                     className="h-12 w-auto mr-4"
                   />
