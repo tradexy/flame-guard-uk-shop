@@ -43,7 +43,7 @@ const FAQ = () => {
     },
     {
       title: "🔥 Ruben's Corner - Orders, Return & Education Info",
-      badge: "Orders & Support",
+      badge: "Orders & Info",
       questions: [
         {
           question: "How long does delivery take?",
@@ -214,61 +214,34 @@ const FAQ = () => {
               </div>
             </div>
 
-            {/* Second Section - Orders with Little Heroes Image */}
-            <div className="grid lg:grid-cols-12 gap-12 items-start">
-              {/* Left Column - FAQ Content */}
-              <div className="lg:col-span-10">
-                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
-                    <div className="flex items-center gap-3">
-                      <h2 className="text-2xl font-bold text-gray-800">{faqCategories[1].title}</h2>
-                      <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
-                        {faqCategories[1].badge}
-                      </Badge>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <Accordion type="single" collapsible className="space-y-4">
-                      {faqCategories[1].questions.map((faq, index) => (
-                        <AccordionItem 
-                          key={index} 
-                          value={`1-${index}`}
-                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
-                        >
-                          <AccordionTrigger className="text-left hover:text-red-600 font-medium">
-                            {faq.question}
-                          </AccordionTrigger>
-                          <AccordionContent className="text-gray-600 leading-relaxed pt-2">
-                            {faq.answer}
-                          </AccordionContent>
-                        </AccordionItem>
-                      ))}
-                    </Accordion>
+            {/* Second Section - Orders without image */}
+            <div className="max-w-6xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                  <div className="flex items-center gap-3">
+                    <h2 className="text-2xl font-bold text-gray-800">{faqCategories[1].title}</h2>
+                    <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                      {faqCategories[1].badge}
+                    </Badge>
                   </div>
                 </div>
-              </div>
-
-              {/* Right Column - Little Heroes Image */}
-              <div className="lg:col-span-2">
-                <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
-                    <div className="h-full flex items-center justify-center p-4">
-                      <div className="text-center">
-                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
-                          <img 
-                            src="/lovable-uploads/137c71ea-6b22-405a-8768-4dbafb00015a.png" 
-                            alt="Little Fire Heroes"
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                        <h3 className="font-bold text-orange-800 text-sm mb-1">Little Heroes</h3>
-                        <p className="text-orange-600 text-sm">Support</p>
-                      </div>
-                    </div>
-                    <div className="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                      Support
-                    </div>
-                  </div>
+                <div className="p-6">
+                  <Accordion type="single" collapsible className="space-y-4">
+                    {faqCategories[1].questions.map((faq, index) => (
+                      <AccordionItem 
+                        key={index} 
+                        value={`1-${index}`}
+                        className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
+                      >
+                        <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                          {faq.question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-gray-600 leading-relaxed pt-2">
+                          {faq.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
                 </div>
               </div>
             </div>
