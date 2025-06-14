@@ -52,7 +52,9 @@ const ProductFilters = ({
 
   return (
     <div className="space-y-4">
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">Filters</h2>
+      <h2 className="text-lg font-semibold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent mb-4">
+        Filters
+      </h2>
       
       {/* Price Filter */}
       <Card className="bg-white/70 backdrop-blur-sm border border-white/50">
@@ -78,7 +80,10 @@ const ProductFilters = ({
                   max="1000"
                   value={priceRange[1]}
                   onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
-                  className="w-full accent-red-500"
+                  className="w-full accent-gradient-to-r accent-from-red-500 accent-to-orange-500"
+                  style={{
+                    background: `linear-gradient(to right, #ef4444 0%, #f97316 100%)`
+                  }}
                 />
               </div>
             </CardContent>
@@ -106,6 +111,7 @@ const ProductFilters = ({
                       id={tag}
                       checked={selectedTags.includes(tag)}
                       onCheckedChange={(checked) => handleTagChange(tag, checked as boolean)}
+                      className="data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-red-500 data-[state=checked]:to-orange-500 border-red-300"
                     />
                     <label htmlFor={tag} className="text-sm text-gray-700 cursor-pointer">
                       {tag}
@@ -138,6 +144,7 @@ const ProductFilters = ({
                       id={category}
                       checked={selectedCategories.includes(category)}
                       onCheckedChange={(checked) => handleCategoryChange(category, checked as boolean)}
+                      className="data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-red-500 data-[state=checked]:to-orange-500 border-red-300"
                     />
                     <label htmlFor={category} className="text-sm text-gray-700 cursor-pointer">
                       {category}
@@ -168,6 +175,7 @@ const ProductFilters = ({
                   id="inStock"
                   checked={inStockOnly}
                   onCheckedChange={(checked) => setInStockOnly(checked as boolean)}
+                  className="data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-red-500 data-[state=checked]:to-orange-500 border-red-300"
                 />
                 <label htmlFor="inStock" className="text-sm text-gray-700 cursor-pointer">
                   In Stock Only

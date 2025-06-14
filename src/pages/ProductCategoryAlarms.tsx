@@ -38,7 +38,9 @@ const ProductCategoryAlarms = () => {
           {/* Products Section */}
           <div className="lg:col-span-3">
             <div className="flex justify-between items-center mb-6">
-              <h1 className="text-2xl font-bold text-gray-800">Fire Detection Alarms</h1>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-red-600 via-orange-500 to-red-500 bg-clip-text text-transparent">
+                Fire Detection Alarms
+              </h1>
               <ProductSorting sortBy={sortBy} setSortBy={setSortBy} />
             </div>
             
