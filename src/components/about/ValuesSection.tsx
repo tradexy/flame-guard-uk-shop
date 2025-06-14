@@ -27,25 +27,28 @@ const ValuesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-white/50">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-white/70 relative fade-in-up">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-yellow-300/10 via-white/20 to-transparent"></div>
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-orange-200/15 via-white/25 to-transparent"></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Values</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            These core values, established by Sofia and Ruben, guide everything we do, 
-            from product development to community engagement.
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 font-montserrat animate-fade-in">Our Values</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in">
+            These core values, established by Sofia and Ruben, guide everything we do, from product development to community engagement.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => {
             const IconComponent = value.icon;
             return (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm border border-white/50 hover:bg-orange-100/40 rounded-2xl animate-fade-in">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
+                  <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4 shadow-inner group-hover:bg-orange-100 transition-colors">
                     <IconComponent className="w-8 h-8 text-red-600" />
                   </div>
-                  <h3 className="text-lg font-bold mb-3 text-gray-800">{value.title}</h3>
+                  <h3 className="text-lg font-bold mb-3 text-gray-800 font-montserrat">{value.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
                 </CardContent>
               </Card>

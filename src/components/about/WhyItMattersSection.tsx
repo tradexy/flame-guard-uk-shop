@@ -1,11 +1,11 @@
 
 const WhyItMattersSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-amber-50 to-yellow-50">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-gradient-to-r from-amber-50 to-yellow-50 fade-in-up relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-200/10 via-red-100/10 to-orange-300/30 pointer-events-none"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center">
-            {/* Why It Matters Image - Square */}
+          <div className="flex justify-center animate-fade-in">
             <div className="relative bg-gradient-to-br from-amber-100 to-yellow-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50 w-80 h-80">
               <img 
                 src="/lovable-uploads/4d4752d2-ef63-47c2-a268-81554a68db6f.png" 
@@ -19,8 +19,8 @@ const WhyItMattersSection = () => {
               </div>
             </div>
           </div>
-          <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Little Fire Heroes - Why It Matters</h2>
+          <div className="animate-fade-in">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 font-montserrat">Little Fire Heroes - Why It Matters</h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 Every day, families, teachers, and business owners face risks they're not equipped to handle.

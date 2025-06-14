@@ -1,12 +1,12 @@
 
 const OurStorySection = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-gradient-to-br from-yellow-50 to-orange-50 fade-in-up">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 font-montserrat animate-fade-in">Our Story</h2>
+            <div className="space-y-4 text-gray-600 leading-relaxed animate-fade-in">
               <p>
                 Little Fire Heroes was born from <strong>Sofia and Ruben's</strong> simple belief: 
                 fire safety shouldn't be complicated, expensive, or intimidating. Together, they started 
@@ -26,8 +26,7 @@ const OurStorySection = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            {/* Sofia & Ruben Image - Square with full image visible */}
-            <div className="relative bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50 w-80 h-80">
+            <div className="relative bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50 w-80 h-80 animate-fade-in">
               <img 
                 src="/lovable-uploads/622fe07f-7ce1-44de-9deb-04e04590a732.png" 
                 alt="Sofia & Ruben - Co-Founders of Little Fire Heroes"
