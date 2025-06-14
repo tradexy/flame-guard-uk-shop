@@ -271,7 +271,6 @@ const FAQ = () => {
                           <AccordionContent className="text-gray-600 leading-relaxed pt-2">
                             {faq.answer}
                           </AccordionContent>
-                        </AccordionContent>
                         </AccordionItem>
                       ))}
                     </Accordion>
