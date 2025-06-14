@@ -40,12 +40,19 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center">
-              <Link to="/">
+            <div className="flex items-center flex-shrink-0">
+              <Link to="/" className="hidden sm:block">
                 <img 
                   src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
                   alt="Little Fire Heroes Logo" 
-                  className="h-14 w-auto"
+                  className="h-14 w-auto object-contain"
+                />
+              </Link>
+              <Link to="/" className="sm:hidden">
+                <img 
+                  src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
+                  alt="Little Fire Heroes Logo" 
+                  className="h-10 w-auto object-contain"
                 />
               </Link>
             </div>
@@ -91,7 +98,7 @@ const Header = () => {
             </nav>
 
             {/* Right side buttons */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 flex-shrink-0">
               <Button 
                 variant="ghost" 
                 size="sm" 
@@ -103,7 +110,7 @@ const Header = () => {
               <BasketSidebar />
               <Link 
                 to="/help-advice" 
-                className="hidden md:inline text-sm text-gray-600 hover:text-red-600 transition-colors cursor-pointer"
+                className="hidden md:inline text-sm text-gray-600 hover:text-red-600 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Help & Advice
               </Link>
@@ -111,7 +118,7 @@ const Header = () => {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2 rounded-lg hover:bg-white/50 backdrop-blur-sm transition-colors"
+              className="md:hidden p-2 rounded-lg hover:bg-white/50 backdrop-blur-sm transition-colors flex-shrink-0"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
