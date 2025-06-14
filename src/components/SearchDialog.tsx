@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { Search, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
@@ -10,106 +10,38 @@ import {
 } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { productsData } from '@/data/productsData';
+import { useSearchData } from '@/hooks/useSearchData';
 
 interface SearchDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
 
-interface SearchResult {
-  title: string;
-  path: string;
-  type: string;
-  price?: string;
-}
-
 const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
   const [searchQuery, setSearchQuery] = useState('');
+  const { allSearchableContent } = useSearchData();
 
-  // Sample search results - you can replace this with actual search logic
-  const searchableContent: SearchResult[] = [
-    { title: 'Aerosol Products', path: '/product-category/aerosol', type: 'Product Category' },
-    { title: 'Fire Alarms', path: '/product-category/alarms', type: 'Product Category' },
-    { title: 'Fire Sachets', path: '/product-category/sachets', type: 'Product Category' },
-    { title: 'Fire Extinguishers', path: '/product-category/extinguishers', type: 'Product Category' },
-    { title: 'Ancillary Products', path: '/product-category/ancillary-products', type: 'Product Category' },
-    { title: 'Servicing Products', path: '/product-category/servicing-products', type: 'Product Category' },
-    { title: 'About Us', path: '/about-us', type: 'Page' },
-    { title: 'Our Mission', path: '/our-mission', type: 'Page' },
-    { title: 'Servicing Support', path: '/servicing-support', type: 'Page' },
-    { title: 'Contact Us', path: '/contact-us', type: 'Page' },
-    { title: 'FAQ', path: '/faqs', type: 'Page' },
-    { title: 'Shop By Category', path: '/shop-by-category', type: 'Page' },
-    { title: 'Shop For', path: '/shop-for', type: 'Page' },
-  ];
+  const filteredResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    
+    const query = searchQuery.toLowerCase();
+    return allSearchableContent.filter(item =>
+      item.title.toLowerCase().includes(query)
+    );
+  }, [searchQuery, allSearchableContent]);
 
-  // Add products to searchable content
-  const allProducts: SearchResult[] = Object.entries(productsData).flatMap(([categoryKey, products]) =>
-    products.map(product => {
-      const getCategoryKey = () => {
-        const categoryMap: { [key: string]: string } = {
-          'Aerosol Systems': 'aerosols',
-          'Portable Aerosols': 'aerosols',
-          'Fixed Systems': 'aerosols',
-          'Emergency Use': 'aerosols',
-          'Smoke Detectors': 'alarms',
-          'Heat Detectors': 'alarms',
-          'Control Panels': 'alarms',
-          'Combination Detectors': 'alarms',
-          'Emergency Sachets': 'sachets',
-          'Professional Sachets': 'sachets',
-          'Sachet Packs': 'sachets',
-          'Vehicle Sachets': 'sachets',
-          'Industrial Sachets': 'sachets',
-          'Home Safety': 'sachets',
-          'Powder Extinguishers': 'extinguishers',
-          'Carbon Dioxide Extinguishers': 'extinguishers',
-          'Foam Extinguishers': 'extinguishers',
-          'Water Extinguishers': 'extinguishers',
-          'Wet Chemical Extinguishers': 'extinguishers',
-          'Mounting & Brackets': 'ancillaryProducts',
-          'Safety Signs': 'ancillaryProducts',
-          'Maintenance Kits': 'ancillaryProducts',
-          'Emergency Lighting': 'ancillaryProducts',
-          'Fire Blankets': 'ancillaryProducts',
-          'Storage & Cabinets': 'ancillaryProducts',
-          'Training Materials': 'ancillaryProducts',
-          'Testing Equipment': 'ancillaryProducts',
-          'Service Tools': 'servicingProducts',
-          'Testing Tools': 'servicingProducts',
-          'Software Solutions': 'servicingProducts',
-          'Inspection Tools': 'servicingProducts'
-        };
-        return categoryMap[product.category] || categoryKey;
-      };
-      
-      return {
-        title: product.name,
-        path: `/product/${getCategoryKey()}/${product.id}`,
-        type: 'Product',
-        price: `£${product.price}`
-      };
-    })
-  );
-
-  const allSearchableContent = [...searchableContent, ...allProducts];
-
-  const filteredResults = searchQuery.trim()
-    ? allSearchableContent.filter(item =>
-        item.title.toLowerCase().includes(searchQuery.toLowerCase())
-      )
-    : [];
-
-  const handleSearchSubmit = (e: React.FormEvent) => {
+  const handleSearchSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault();
-    // Handle search submission if needed
-  };
+  }, []);
 
-  const handleResultClick = () => {
+  const handleResultClick = useCallback(() => {
     onOpenChange(false);
     setSearchQuery('');
-  };
+  }, [onOpenChange]);
+
+  const clearSearch = useCallback(() => {
+    setSearchQuery('');
+  }, []);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -137,7 +69,7 @@ const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
                 variant="ghost"
                 size="sm"
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 h-6 w-6 p-0"
-                onClick={() => setSearchQuery('')}
+                onClick={clearSearch}
               >
                 <X className="h-4 w-4" />
               </Button>
@@ -154,7 +86,7 @@ const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
                 </h3>
                 {filteredResults.map((result, index) => (
                   <Link
-                    key={index}
+                    key={`${result.type}-${result.title}-${index}`}
                     to={result.path}
                     onClick={handleResultClick}
                     className="block p-3 rounded-lg bg-white/50 backdrop-blur-sm border border-white/20 hover:bg-white/70 transition-all duration-200 group"

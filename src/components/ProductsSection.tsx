@@ -1,9 +1,10 @@
 
+import { memo, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
-const ProductsSection = () => {
-  const products = [
+const ProductsSection = memo(() => {
+  const products = useMemo(() => [
     {
       id: 1,
       name: "Firexo 500ml Stainless Steel Extinguisher",
@@ -28,7 +29,7 @@ const ProductsSection = () => {
       price: "£64.00",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop"
     }
-  ];
+  ], []);
 
   return (
     <section className="py-16 bg-gradient-to-b from-white to-gray-50/50">
@@ -47,6 +48,7 @@ const ProductsSection = () => {
                     src={product.image} 
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-2 text-center text-sm">
@@ -68,6 +70,8 @@ const ProductsSection = () => {
       </div>
     </section>
   );
-};
+});
+
+ProductsSection.displayName = 'ProductsSection';
 
 export default ProductsSection;

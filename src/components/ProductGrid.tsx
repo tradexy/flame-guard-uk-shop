@@ -1,7 +1,8 @@
 
-import { productsData } from '@/data/productsData';
+import { memo } from 'react';
 import { useProductFilters } from '@/hooks/useProductFilters';
 import ProductCard from '@/components/ProductCard';
+import { productsData } from '@/data/productsData';
 
 interface ProductGridProps {
   category: string;
@@ -12,7 +13,7 @@ interface ProductGridProps {
   inStockOnly: boolean;
 }
 
-const ProductGrid = ({ category, sortBy, priceRange, selectedTags, selectedCategories, inStockOnly }: ProductGridProps) => {
+const ProductGrid = memo(({ category, sortBy, priceRange, selectedTags, selectedCategories, inStockOnly }: ProductGridProps) => {
   const products = productsData[category as keyof typeof productsData] || [];
   
   const filteredProducts = useProductFilters({
@@ -44,6 +45,8 @@ const ProductGrid = ({ category, sortBy, priceRange, selectedTags, selectedCateg
       )}
     </div>
   );
-};
+});
+
+ProductGrid.displayName = 'ProductGrid';
 
 export default ProductGrid;
