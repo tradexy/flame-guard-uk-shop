@@ -2,6 +2,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart, Eye, Star, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useBasket } from '@/contexts/BasketContext';
 import { useToast } from '@/hooks/use-toast';
 import { Product } from '@/data/productsData';
@@ -37,6 +38,47 @@ const ProductCard = ({ product }: ProductCardProps) => {
     });
   };
 
+  // Determine the category key for routing
+  const getCategoryKey = () => {
+    // Map product categories back to data keys
+    const categoryMap: { [key: string]: string } = {
+      'Aerosol Systems': 'aerosols',
+      'Portable Aerosols': 'aerosols',
+      'Fixed Systems': 'aerosols',
+      'Emergency Use': 'aerosols',
+      'Smoke Detectors': 'alarms',
+      'Heat Detectors': 'alarms',
+      'Control Panels': 'alarms',
+      'Combination Detectors': 'alarms',
+      'Emergency Sachets': 'sachets',
+      'Professional Sachets': 'sachets',
+      'Sachet Packs': 'sachets',
+      'Vehicle Sachets': 'sachets',
+      'Industrial Sachets': 'sachets',
+      'Home Safety': 'sachets',
+      'Powder Extinguishers': 'extinguishers',
+      'Carbon Dioxide Extinguishers': 'extinguishers',
+      'Foam Extinguishers': 'extinguishers',
+      'Water Extinguishers': 'extinguishers',
+      'Wet Chemical Extinguishers': 'extinguishers',
+      'Mounting & Brackets': 'ancillaryProducts',
+      'Safety Signs': 'ancillaryProducts',
+      'Maintenance Kits': 'ancillaryProducts',
+      'Emergency Lighting': 'ancillaryProducts',
+      'Fire Blankets': 'ancillaryProducts',
+      'Storage & Cabinets': 'ancillaryProducts',
+      'Training Materials': 'ancillaryProducts',
+      'Testing Equipment': 'ancillaryProducts',
+      'Service Tools': 'servicingProducts',
+      'Testing Tools': 'servicingProducts',
+      'Software Solutions': 'servicingProducts',
+      'Inspection Tools': 'servicingProducts'
+    };
+    return categoryMap[product.category] || 'extinguishers';
+  };
+
+  const productUrl = `/product/${getCategoryKey()}/${product.id}`;
+
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80">
       <CardContent className="p-0">
@@ -57,16 +99,20 @@ const ProductCard = ({ product }: ProductCardProps) => {
             </div>
           )}
           <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-2">
-            <Button size="sm" className="bg-white/20 backdrop-blur-sm hover:bg-white/30">
-              <Eye className="h-4 w-4" />
-            </Button>
+            <Link to={productUrl}>
+              <Button size="sm" className="bg-white/20 backdrop-blur-sm hover:bg-white/30">
+                <Eye className="h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
         
         <div className="p-4">
-          <h3 className="font-semibold text-gray-800 mb-2 line-clamp-2">
-            {product.name}
-          </h3>
+          <Link to={productUrl}>
+            <h3 className="font-semibold text-gray-800 mb-2 line-clamp-2 hover:text-red-600 transition-colors cursor-pointer">
+              {product.name}
+            </h3>
+          </Link>
           <p className="text-sm text-gray-600 mb-3 line-clamp-2">
             {product.description}
           </p>

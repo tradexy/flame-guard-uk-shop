@@ -18,6 +18,7 @@ import ProductCategorySachets from "./pages/ProductCategorySachets";
 import ProductCategoryExtinguishers from "./pages/ProductCategoryExtinguishers";
 import ProductCategoryAncillaryProducts from "./pages/ProductCategoryAncillaryProducts";
 import ProductCategoryServicingProducts from "./pages/ProductCategoryServicingProducts";
+import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 import FAQ from "./pages/FAQ";
 
@@ -45,6 +46,7 @@ const App = () => (
             <Route path="/product-category/extinguishers" element={<ProductCategoryExtinguishers />} />
             <Route path="/product-category/ancillary-products" element={<ProductCategoryAncillaryProducts />} />
             <Route path="/product-category/servicing-products" element={<ProductCategoryServicingProducts />} />
+            <Route path="/product/:category/:productId" element={<ProductDetail />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

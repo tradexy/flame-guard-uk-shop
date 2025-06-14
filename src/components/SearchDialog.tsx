@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { productsData } from '@/data/productsData';
 
 interface SearchDialogProps {
   open: boolean;
@@ -36,8 +37,59 @@ const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
     { title: 'Shop For', path: '/shop-for', type: 'Page' },
   ];
 
+  // Add products to searchable content
+  const allProducts = Object.entries(productsData).flatMap(([categoryKey, products]) =>
+    products.map(product => {
+      const getCategoryKey = () => {
+        const categoryMap: { [key: string]: string } = {
+          'Aerosol Systems': 'aerosols',
+          'Portable Aerosols': 'aerosols',
+          'Fixed Systems': 'aerosols',
+          'Emergency Use': 'aerosols',
+          'Smoke Detectors': 'alarms',
+          'Heat Detectors': 'alarms',
+          'Control Panels': 'alarms',
+          'Combination Detectors': 'alarms',
+          'Emergency Sachets': 'sachets',
+          'Professional Sachets': 'sachets',
+          'Sachet Packs': 'sachets',
+          'Vehicle Sachets': 'sachets',
+          'Industrial Sachets': 'sachets',
+          'Home Safety': 'sachets',
+          'Powder Extinguishers': 'extinguishers',
+          'Carbon Dioxide Extinguishers': 'extinguishers',
+          'Foam Extinguishers': 'extinguishers',
+          'Water Extinguishers': 'extinguishers',
+          'Wet Chemical Extinguishers': 'extinguishers',
+          'Mounting & Brackets': 'ancillaryProducts',
+          'Safety Signs': 'ancillaryProducts',
+          'Maintenance Kits': 'ancillaryProducts',
+          'Emergency Lighting': 'ancillaryProducts',
+          'Fire Blankets': 'ancillaryProducts',
+          'Storage & Cabinets': 'ancillaryProducts',
+          'Training Materials': 'ancillaryProducts',
+          'Testing Equipment': 'ancillaryProducts',
+          'Service Tools': 'servicingProducts',
+          'Testing Tools': 'servicingProducts',
+          'Software Solutions': 'servicingProducts',
+          'Inspection Tools': 'servicingProducts'
+        };
+        return categoryMap[product.category] || categoryKey;
+      };
+      
+      return {
+        title: product.name,
+        path: `/product/${getCategoryKey()}/${product.id}`,
+        type: 'Product',
+        price: `£${product.price}`
+      };
+    })
+  );
+
+  const allSearchableContent = [...searchableContent, ...allProducts];
+
   const filteredResults = searchQuery.trim()
-    ? searchableContent.filter(item =>
+    ? allSearchableContent.filter(item =>
         item.title.toLowerCase().includes(searchQuery.toLowerCase())
       )
     : [];
@@ -105,7 +157,15 @@ const SearchDialog = ({ open, onOpenChange }: SearchDialogProps) => {
                         <h4 className="font-medium text-gray-900 group-hover:text-red-600 transition-colors">
                           {result.title}
                         </h4>
-                        <p className="text-sm text-gray-600">{result.type}</p>
+                        <div className="flex items-center space-x-2">
+                          <p className="text-sm text-gray-600">{result.type}</p>
+                          {result.type === 'Product' && 'price' in result && (
+                            <>
+                              <span className="text-gray-400">•</span>
+                              <p className="text-sm font-medium text-red-600">{result.price}</p>
+                            </>
+                          )}
+                        </div>
                       </div>
                       <Search className="h-4 w-4 text-gray-400 group-hover:text-red-500 transition-colors" />
                     </div>
