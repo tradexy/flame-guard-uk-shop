@@ -161,14 +161,17 @@ const FAQ = () => {
               <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[4/5] flex items-center justify-center p-10">
+                    <div className="aspect-square flex items-center justify-center p-8">
                       <div className="text-center">
-                        <div className="w-40 h-40 bg-blue-200 rounded-full mb-8 mx-auto flex items-center justify-center">
-                          <span className="text-6xl">👨‍🚒</span>
+                        <div className="w-48 h-48 mb-6 mx-auto flex items-center justify-center">
+                          <img 
+                            src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
+                            alt="Ruben - Fire Safety Expert"
+                            className="w-full h-full object-contain"
+                          />
                         </div>
-                        <h3 className="font-bold text-blue-800 text-2xl mb-4">Ruben</h3>
-                        <p className="text-blue-600 text-lg mb-2">Fire Safety Expert</p>
-                        <p className="text-base text-blue-500 mt-4">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-blue-800 text-2xl mb-2">Ruben</h3>
+                        <p className="text-blue-600 text-lg">Fire Safety Expert</p>
                       </div>
                     </div>
                     <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -245,45 +248,51 @@ const FAQ = () => {
                 </div>
               </div>
 
-              {/* Right Column - Sofia's Image */}
+              {/* Right Column - Ruben's Image for Orders */}
               <div className="lg:col-span-4">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[4/5] flex items-center justify-center p-10">
+                  <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                    <div className="aspect-square flex items-center justify-center p-8">
                       <div className="text-center">
-                        <div className="w-40 h-40 bg-pink-200 rounded-full mb-8 mx-auto flex items-center justify-center">
-                          <span className="text-6xl">👩‍🚒</span>
+                        <div className="w-48 h-48 mb-6 mx-auto flex items-center justify-center">
+                          <img 
+                            src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
+                            alt="Ruben - Orders & Support Expert"
+                            className="w-full h-full object-contain"
+                          />
                         </div>
-                        <h3 className="font-bold text-purple-800 text-2xl mb-4">Sofia</h3>
-                        <p className="text-purple-600 text-lg mb-2">Safety Specialist</p>
-                        <p className="text-base text-purple-500 mt-4">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-orange-800 text-2xl mb-2">Ruben</h3>
+                        <p className="text-orange-600 text-lg">Orders & Support</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      Specialist
+                    <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      Support
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Third Section - Ruben on Left Again */}
+            {/* Third Section - Sofia on Left */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
-              {/* Left Column - Ruben's Image */}
+              {/* Left Column - Sofia's Image */}
               <div className="lg:col-span-4">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-green-100 to-emerald-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[4/5] flex items-center justify-center p-10">
+                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                    <div className="aspect-square flex items-center justify-center p-8">
                       <div className="text-center">
-                        <div className="w-40 h-40 bg-green-200 rounded-full mb-8 mx-auto flex items-center justify-center">
-                          <span className="text-6xl">👩‍🚒</span>
+                        <div className="w-48 h-48 mb-6 mx-auto flex items-center justify-center">
+                          <img 
+                            src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
+                            alt="Sofia - Products & Community Expert"
+                            className="w-full h-full object-contain"
+                          />
                         </div>
-                        <h3 className="font-bold text-green-800 text-2xl mb-4">Sofia</h3>
-                        <p className="text-green-600 text-lg mb-2">Products & Community</p>
-                        <p className="text-base text-green-500 mt-4">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-purple-800 text-2xl mb-2">Sofia</h3>
+                        <p className="text-purple-600 text-lg">Products & Community</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Community
                     </div>
                   </div>
@@ -315,6 +324,7 @@ const FAQ = () => {
                           <AccordionContent className="text-gray-600 leading-relaxed pt-2">
                             {faq.answer}
                           </AccordionContent>
+                        </AccordionContent>
                         </AccordionItem>
                       ))}
                     </Accordion>
