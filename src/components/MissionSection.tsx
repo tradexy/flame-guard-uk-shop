@@ -3,18 +3,22 @@ import { Button } from '@/components/ui/button';
 
 const MissionSection = () => {
   return (
-    <section className="py-16 bg-red-600 text-white">
-      <div className="container mx-auto px-4 text-center">
-        <p className="text-orange-300 font-semibold mb-2">At Little Heroes</p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">
-          Fire safety goes beyond products — it's about impact.
-        </h2>
-        <p className="text-lg mb-8 max-w-3xl mx-auto">
-          We proudly donate 3% of our profits to help schools in the UK access sports kits, uniforms, and safety education tools
-        </p>
-        <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">
-          REGISTER NOW
-        </Button>
+    <section className="py-16 bg-gradient-to-br from-red-600 to-red-700 text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+      <div className="absolute inset-0 backdrop-blur-[1px]"></div>
+      <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/20 shadow-2xl">
+          <p className="text-orange-300 font-semibold mb-2">At Little Heroes</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            Fire safety goes beyond products — it's about impact.
+          </h2>
+          <p className="text-lg mb-8 max-w-3xl mx-auto opacity-90">
+            We proudly donate 3% of our profits to help schools in the UK access sports kits, uniforms, and safety education tools
+          </p>
+          <Button className="bg-orange-500/90 backdrop-blur-sm hover:bg-orange-600/90 text-white px-8 py-3 shadow-lg border border-white/20">
+            REGISTER NOW
+          </Button>
+        </div>
       </div>
     </section>
   );

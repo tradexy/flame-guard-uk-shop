@@ -31,7 +31,7 @@ const ProductsSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gradient-to-b from-white to-gray-50/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-orange-500 font-semibold mb-2">Featured Products</p>
@@ -40,13 +40,13 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
-            <Card key={product.id} className="group hover:shadow-lg transition-shadow">
+            <Card key={product.id} className="group hover:shadow-xl transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80">
               <CardContent className="p-6">
-                <div className="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100/50 backdrop-blur-sm rounded-lg mb-4 overflow-hidden border border-white/30">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-2 text-center text-sm">
@@ -54,10 +54,10 @@ const ProductsSection = () => {
                 </h3>
                 <p className="text-red-600 font-bold text-center mb-4">{product.price}</p>
                 <div className="space-y-2">
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                  <Button className="w-full bg-red-600/90 backdrop-blur-sm hover:bg-red-700/90 text-white shadow-lg">
                     ADD TO BASKET
                   </Button>
-                  <Button variant="outline" className="w-full border-red-600 text-red-600 hover:bg-red-50">
+                  <Button variant="outline" className="w-full border-red-600/50 bg-white/50 backdrop-blur-sm text-red-600 hover:bg-red-50/80 shadow-lg">
                     BUY NOW
                   </Button>
                 </div>
