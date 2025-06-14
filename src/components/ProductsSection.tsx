@@ -9,25 +9,25 @@ const ProductsSection = memo(() => {
       id: 1,
       name: "Firexo 500ml Stainless Steel Extinguisher",
       price: "£21.50",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop"
+      image: "/lovable-uploads/7dab0756-aa57-470f-9d85-fd5778a3aec3.png"
     },
     {
       id: 2,
       name: "Firexo 2L Kitemarked Extinguisher",
       price: "£21.00",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop"
+      image: "/lovable-uploads/edcd76c1-40e9-4693-b0cc-5768537eb789.png"
     },
     {
       id: 3,
       name: "Firexo 6L Kitemarked Extinguisher",
       price: "£48.00",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop"
+      image: "/lovable-uploads/51c66cd4-7709-4a89-be39-82084826e497.png"
     },
     {
       id: 4,
       name: "Firexo 9L Kitemarked Extinguisher",
       price: "£64.00",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop"
+      image: "/lovable-uploads/7ad47141-0b8a-450e-9350-fce2e9b71b02.png"
     }
   ], []);
 
