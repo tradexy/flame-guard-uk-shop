@@ -31,7 +31,7 @@ const BasketSidebar = () => {
     <Sheet open={isBasketOpen} onOpenChange={setIsBasketOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="sm" className="hover:bg-white/50 backdrop-blur-sm relative">
-          <ShoppingCart className="h-4 w-4" />
+          <ShoppingCart className="h-5 w-5" />
           {getTotalItems() > 0 && (
             <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
               {getTotalItems()}

@@ -98,7 +98,7 @@ const Header = () => {
                 className="hover:bg-white/50 backdrop-blur-sm"
                 onClick={handleSearchClick}
               >
-                <Search className="h-4 w-4" />
+                <Search className="h-5 w-5" />
               </Button>
               <BasketSidebar />
               <Link 
