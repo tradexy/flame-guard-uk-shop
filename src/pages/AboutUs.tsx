@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -79,7 +78,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Story Section */}
+      {/* Our Story Section with Image Placeholder */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -105,17 +104,21 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="relative">
-              <Card className="bg-gradient-to-br from-red-500/90 to-orange-500/90 text-white border border-white/20 shadow-2xl">
-                <CardContent className="p-8 text-center">
-                  <div className="text-6xl mb-4">🏆</div>
-                  <h3 className="text-2xl font-bold mb-4">Sofia & Ruben's Mission</h3>
-                  <p className="text-lg opacity-90">
-                    To make every person a fire hero through accessible products, 
-                    education, and community support - driven by their shared vision 
-                    for safer communities.
-                  </p>
-                </CardContent>
-              </Card>
+              {/* Image Placeholder 1 - Sofia & Ruben */}
+              <div className="relative bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
+                <div className="aspect-[4/3] flex items-center justify-center bg-gradient-to-br from-red-500/10 to-orange-500/10 backdrop-blur-sm">
+                  <div className="text-center text-gray-500">
+                    <div className="text-6xl mb-4">📸</div>
+                    <p className="text-lg font-medium">Sofia & Ruben Image</p>
+                    <p className="text-sm opacity-70">Placeholder for founders photo</p>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="font-semibold text-lg">Sofia & Ruben</p>
+                  <p className="text-sm opacity-90">Co-Founders of Little Fire Heroes</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -183,7 +186,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Team Section */}
+      {/* Our Team Section with Second Image Placeholder */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -193,6 +196,25 @@ const AboutUs = () => {
               dedicated to keeping communities safe through their innovative vision.
             </p>
           </div>
+          
+          {/* Second Image Placeholder - Team Photo */}
+          <div className="mb-12 max-w-4xl mx-auto">
+            <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
+              <div className="aspect-[16/9] flex items-center justify-center bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm">
+                <div className="text-center text-gray-500">
+                  <div className="text-8xl mb-4">🏢</div>
+                  <p className="text-xl font-medium">Team & Office Photo</p>
+                  <p className="text-sm opacity-70">Placeholder for Sofia, Ruben & team image</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <p className="font-semibold text-xl">The Little Fire Heroes Team</p>
+                <p className="text-sm opacity-90">Sofia, Ruben and the safety innovation team working together</p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80">
