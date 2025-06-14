@@ -124,6 +124,52 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Little Fire Heroes - Why It Matters Section */}
+      <section className="py-16 bg-gradient-to-r from-amber-50 to-yellow-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">Little Fire Heroes - Why It Matters</h2>
+              <div className="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  <strong>Sofia and Ruben</strong> founded Little Fire Heroes because they understood that fire safety 
+                  isn't just about having the right equipment - it's about creating a culture where everyone feels 
+                  empowered to act as a fire hero in their community.
+                </p>
+                <p>
+                  Through <strong>Sofia and Ruben's</strong> innovative approach, we've transformed how people think 
+                  about fire safety. From homes to workplaces, schools to recreational vehicles, their vision ensures 
+                  that fire safety solutions are accessible, understandable, and effective for everyone.
+                </p>
+                <p>
+                  <strong>Sofia and Ruben's</strong> commitment goes beyond products - they've built a movement that 
+                  educates, empowers, and protects communities across the UK. Every fire extinguisher, every safety 
+                  course, every community program reflects their dedication to making fire safety a priority that 
+                  saves lives.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              {/* Image Placeholder 3 - Why It Matters */}
+              <div className="relative bg-gradient-to-br from-amber-100 to-yellow-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50">
+                <div className="aspect-[4/3] flex items-center justify-center bg-gradient-to-br from-amber-500/10 to-yellow-500/10 backdrop-blur-sm">
+                  <div className="text-center text-gray-500">
+                    <div className="text-6xl mb-4">🔥</div>
+                    <p className="text-lg font-medium">Why It Matters Image</p>
+                    <p className="text-sm opacity-70">Placeholder for impact/mission photo</p>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="font-semibold text-lg">Making Fire Safety Matter</p>
+                  <p className="text-sm opacity-90">Sofia & Ruben's impact on community safety</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Values Section */}
       <section className="py-16 bg-white/50">
         <div className="container mx-auto px-4">
