@@ -15,6 +15,7 @@ const AboutUs = lazy(() => import("./pages/AboutUs"));
 const OurMission = lazy(() => import("./pages/OurMission"));
 const ServicingSupport = lazy(() => import("./pages/ServicingSupport"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
+const HelpAdvice = lazy(() => import("./pages/HelpAdvice"));
 const ProductCategoryAerosol = lazy(() => import("./pages/ProductCategoryAerosol"));
 const ProductCategoryAlarms = lazy(() => import("./pages/ProductCategoryAlarms"));
 const ProductCategorySachets = lazy(() => import("./pages/ProductCategorySachets"));
@@ -56,6 +57,7 @@ const App = () => (
               <Route path="/our-mission" element={<OurMission />} />
               <Route path="/servicing-support" element={<ServicingSupport />} />
               <Route path="/contact-us" element={<ContactUs />} />
+              <Route path="/help-advice" element={<HelpAdvice />} />
               <Route path="/faqs" element={<FAQ />} />
               <Route path="/product-category/aerosol" element={<ProductCategoryAerosol />} />
               <Route path="/product-category/alarms" element={<ProductCategoryAlarms />} />

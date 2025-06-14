@@ -101,7 +101,12 @@ const Header = () => {
                 <Search className="h-4 w-4" />
               </Button>
               <BasketSidebar />
-              <span className="hidden md:inline text-sm text-gray-600">Help & Advice</span>
+              <Link 
+                to="/help-advice" 
+                className="hidden md:inline text-sm text-gray-600 hover:text-red-600 transition-colors cursor-pointer"
+              >
+                Help & Advice
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -142,6 +147,7 @@ const Header = () => {
                 <Link to="/our-mission" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Our Mission</Link>
                 <Link to="/servicing-support" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Servicing Support</Link>
                 <Link to="/contact-us" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Contact Us</Link>
+                <Link to="/help-advice" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Help & Advice</Link>
               </nav>
             </div>
           )}
