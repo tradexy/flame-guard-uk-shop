@@ -160,10 +160,10 @@ const FAQ = () => {
               {/* Left Column - Ruben's Image */}
               <div className="lg:col-span-2">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl overflow-hidden shadow-md border border-white w-40 h-40 mx-auto">
-                    <div className="h-full flex items-center justify-center p-3">
+                  <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
+                    <div className="h-full flex items-center justify-center p-4">
                       <div className="text-center">
-                        <div className="w-24 h-24 mb-2 mx-auto flex items-center justify-center">
+                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
                           <img 
                             src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
                             alt="Ruben - Fire Safety Expert"
@@ -251,12 +251,12 @@ const FAQ = () => {
               {/* Right Column - Little Heroes Image */}
               <div className="lg:col-span-2">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-md border border-white w-40 h-40 mx-auto">
-                    <div className="h-full flex items-center justify-center p-3">
+                  <div className="relative bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
+                    <div className="h-full flex items-center justify-center p-4">
                       <div className="text-center">
-                        <div className="w-24 h-24 mb-2 mx-auto flex items-center justify-center">
+                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
                           <img 
-                            src="/lovable-uploads/0ae35d17-2db3-4124-a758-39fd05ca39cb.png" 
+                            src="/lovable-uploads/137c71ea-6b22-405a-8768-4dbafb00015a.png" 
                             alt="Little Fire Heroes"
                             className="w-full h-full object-contain"
                           />
@@ -278,10 +278,10 @@ const FAQ = () => {
               {/* Left Column - Sofia's Image */}
               <div className="lg:col-span-2">
                 <div className="sticky top-24">
-                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl overflow-hidden shadow-md border border-white w-40 h-40 mx-auto">
-                    <div className="h-full flex items-center justify-center p-3">
+                  <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl overflow-hidden shadow-md border border-white w-52 h-52 mx-auto">
+                    <div className="h-full flex items-center justify-center p-4">
                       <div className="text-center">
-                        <div className="w-24 h-24 mb-2 mx-auto flex items-center justify-center">
+                        <div className="w-32 h-32 mb-3 mx-auto flex items-center justify-center">
                           <img 
                             src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
                             alt="Sofia - Products & Community Expert"
