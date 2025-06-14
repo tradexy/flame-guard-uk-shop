@@ -110,7 +110,7 @@ const AboutUs = () => {
                 <img 
                   src="/lovable-uploads/622fe07f-7ce1-44de-9deb-04e04590a732.png" 
                   alt="Sofia & Ruben - Co-Founders of Little Fire Heroes"
-                  className="w-full h-full object-cover aspect-[4/3]"
+                  className="w-full h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -133,7 +133,7 @@ const AboutUs = () => {
                 <img 
                   src="/lovable-uploads/4d4752d2-ef63-47c2-a268-81554a68db6f.png" 
                   alt="Fire safety in action - Why it matters"
-                  className="w-full h-full object-cover aspect-[4/3]"
+                  className="w-full h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -242,7 +242,7 @@ const AboutUs = () => {
               <img 
                 src="/lovable-uploads/9558bcf3-3d6b-4fa6-b6a0-c9879452038c.png" 
                 alt="Sofia and Ruben - The Little Fire Heroes Team"
-                className="w-full h-full object-cover aspect-[16/9]"
+                className="w-full h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6 text-white">
