@@ -49,7 +49,6 @@ const ShopFor = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-100 via-white to-red-50 animate-fade-in">
       <Header />
-
       {/* Hero Section */}
       <section className="py-16 relative bg-gradient-to-r from-orange-50/40 via-white to-red-100/60 fade-in-up overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-200/15 via-red-100/10 to-yellow-200/20 animate-pulse pointer-events-none" />
@@ -74,8 +73,19 @@ const ShopFor = () => {
               const IconComponent = facility.icon;
               return (
                 <Link key={index} to={facility.path}>
-                  <Card className="group hover:shadow-lg hover:scale-105 transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/90 h-full animate-fade-in">
-                    <CardContent className="p-4 text-center">
+                  <Card className="group hover:shadow-lg hover:scale-105 transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/90 h-full animate-fade-in relative overflow-hidden">
+                    {/* Mascot/Flame Watermark */}
+                    <img
+                      src="/lovable-uploads/fc2eea39-bf52-4e85-84f7-b9a3181a054b.png"
+                      alt=""
+                      aria-hidden="true"
+                      className="pointer-events-none absolute right-1 bottom-1 w-16 h-16 opacity-10 z-0 select-none"
+                      style={{
+                        filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.03))',
+                        objectFit: 'contain'
+                      }}
+                    />
+                    <CardContent className="p-4 text-center relative z-10">
                       <div className="relative overflow-hidden mb-3 flex justify-center">
                         <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors animate-scale-in">
                           <IconComponent className="w-8 h-8 text-red-600" />
@@ -97,7 +107,6 @@ const ShopFor = () => {
           </div>
         </div>
       </section>
-
       {/* Best Selling Products */}
       <div className="fade-in-up delay-300">
         <BestSellingCarousel />
