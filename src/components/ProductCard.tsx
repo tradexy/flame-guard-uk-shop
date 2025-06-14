@@ -83,7 +83,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <Card className="group hover:shadow-xl transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80">
       <CardContent className="p-0">
         <div className="relative overflow-hidden">
-          <div className="h-48 bg-gradient-to-br from-gray-50 to-gray-100/50 flex items-center justify-center p-4">
+          <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100/50 flex items-center justify-center p-4">
             <img 
               src={product.image} 
               alt={product.name}
