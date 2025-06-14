@@ -47,18 +47,19 @@ const ShopFor = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-100 via-white to-red-50 animate-fade-in">
       <Header />
-      
+
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-orange-100 to-red-100">
-        <div className="container mx-auto px-4">
+      <section className="py-16 relative bg-gradient-to-r from-orange-50/40 via-white to-red-100/60 fade-in-up overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-200/15 via-red-100/10 to-yellow-200/20 animate-pulse pointer-events-none" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 font-montserrat animate-fade-in bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
               Shop For Your Facility
             </h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Find the perfect fire safety solutions tailored to your specific environment. 
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto font-montserrat animate-fade-in">
+              Find the perfect fire safety solutions tailored to your specific environment.
               From homes to industrial facilities, we have the right products to keep you safe.
             </p>
           </div>
@@ -66,24 +67,22 @@ const ShopFor = () => {
       </section>
 
       {/* Facilities Grid */}
-      <section className="py-16">
+      <section className="py-16 fade-in-up delay-200">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {facilities.map((facility, index) => {
               const IconComponent = facility.icon;
               return (
                 <Link key={index} to={facility.path}>
-                  <Card className="group hover:shadow-lg transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/80 h-full">
+                  <Card className="group hover:shadow-lg hover:scale-105 transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/50 hover:bg-white/90 h-full animate-fade-in">
                     <CardContent className="p-4 text-center">
                       <div className="relative overflow-hidden mb-3 flex justify-center">
-                        <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
+                        <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors animate-scale-in">
                           <IconComponent className="w-8 h-8 text-red-600" />
                         </div>
                       </div>
-                      <h3 className="text-sm font-bold mb-2 text-gray-800">{facility.title}</h3>
-                      <p className="text-xs text-gray-600 mb-3 leading-relaxed line-clamp-3">
-                        {facility.description}
-                      </p>
+                      <h3 className="text-sm font-bold mb-2 text-gray-800 font-montserrat">{facility.title}</h3>
+                      <p className="text-xs text-gray-600 mb-3 leading-relaxed line-clamp-3 font-montserrat">{facility.description}</p>
                       <div className="flex items-center justify-center text-red-600 text-xs font-medium group-hover:text-red-700 transition-colors">
                         Shop Now
                         <svg className="ml-1 h-3 w-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,8 +99,9 @@ const ShopFor = () => {
       </section>
 
       {/* Best Selling Products */}
-      <BestSellingCarousel />
-
+      <div className="fade-in-up delay-300">
+        <BestSellingCarousel />
+      </div>
       <Footer />
     </div>
   );
