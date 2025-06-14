@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { 
@@ -32,11 +33,11 @@ const FAQ = () => {
         },
         {
           question: "Are your products environmentally friendly?",
-          answer: "Absolutely! We're committed to environmental responsibility. Our products are designed to be eco-friendly while maintaining the highest safety standards."
+          answer: "Absolutely! We're committed to environmental responsibility. Our products are designed to be eco-friendly whilst maintaining the highest safety standards."
         },
         {
           question: "What makes your products unique?",
-          answer: "Our products combine cutting-edge safety technology with educational value, helping to create a new generation of fire safety heroes while providing reliable protection for your property."
+          answer: "Our products combine cutting-edge safety technology with educational value, helping to create a new generation of fire safety heroes whilst providing reliable protection for your property."
         }
       ]
     },
@@ -50,7 +51,7 @@ const FAQ = () => {
         },
         {
           question: "Do you ship internationally?",
-          answer: "Currently we focus on UK deliveries to ensure the fastest and most reliable service. Please contact us for international shipping inquiries."
+          answer: "Currently we focus on UK deliveries to ensure the fastest and most reliable service. Please contact us for international shipping enquiries."
         },
         {
           question: "What are your shipping fees?",
@@ -66,7 +67,7 @@ const FAQ = () => {
         },
         {
           question: "What if my product arrives damaged?",
-          answer: "If your product arrives damaged, please contact us immediately with photos of the damage. We'll arrange a replacement or full refund right away."
+          answer: "If your product arrives damaged, please contact us immediately with photos of the damage. We'll arrange a replacement or full refund straightaway."
         },
         {
           question: "How can I get in touch for more help?",
@@ -78,11 +79,11 @@ const FAQ = () => {
         },
         {
           question: "Do you offer servicing and maintenance options?",
-          answer: "Yes, we provide comprehensive servicing and maintenance programs to ensure your fire safety equipment remains in perfect working condition."
+          answer: "Yes, we provide comprehensive servicing and maintenance programmes to ensure your fire safety equipment remains in perfect working condition."
         },
         {
           question: "Do you provide bulk or institutional discounts?",
-          answer: "Yes! We offer competitive pricing for schools, businesses, and bulk orders. Contact us for a customized quote based on your requirements."
+          answer: "Yes! We offer competitive pricing for schools, businesses, and bulk orders. Contact us for a customised quote based on your requirements."
         }
       ]
     },
@@ -96,7 +97,7 @@ const FAQ = () => {
         },
         {
           question: "How do I know which fire extinguisher is right for my space?",
-          answer: "Our product descriptions include detailed guidance on the best applications for each extinguisher. You can also contact our experts for personalized recommendations."
+          answer: "Our product descriptions include detailed guidance on the best applications for each extinguisher. You can also contact our experts for personalised recommendations."
         },
         {
           question: "Do your products require maintenance or replacement?",
@@ -108,15 +109,15 @@ const FAQ = () => {
         },
         {
           question: "Can I check out as a guest?",
-          answer: "Yes! While creating an account helps track orders and speeds up future purchases, you can complete your purchase as a guest if you prefer."
+          answer: "Yes! Whilst creating an account helps track orders and speeds up future purchases, you can complete your purchase as a guest if you prefer."
         },
         {
-          question: "How does my purchase support schools or community programs?",
+          question: "How does my purchase support schools or community programmes?",
           answer: "Every purchase helps fund our Little Hero Fire Project initiatives, providing fire safety education and equipment to schools and communities in need."
         },
         {
           question: "Can schools apply for support from Little Hero Fire Project?",
-          answer: "Yes! Schools can apply for our community support program. We provide fire safety education, equipment donations, and training sessions. Contact us to learn about application requirements."
+          answer: "Yes! Schools can apply for our community support programme. We provide fire safety education, equipment donations, and training sessions. Contact us to learn about application requirements."
         }
       ]
     }
@@ -160,17 +161,17 @@ const FAQ = () => {
               <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[3/4] flex items-center justify-center p-8">
+                    <div className="aspect-[4/5] flex items-center justify-center p-10">
                       <div className="text-center">
-                        <div className="w-32 h-32 bg-blue-200 rounded-full mb-6 mx-auto flex items-center justify-center">
-                          <span className="text-5xl">👨‍🚒</span>
+                        <div className="w-40 h-40 bg-blue-200 rounded-full mb-8 mx-auto flex items-center justify-center">
+                          <span className="text-6xl">👨‍🚒</span>
                         </div>
-                        <h3 className="font-bold text-blue-800 text-xl mb-3">Ruben</h3>
-                        <p className="text-blue-600 text-base">Fire Safety Expert</p>
-                        <p className="text-sm text-blue-500 mt-3">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-blue-800 text-2xl mb-4">Ruben</h3>
+                        <p className="text-blue-600 text-lg mb-2">Fire Safety Expert</p>
+                        <p className="text-base text-blue-500 mt-4">[Cartoon image placeholder]</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Expert
                     </div>
                   </div>
@@ -194,7 +195,7 @@ const FAQ = () => {
                         <AccordionItem 
                           key={index} 
                           value={`0-${index}`}
-                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colors"
+                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
                         >
                           <AccordionTrigger className="text-left hover:text-red-600 font-medium">
                             {faq.question}
@@ -229,7 +230,7 @@ const FAQ = () => {
                         <AccordionItem 
                           key={index} 
                           value={`1-${index}`}
-                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colors"
+                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
                         >
                           <AccordionTrigger className="text-left hover:text-red-600 font-medium">
                             {faq.question}
@@ -248,17 +249,17 @@ const FAQ = () => {
               <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[3/4] flex items-center justify-center p-8">
+                    <div className="aspect-[4/5] flex items-center justify-center p-10">
                       <div className="text-center">
-                        <div className="w-32 h-32 bg-pink-200 rounded-full mb-6 mx-auto flex items-center justify-center">
-                          <span className="text-5xl">👩‍🚒</span>
+                        <div className="w-40 h-40 bg-pink-200 rounded-full mb-8 mx-auto flex items-center justify-center">
+                          <span className="text-6xl">👩‍🚒</span>
                         </div>
-                        <h3 className="font-bold text-purple-800 text-xl mb-3">Sofia</h3>
-                        <p className="text-purple-600 text-base">Safety Specialist</p>
-                        <p className="text-sm text-purple-500 mt-3">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-purple-800 text-2xl mb-4">Sofia</h3>
+                        <p className="text-purple-600 text-lg mb-2">Safety Specialist</p>
+                        <p className="text-base text-purple-500 mt-4">[Cartoon image placeholder]</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Specialist
                     </div>
                   </div>
@@ -272,18 +273,18 @@ const FAQ = () => {
               <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-green-100 to-emerald-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[3/4] flex items-center justify-center p-8">
+                    <div className="aspect-[4/5] flex items-center justify-center p-10">
                       <div className="text-center">
-                        <div className="w-32 h-32 bg-green-200 rounded-full mb-6 mx-auto flex items-center justify-center">
-                          <span className="text-5xl">👨‍🚒</span>
+                        <div className="w-40 h-40 bg-green-200 rounded-full mb-8 mx-auto flex items-center justify-center">
+                          <span className="text-6xl">👩‍🚒</span>
                         </div>
-                        <h3 className="font-bold text-green-800 text-xl mb-3">Ruben</h3>
-                        <p className="text-green-600 text-base">Orders & Support</p>
-                        <p className="text-sm text-green-500 mt-3">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-green-800 text-2xl mb-4">Sofia</h3>
+                        <p className="text-green-600 text-lg mb-2">Products & Community</p>
+                        <p className="text-base text-green-500 mt-4">[Cartoon image placeholder]</p>
                       </div>
                     </div>
-                    <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                      Support
+                    <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      Community
                     </div>
                   </div>
                 </div>
@@ -306,7 +307,7 @@ const FAQ = () => {
                         <AccordionItem 
                           key={index} 
                           value={`2-${index}`}
-                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colors"
+                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
                         >
                           <AccordionTrigger className="text-left hover:text-red-600 font-medium">
                             {faq.question}
@@ -333,13 +334,13 @@ const FAQ = () => {
               Still Have Questions?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Our fire safety experts are here to help. Get in touch with us for personalized advice and support.
+              Our fire safety experts are here to help. Get in touch with us for personalised advice and support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg">
+              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colours shadow-lg">
                 Contact Our Experts
               </button>
-              <button className="bg-white hover:bg-gray-50 text-red-600 px-8 py-3 rounded-lg font-semibold border border-red-200 transition-colors">
+              <button className="bg-white hover:bg-gray-50 text-red-600 px-8 py-3 rounded-lg font-semibold border border-red-200 transition-colours">
                 Browse Products
               </button>
             </div>
