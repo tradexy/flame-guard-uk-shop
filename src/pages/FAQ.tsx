@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { 
@@ -158,17 +157,17 @@ const FAQ = () => {
             {/* First Section - Ruben on Left */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - Ruben's Image */}
-              <div className="lg:col-span-3">
+              <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[3/4] flex items-center justify-center p-6">
+                    <div className="aspect-[3/4] flex items-center justify-center p-8">
                       <div className="text-center">
-                        <div className="w-24 h-24 bg-blue-200 rounded-full mb-4 mx-auto flex items-center justify-center">
-                          <span className="text-4xl">👨‍🚒</span>
+                        <div className="w-32 h-32 bg-blue-200 rounded-full mb-6 mx-auto flex items-center justify-center">
+                          <span className="text-5xl">👨‍🚒</span>
                         </div>
-                        <h3 className="font-bold text-blue-800 text-lg mb-2">Ruben</h3>
-                        <p className="text-blue-600 text-sm">Fire Safety Expert</p>
-                        <p className="text-xs text-blue-500 mt-2">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-blue-800 text-xl mb-3">Ruben</h3>
+                        <p className="text-blue-600 text-base">Fire Safety Expert</p>
+                        <p className="text-sm text-blue-500 mt-3">[Cartoon image placeholder]</p>
                       </div>
                     </div>
                     <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
@@ -179,7 +178,7 @@ const FAQ = () => {
               </div>
 
               {/* Right Column - FAQ Content */}
-              <div className="lg:col-span-9">
+              <div className="lg:col-span-8">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
@@ -214,7 +213,7 @@ const FAQ = () => {
             {/* Second Section - Sofia on Right */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - FAQ Content */}
-              <div className="lg:col-span-9">
+              <div className="lg:col-span-8">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
@@ -246,17 +245,17 @@ const FAQ = () => {
               </div>
 
               {/* Right Column - Sofia's Image */}
-              <div className="lg:col-span-3">
+              <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[3/4] flex items-center justify-center p-6">
+                    <div className="aspect-[3/4] flex items-center justify-center p-8">
                       <div className="text-center">
-                        <div className="w-24 h-24 bg-pink-200 rounded-full mb-4 mx-auto flex items-center justify-center">
-                          <span className="text-4xl">👩‍🚒</span>
+                        <div className="w-32 h-32 bg-pink-200 rounded-full mb-6 mx-auto flex items-center justify-center">
+                          <span className="text-5xl">👩‍🚒</span>
                         </div>
-                        <h3 className="font-bold text-purple-800 text-lg mb-2">Sofia</h3>
-                        <p className="text-purple-600 text-sm">Safety Specialist</p>
-                        <p className="text-xs text-purple-500 mt-2">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-purple-800 text-xl mb-3">Sofia</h3>
+                        <p className="text-purple-600 text-base">Safety Specialist</p>
+                        <p className="text-sm text-purple-500 mt-3">[Cartoon image placeholder]</p>
                       </div>
                     </div>
                     <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
@@ -270,17 +269,17 @@ const FAQ = () => {
             {/* Third Section - Ruben on Left Again */}
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               {/* Left Column - Ruben's Image */}
-              <div className="lg:col-span-3">
+              <div className="lg:col-span-4">
                 <div className="sticky top-24">
                   <div className="relative bg-gradient-to-br from-green-100 to-emerald-100 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                    <div className="aspect-[3/4] flex items-center justify-center p-6">
+                    <div className="aspect-[3/4] flex items-center justify-center p-8">
                       <div className="text-center">
-                        <div className="w-24 h-24 bg-green-200 rounded-full mb-4 mx-auto flex items-center justify-center">
-                          <span className="text-4xl">👨‍🚒</span>
+                        <div className="w-32 h-32 bg-green-200 rounded-full mb-6 mx-auto flex items-center justify-center">
+                          <span className="text-5xl">👨‍🚒</span>
                         </div>
-                        <h3 className="font-bold text-green-800 text-lg mb-2">Ruben</h3>
-                        <p className="text-green-600 text-sm">Orders & Support</p>
-                        <p className="text-xs text-green-500 mt-2">[Cartoon image placeholder]</p>
+                        <h3 className="font-bold text-green-800 text-xl mb-3">Ruben</h3>
+                        <p className="text-green-600 text-base">Orders & Support</p>
+                        <p className="text-sm text-green-500 mt-3">[Cartoon image placeholder]</p>
                       </div>
                     </div>
                     <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
@@ -291,7 +290,7 @@ const FAQ = () => {
               </div>
 
               {/* Right Column - FAQ Content */}
-              <div className="lg:col-span-9">
+              <div className="lg:col-span-8">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                   <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
                     <div className="flex items-center gap-3">
