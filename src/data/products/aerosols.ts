@@ -4,29 +4,29 @@ import { Product } from '../productsData';
 export const aerosolProducts: Product[] = [
   {
     id: 1,
-    name: 'FirePro FP-40 Aerosol Fire Suppression Generator',
+    name: 'Firexo Mini Fire Extinguisher Spray',
     price: 299.99,
     originalPrice: 349.99,
-    image: '/placeholder.svg',
+    image: '/lovable-uploads/f88c3550-2243-4a00-aaa4-18130098a6c5.png',
     rating: 4.8,
     reviews: 24,
     inStock: true,
     tags: ['Automatic', 'Professional'],
     category: 'Aerosol Systems',
-    description: 'Compact aerosol fire suppression system for enclosed spaces'
+    description: 'Compact aerosol fire suppression system for all fires - one answer solution'
   },
   {
     id: 2,
-    name: 'Portable Aerosol Fire Extinguisher 600g',
+    name: 'Firexo Stainless Steel Fire Extinguisher',
     price: 89.99,
     originalPrice: null,
-    image: '/placeholder.svg',
+    image: '/lovable-uploads/403fdc40-ad3b-4cdd-b6f1-102923ff4401.png',
     rating: 4.6,
     reviews: 18,
     inStock: true,
     tags: ['Portable', 'Manual'],
     category: 'Portable Aerosols',
-    description: 'Lightweight portable aerosol fire extinguisher'
+    description: 'Lightweight stainless steel aerosol fire extinguisher for all fire types'
   },
   {
     id: 3,
