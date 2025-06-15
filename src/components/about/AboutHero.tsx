@@ -3,8 +3,8 @@ import { Flame, Shield, Truck } from 'lucide-react';
 
 const AboutHero = () => {
   return (
-    <section className="py-16 bg-white relative overflow-hidden fade-in-up">
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="bg-white relative overflow-hidden fade-in-up">
+      <div className="relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 font-montserrat animate-fade-in">
             About Little <span className="font-semibold">Fire Heroes</span>

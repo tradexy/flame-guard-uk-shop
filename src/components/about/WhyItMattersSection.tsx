@@ -1,8 +1,7 @@
-
 const WhyItMattersSection = () => {
   return (
-    <section className="py-16 bg-white fade-in-up relative">
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="bg-white fade-in-up relative">
+      <div className="relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center animate-fade-in">
             <div className="relative bg-gray-100 rounded-2xl overflow-hidden shadow-subtle border w-80 h-80 transition-all duration-300 hover:shadow-lg hover:scale-105">

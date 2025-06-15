@@ -26,8 +26,8 @@ const ValuesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-white relative fade-in-up">
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="bg-white relative fade-in-up">
+      <div className="relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-montserrat animate-fade-in">Our Values</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in">

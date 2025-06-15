@@ -13,13 +13,15 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <AboutHero />
-      <OurStorySection />
-      <WhyItMattersSection />
-      <ValuesSection />
-      <CommunityImpactSection />
-      <TeamSection />
-      <ContactCTA />
+      <main className="container py-12 space-y-24 md:space-y-32">
+        <AboutHero />
+        <OurStorySection />
+        <WhyItMattersSection />
+        <ValuesSection />
+        <CommunityImpactSection />
+        <TeamSection />
+        <ContactCTA />
+      </main>
       <Footer />
     </div>
   );

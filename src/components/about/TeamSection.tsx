@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { User, UserCheck, FlaskConical } from 'lucide-react';
 
@@ -25,8 +24,8 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-white fade-in-up">
-      <div className="container mx-auto px-4">
+    <section className="bg-white fade-in-up">
+      <div>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-montserrat animate-fade-in">Meet Sofia & Ruben</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in">
