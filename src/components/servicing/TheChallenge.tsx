@@ -20,7 +20,7 @@ const TheChallenge = () => {
           </div>
         </div>
         <div className="lg:w-1/2">
-          <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+          <div className="bg-red-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
             <img 
               src="/lovable-uploads/de18821f-2094-43b1-b890-3e25572194d0.png"
               alt="Sofia - Little Fire Heroes"
