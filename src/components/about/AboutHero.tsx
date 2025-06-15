@@ -1,5 +1,5 @@
 
-import { Button } from '@/components/ui/button';
+import { Flame, Shield, Truck } from 'lucide-react';
 
 const AboutHero = () => {
   return (
@@ -18,10 +18,10 @@ const AboutHero = () => {
           <p className="text-md text-gray-500 mb-8 animate-fade-in">
             <em>Inspired by Sofia and Ruben's vision for safer communities</em>
           </p>
-          <div className="flex justify-center space-x-4 text-6xl">
-            <span className="animate-bounce">🚒</span>
-            <span className="animate-bounce delay-100">🔥</span>
-            <span className="animate-bounce delay-300">🛡️</span>
+          <div className="flex justify-center space-x-8 text-primary mt-8">
+            <Truck size={48} strokeWidth={1.5} />
+            <Flame size={48} strokeWidth={1.5} />
+            <Shield size={48} strokeWidth={1.5} />
           </div>
         </div>
       </div>
@@ -30,4 +30,3 @@ const AboutHero = () => {
 };
 
 export default AboutHero;
-

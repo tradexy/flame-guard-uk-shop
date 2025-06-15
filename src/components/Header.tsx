@@ -60,8 +60,8 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               <DropdownMenu>
-                <DropdownMenuTrigger 
-                  className="text-gray-700 hover:text-red-600 transition-colors flex items-center space-x-1 cursor-pointer"
+                <DropdownMenuTrigger
+                  className="font-medium text-foreground/90 hover:text-primary transition-colors flex items-center space-x-1 cursor-pointer"
                   onClick={handleShopByCategoryClick}
                 >
                   <span>Shop By Category</span>
@@ -69,9 +69,9 @@ const Header = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white/90 backdrop-blur-md border border-white/20 shadow-lg">
                   <DropdownMenuItem asChild>
-                    <Link 
+                    <Link
                       to="/shop-by-category"
-                      className="hover:bg-red-50 cursor-pointer w-full font-medium"
+                      className="hover:bg-primary/10 hover:text-primary cursor-pointer w-full font-medium"
                     >
                       View All Categories
                     </Link>
@@ -79,9 +79,9 @@ const Header = () => {
                   <div className="border-t border-gray-200 my-1"></div>
                   {categories.map((category) => (
                     <DropdownMenuItem key={category.name} asChild>
-                      <Link 
+                      <Link
                         to={category.path}
-                        className="hover:bg-red-50 cursor-pointer w-full"
+                        className="hover:bg-primary/10 hover:text-primary cursor-pointer w-full"
                       >
                         {category.name}
                       </Link>
@@ -89,28 +89,28 @@ const Header = () => {
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Link to="/shop-for" className="text-gray-700 hover:text-red-600 transition-colors">Shop For</Link>
-              <Link to="/about-us" className="text-gray-700 hover:text-red-600 transition-colors">About Us</Link>
-              <Link to="/faqs" className="text-gray-700 hover:text-red-600 transition-colors">FAQ</Link>
-              <Link to="/our-mission" className="text-gray-700 hover:text-red-600 transition-colors">Our Mission</Link>
-              <Link to="/servicing-support" className="text-gray-700 hover:text-red-600 transition-colors">Servicing Support</Link>
-              <Link to="/contact-us" className="text-gray-700 hover:text-red-600 transition-colors">Contact Us</Link>
+              <Link to="/shop-for" className="font-medium text-foreground/90 hover:text-primary transition-colors">Shop For</Link>
+              <Link to="/about-us" className="font-medium text-foreground/90 hover:text-primary transition-colors">About Us</Link>
+              <Link to="/faqs" className="font-medium text-foreground/90 hover:text-primary transition-colors">FAQ</Link>
+              <Link to="/our-mission" className="font-medium text-foreground/90 hover:text-primary transition-colors">Our Mission</Link>
+              <Link to="/servicing-support" className="font-medium text-foreground/90 hover:text-primary transition-colors">Servicing Support</Link>
+              <Link to="/contact-us" className="font-medium text-foreground/90 hover:text-primary transition-colors">Contact Us</Link>
             </nav>
 
             {/* Right side buttons */}
             <div className="flex items-center space-x-4 flex-shrink-0">
-              <Button 
-                variant="ghost" 
-                size="sm" 
+              <Button
+                variant="ghost"
+                size="sm"
                 className="hover:bg-white/50 backdrop-blur-sm"
                 onClick={handleSearchClick}
               >
                 <Search className="h-5 w-5" />
               </Button>
               <BasketSidebar />
-              <Link 
-                to="/help-advice" 
-                className="hidden md:inline text-sm text-gray-600 hover:text-red-600 transition-colors cursor-pointer whitespace-nowrap"
+              <Link
+                to="/help-advice"
+                className="hidden md:inline text-sm font-medium text-foreground/80 hover:text-primary transition-colors cursor-pointer whitespace-nowrap"
               >
                 Help & Advice
               </Link>
@@ -130,31 +130,31 @@ const Header = () => {
             <div className="md:hidden py-4 border-t border-white/20 bg-white/90 backdrop-blur-md rounded-b-lg">
               <nav className="flex flex-col space-y-2">
                 <div className="px-4 py-2">
-                  <Link 
+                  <Link
                     to="/shop-by-category"
-                    className="text-gray-700 font-medium hover:text-red-600 block py-1 px-2 rounded-lg hover:bg-white/50 transition-colors"
+                    className="font-medium text-foreground/90 hover:text-primary block py-1 px-2 rounded-lg hover:bg-primary/10 transition-colors"
                   >
                     Shop By Category
                   </Link>
                   <div className="ml-4 mt-2 space-y-1">
                     {categories.map((category) => (
-                      <Link 
+                      <Link
                         key={category.name}
                         to={category.path}
-                        className="block text-gray-600 hover:text-red-600 py-1 px-2 rounded-lg hover:bg-white/50 transition-colors"
+                        className="block text-foreground/80 hover:text-primary py-1 px-2 rounded-lg hover:bg-primary/10 transition-colors"
                       >
                         {category.name}
                       </Link>
                     ))}
                   </div>
                 </div>
-                <Link to="/shop-for" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Shop For</Link>
-                <Link to="/about-us" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">About Us</Link>
-                <Link to="/faqs" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">FAQ</Link>
-                <Link to="/our-mission" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Our Mission</Link>
-                <Link to="/servicing-support" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Servicing Support</Link>
-                <Link to="/contact-us" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Contact Us</Link>
-                <Link to="/help-advice" className="text-gray-700 hover:text-red-600 py-2 px-4 rounded-lg hover:bg-white/50 transition-colors">Help & Advice</Link>
+                <Link to="/shop-for" className="font-medium text-foreground/90 hover:text-primary py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors">Shop For</Link>
+                <Link to="/about-us" className="font-medium text-foreground/90 hover:text-primary py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors">About Us</Link>
+                <Link to="/faqs" className="font-medium text-foreground/90 hover:text-primary py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors">FAQ</Link>
+                <Link to="/our-mission" className="font-medium text-foreground/90 hover:text-primary py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors">Our Mission</Link>
+                <Link to="/servicing-support" className="font-medium text-foreground/90 hover:text-primary py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors">Servicing Support</Link>
+                <Link to="/contact-us" className="font-medium text-foreground/90 hover:text-primary py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors">Contact Us</Link>
+                <Link to="/help-advice" className="font-medium text-foreground/90 hover:text-primary py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors">Help & Advice</Link>
               </nav>
             </div>
           )}
