@@ -31,9 +31,9 @@ const CategoryHero = () => {
     <section className="relative py-20 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-gray-800">
-            <h1 className="text-4xl md:text-5xl font-bold font-montserrat">
-              Browse by <span className="text-gray-900">Category</span>
+          <div className="space-y-6 text-gray-200">
+            <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-white">
+              Browse by <span className="text-primary">Category</span>
             </h1>
             <p className="text-lg opacity-90">
               Find the perfect fire safety products for your needs
@@ -41,7 +41,7 @@ const CategoryHero = () => {
             
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button size="lg" className="bg-gray-800 text-white hover:bg-gray-900">
+                <Button size="lg">
                   {selectedCategory}
                 </Button>
               </DropdownMenuTrigger>
