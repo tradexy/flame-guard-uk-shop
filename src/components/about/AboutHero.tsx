@@ -20,7 +20,6 @@ const AboutHero = () => {
           </p>
           <div className="flex justify-center space-x-4 text-6xl">
             <span className="animate-bounce">🚒</span>
-            <span className="animate-bounce delay-200">👨‍🚒</span>
             <span className="animate-bounce delay-100">🔥</span>
             <span className="animate-bounce delay-300">🛡️</span>
           </div>
@@ -31,3 +30,4 @@ const AboutHero = () => {
 };
 
 export default AboutHero;
+
