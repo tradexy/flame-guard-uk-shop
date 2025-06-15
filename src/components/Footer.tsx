@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -13,7 +12,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="font-bold mb-4 text-white">Product Information & Support</h3>
-              <div className="space-y-2 text-sm text-gray-300">
+              <div className="space-y-2 text-sm text-gray-300 [&>p]:text-inherit">
                 <p>Little Heroes Unit 5 Ridge Way</p>
                 <p>Crendon Industrial Park Long</p>
                 <p>Crendon Buckinghamshire HP18 9BF</p>
