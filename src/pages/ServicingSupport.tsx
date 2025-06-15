@@ -78,7 +78,8 @@ const ServicingSupport = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+              {/* Ruben image background: warm red/orange gradient, no black */}
+              <div className="bg-gradient-to-br from-red-100 via-orange-100 to-gray-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
                 <img 
                   src="/lovable-uploads/ac2f5bee-fd22-4f72-b2aa-c89edc5674ef.png"
                   alt="Ruben - Little Fire Heroes"
@@ -111,7 +112,8 @@ const ServicingSupport = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-gradient-to-br from-yellow-100 to-red-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+              {/* Sofia image background: soft, theme red with hint of orange */}
+              <div className="bg-gradient-to-br from-red-100 via-orange-50 to-gray-50 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
                 <img 
                   src="/lovable-uploads/de18821f-2094-43b1-b890-3e25572194d0.png"
                   alt="Sofia - Little Fire Heroes"
@@ -242,7 +244,8 @@ const ServicingSupport = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+              {/* Replace background with orange/grey (remove blue/green) for theme consistency */}
+              <div className="bg-gradient-to-br from-orange-100 via-gray-100 to-red-50 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
                 <img 
                   src="/lovable-uploads/5ad85333-4e3f-4432-8ec4-e1a693b5bf73.png"
                   alt="Little Fire Heroes - Keeping Us Safe"
