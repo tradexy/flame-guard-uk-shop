@@ -15,7 +15,7 @@ const ProductCategoryServicingProducts = () => {
   const [inStockOnly, setInStockOnly] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50 animate-fade-in">
+    <div className="min-h-screen bg-white animate-fade-in">
       <Header />
       <section className="fade-in-up relative py-12 bg-white">
         <div className="container mx-auto px-4 relative z-10">

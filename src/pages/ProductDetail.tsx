@@ -21,7 +21,7 @@ const ProductDetail = () => {
 
   if (!product) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-white">
         <Header />
         <div className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
@@ -74,17 +74,17 @@ const ProductDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Header />
       
       <div className="container mx-auto px-4 py-8 md:py-12">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
-          <Link to="/" className="hover:text-primary">Home</Link>
+          <Link to="/" className="hover:text-gray-900">Home</Link>
           <span>/</span>
-          <Link to="/shop-by-category" className="hover:text-primary">Shop</Link>
+          <Link to="/shop-by-category" className="hover:text-gray-900">Shop</Link>
           <span>/</span>
-          <Link to={getCategoryPath(category || '')} className="hover:text-primary capitalize">
+          <Link to={getCategoryPath(category || '')} className="hover:text-gray-900 capitalize">
             {category?.replace(/([A-Z])/g, ' $1').trim()}
           </Link>
           <span>/</span>
@@ -106,7 +106,7 @@ const ProductDetail = () => {
                     <Badge variant="destructive" className="absolute top-4 left-4">Out of Stock</Badge>
                   )}
                   {product.originalPrice && (
-                    <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">Sale</Badge>
+                    <Badge className="absolute top-4 right-4 bg-gray-800 text-white">Sale</Badge>
                   )}
                 </div>
               </CardContent>
@@ -133,7 +133,7 @@ const ProductDetail = () => {
 
             {/* Price */}
             <div className="flex items-baseline space-x-3">
-              <span className="text-4xl font-bold text-primary">
+              <span className="text-4xl font-bold text-gray-900">
                 £{product.price}
               </span>
               {product.originalPrice && (
@@ -168,7 +168,7 @@ const ProductDetail = () => {
               <Button 
                 onClick={handleBuyNow}
                 disabled={!product.inStock}
-                className="w-full"
+                className="w-full bg-gray-900 text-white hover:bg-gray-700"
                 size="lg"
               >
                 <Zap className="h-5 w-5 mr-2" />
@@ -189,15 +189,15 @@ const ProductDetail = () => {
             {/* Additional Info */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t mt-6">
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
-                <Shield className="h-5 w-5 text-green-500" />
+                <Shield className="h-5 w-5 text-gray-500" />
                 <span>2 Year Warranty</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
-                <Truck className="h-5 w-5 text-blue-500" />
+                <Truck className="h-5 w-5 text-gray-500" />
                 <span>Free UK Delivery over £50</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
-                <RotateCcw className="h-5 w-5 text-purple-500" />
+                <RotateCcw className="h-5 w-5 text-gray-500" />
                 <span>30-Day Returns Policy</span>
               </div>
             </div>

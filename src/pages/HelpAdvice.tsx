@@ -9,7 +9,7 @@ import EmergencyNotice from '@/components/help/EmergencyNotice';
 
 const HelpAdvice = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50">
+    <div className="min-h-screen bg-white">
       <Header />
       
       <main className="container mx-auto px-4 py-12">

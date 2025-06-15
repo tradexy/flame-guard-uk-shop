@@ -8,7 +8,7 @@ import SectionDivider from '@/components/SectionDivider';
 
 const ShopFor = () => {
   return (
-    <div className="min-h-screen bg-gray-50 animate-fade-in">
+    <div className="min-h-screen bg-white animate-fade-in">
       <Header />
       {/* Hero Section */}
       <section className="py-20 md:py-24 text-center">

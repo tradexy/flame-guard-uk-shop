@@ -7,10 +7,10 @@ import BestSellingCarousel from '@/components/BestSellingCarousel';
 
 const ShopByCategory = () => {
   return (
-    <div className="min-h-screen bg-gray-50 animate-fade-in">
+    <div className="min-h-screen bg-white animate-fade-in">
       <Header />
       {/* Hero Section */}
-      <section className="fade-in-up relative py-16 bg-gradient-to-br from-orange-50 via-white to-red-50 overflow-hidden">
+      <section className="fade-in-up relative py-16 bg-white overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <CategoryHero />
         </div>

@@ -83,25 +83,24 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-orange-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
+      <section className="py-16 bg-white text-gray-900 border-b">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Frequently Asked Questions
             </h1>
-            <p className="text-xl md:text-2xl opacity-90 mb-8">
+            <p className="text-xl md:text-2xl text-gray-700 mb-8">
               Get answers to your fire safety questions from our experts
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-lg px-4 py-2">
+              <Badge variant="secondary" className="bg-gray-100 text-gray-800 border-gray-200 text-lg px-4 py-2">
                 🔥 Fire Safety Experts
               </Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-lg px-4 py-2">
+              <Badge variant="secondary" className="bg-gray-100 text-gray-800 border-gray-200 text-lg px-4 py-2">
                 💡 Quick Answers
               </Badge>
             </div>
@@ -118,7 +117,7 @@ const FAQ = () => {
             <div className="grid md:grid-cols-12 gap-8 items-start">
               {/* Left Column - Expert Image */}
               <div className="md:col-span-3">
-                <div className="bg-gradient-to-br from-gray-200 via-gray-50 to-gray-400 rounded-xl p-6 text-center shadow-lg border border-gray-300">
+                <div className="bg-gray-50 rounded-xl p-6 text-center shadow-lg border border-gray-200">
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
@@ -128,7 +127,7 @@ const FAQ = () => {
                   </div>
                   <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben</h3>
                   <p className="text-gray-700 text-sm mb-3">Fire Safety Expert</p>
-                  <Badge className="bg-gradient-to-r from-gray-400 via-red-600 to-gray-700 text-white text-xs border border-red-400 shadow">
+                  <Badge className="bg-gray-200 text-gray-800 text-xs border border-gray-300 shadow">
                     Expert
                   </Badge>
                 </div>
@@ -137,10 +136,10 @@ const FAQ = () => {
               {/* Right Column - FAQ Content */}
               <div className="md:col-span-9">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                  <div className="bg-gray-50 p-6 border-b">
                     <div className="flex items-center gap-3">
                       <h2 className="text-2xl font-bold text-gray-800">{faqCategories[0].title}</h2>
-                      <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                      <Badge variant="outline" className="bg-gray-100 text-gray-700 border-gray-200">
                         {faqCategories[0].badge}
                       </Badge>
                     </div>
@@ -151,9 +150,9 @@ const FAQ = () => {
                         <AccordionItem 
                           key={index} 
                           value={`0-${index}`}
-                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
+                          className="border border-gray-200 rounded-lg px-4 hover:border-gray-300 transition-colors"
                         >
-                          <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                          <AccordionTrigger className="text-left hover:text-gray-900 font-medium">
                             {faq.question}
                           </AccordionTrigger>
                           <AccordionContent className="text-gray-600 leading-relaxed pt-2">
@@ -169,10 +168,10 @@ const FAQ = () => {
 
             {/* Second Section - Orders without image */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-              <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+              <div className="bg-gray-50 p-6 border-b">
                 <div className="flex items-center gap-3">
                   <h2 className="text-2xl font-bold text-gray-800">{faqCategories[1].title}</h2>
-                  <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                  <Badge variant="outline" className="bg-gray-100 text-gray-700 border-gray-200">
                     {faqCategories[1].badge}
                   </Badge>
                 </div>
@@ -183,9 +182,9 @@ const FAQ = () => {
                     <AccordionItem 
                       key={index} 
                       value={`1-${index}`}
-                      className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
+                      className="border border-gray-200 rounded-lg px-4 hover:border-gray-300 transition-colors"
                     >
-                      <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                      <AccordionTrigger className="text-left hover:text-gray-900 font-medium">
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent className="text-gray-600 leading-relaxed pt-2">
@@ -202,10 +201,10 @@ const FAQ = () => {
               {/* Left Column - FAQ Content */}
               <div className="md:col-span-9">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-                  <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
+                  <div className="bg-gray-50 p-6 border-b">
                     <div className="flex items-center gap-3">
                       <h2 className="text-2xl font-bold text-gray-800">{faqCategories[2].title}</h2>
-                      <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200">
+                      <Badge variant="outline" className="bg-gray-100 text-gray-700 border-gray-200">
                         {faqCategories[2].badge}
                       </Badge>
                     </div>
@@ -216,9 +215,9 @@ const FAQ = () => {
                         <AccordionItem 
                           key={index} 
                           value={`2-${index}`}
-                          className="border border-gray-200 rounded-lg px-4 hover:border-red-300 transition-colours"
+                          className="border border-gray-200 rounded-lg px-4 hover:border-gray-300 transition-colors"
                         >
-                          <AccordionTrigger className="text-left hover:text-red-600 font-medium">
+                          <AccordionTrigger className="text-left hover:text-gray-900 font-medium">
                             {faq.question}
                           </AccordionTrigger>
                           <AccordionContent className="text-gray-600 leading-relaxed pt-2">
@@ -233,7 +232,7 @@ const FAQ = () => {
 
               {/* Right Column - Community Image */}
               <div className="md:col-span-3">
-                <div className="bg-gradient-to-br from-gray-200 via-yellow-50 to-gray-300 rounded-xl p-6 text-center shadow-lg border border-gray-200">
+                <div className="bg-gray-50 rounded-xl p-6 text-center shadow-lg border border-gray-200">
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
@@ -241,9 +240,9 @@ const FAQ = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="font-bold text-yellow-900 text-lg mb-2">Sofia</h3>
-                  <p className="text-yellow-700 text-sm mb-3">Community Expert</p>
-                  <Badge className="bg-gradient-to-r from-gray-300 via-yellow-400 to-gray-400 text-yellow-900 text-xs border border-yellow-300 shadow">
+                  <h3 className="font-bold text-gray-800 text-lg mb-2">Sofia</h3>
+                  <p className="text-gray-700 text-sm mb-3">Community Expert</p>
+                  <Badge className="bg-gray-200 text-gray-800 text-xs border border-gray-300 shadow">
                     Community
                   </Badge>
                 </div>
@@ -254,7 +253,7 @@ const FAQ = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-red-50 to-orange-50">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -264,10 +263,10 @@ const FAQ = () => {
               Our fire safety experts are here to help. Get in touch with us for personalised advice and support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colours shadow-lg">
+              <button className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg">
                 Contact Our Experts
               </button>
-              <button className="bg-white hover:bg-gray-50 text-red-600 px-8 py-3 rounded-lg font-semibold border border-red-200 transition-colours">
+              <button className="bg-white hover:bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-semibold border border-gray-300 transition-colors">
                 Browse Products
               </button>
             </div>

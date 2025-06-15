@@ -1,3 +1,4 @@
+
 const WhyChooseUs = () => {
   const reasons = [
     {
@@ -23,9 +24,9 @@ const WhyChooseUs = () => {
   ];
   return (
     <div className="lg:w-1/2 animate-fade-in animate-delay-200">
-      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-subtle border border-white/50 h-full transition-all duration-300 hover:shadow-lg hover:border-primary/20">
+      <div className="bg-white rounded-2xl p-8 shadow-subtle border border-gray-200 h-full transition-all duration-300 hover:shadow-lg hover:border-gray-300">
         <h3 className="text-2xl font-bold text-gray-900 mb-6 font-montserrat">
-          Why Choose <span className="text-primary">Little Fire Heroes?</span>
+          Why Choose <span>Little Fire Heroes?</span>
         </h3>
         <div className="space-y-6">
           {reasons.map((r, i) => (
@@ -34,8 +35,8 @@ const WhyChooseUs = () => {
               className={`flex items-start space-x-4 animate-fade-in`}
               style={{ animationDelay: `${100 + i * 100}ms` }}
             >
-              <div className={`bg-primary/10 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1 shadow-md border-2 border-white`}>
-                <span className={`text-primary font-bold text-lg`}>{r.number}</span>
+              <div className={`bg-gray-100 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1 shadow-md border-2 border-white`}>
+                <span className={`text-gray-800 font-bold text-lg`}>{r.number}</span>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">{r.title}</h4>

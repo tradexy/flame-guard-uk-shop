@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -27,12 +28,12 @@ const CategoryHero = () => {
   };
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-orange-100 via-white to-red-100 overflow-hidden">
+    <section className="relative py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-gray-800">
             <h1 className="text-4xl md:text-5xl font-bold font-montserrat">
-              Browse by <span className="text-primary">Category</span>
+              Browse by <span className="text-gray-900">Category</span>
             </h1>
             <p className="text-lg opacity-90">
               Find the perfect fire safety products for your needs
@@ -40,16 +41,16 @@ const CategoryHero = () => {
             
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button size="lg">
+                <Button size="lg" className="bg-gray-800 text-white hover:bg-gray-900">
                   {selectedCategory}
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white/90 backdrop-blur-md border border-white/20">
+              <DropdownMenuContent className="bg-white border">
                 {categories.map((category) => (
                   <DropdownMenuItem 
                     key={category.name}
                     onClick={() => handleCategorySelect(category)}
-                    className="hover:bg-red-50 cursor-pointer"
+                    className="hover:bg-gray-100 cursor-pointer"
                   >
                     {category.name}
                   </DropdownMenuItem>
@@ -59,7 +60,7 @@ const CategoryHero = () => {
           </div>
           
           <div className="relative flex items-center justify-center">
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/50 w-full flex flex-col items-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border w-full flex flex-col items-center">
               <img
                 src="/lovable-uploads/5c679836-b525-4fdb-b3d0-a422b4fc4896.png"
                 alt="Little Fire Heroes logo showing two child firefighters"

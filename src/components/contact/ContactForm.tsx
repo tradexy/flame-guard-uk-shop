@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -42,9 +43,9 @@ const ContactForm = () => {
   };
   return (
     <div className="lg:w-1/2">
-      <div className="bg-white/90 hover:shadow-2xl transition-shadow duration-300 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-orange-200/60 animate-fade-in">
+      <div className="bg-white hover:shadow-2xl transition-shadow duration-300 rounded-2xl p-8 shadow-xl border border-gray-200 animate-fade-in">
         <div className="flex items-center mb-6">
-          <div className="w-16 h-16 mr-4 flex items-center justify-center shadow-lg bg-orange-100 rounded-full border-2 border-orange-200">
+          <div className="w-16 h-16 mr-4 flex items-center justify-center shadow-lg bg-gray-100 rounded-full border-2 border-gray-200">
             <img 
               src="/lovable-uploads/356e71d1-edfd-4980-b017-784222eb87ff.png" 
               alt="Fire Safety Assistant" 
@@ -53,7 +54,7 @@ const ContactForm = () => {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-gray-900 font-montserrat">Get In Touch</h2>
-            <p className="text-orange-600 text-sm font-medium">Hi! I'm here to assist you.</p>
+            <p className="text-gray-600 text-sm font-medium">Hi! I'm here to assist you.</p>
           </div>
         </div>
         
@@ -69,7 +70,7 @@ const ContactForm = () => {
                 required
                 value={formData.name}
                 onChange={handleInputChange}
-                className="mt-2 bg-white/70 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                className="mt-2 bg-white border-gray-300 focus:border-gray-500 focus:ring-gray-500"
               />
             </div>
             <div>
@@ -81,7 +82,7 @@ const ContactForm = () => {
                 required
                 value={formData.email}
                 onChange={handleInputChange}
-                className="mt-2 bg-white/70 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                className="mt-2 bg-white border-gray-300 focus:border-gray-500 focus:ring-gray-500"
               />
             </div>
           </div>
@@ -95,7 +96,7 @@ const ContactForm = () => {
                 type="tel"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="mt-2 bg-white/70 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                className="mt-2 bg-white border-gray-300 focus:border-gray-500 focus:ring-gray-500"
               />
             </div>
             <div>
@@ -106,7 +107,7 @@ const ContactForm = () => {
                 type="text"
                 value={formData.company}
                 onChange={handleInputChange}
-                className="mt-2 bg-white/70 border-gray-300 focus:border-red-500 focus:ring-red-500"
+                className="mt-2 bg-white border-gray-300 focus:border-gray-500 focus:ring-gray-500"
               />
             </div>
           </div>
@@ -119,13 +120,13 @@ const ContactForm = () => {
               required
               value={formData.message}
               onChange={handleInputChange}
-              className="mt-2 bg-white/70 border-gray-300 focus:border-red-500 focus:ring-red-500 min-h-[120px]"
+              className="mt-2 bg-white border-gray-300 focus:border-gray-500 focus:ring-gray-500 min-h-[120px]"
               placeholder="Tell us how we can help you..."
             />
           </div>
           <Button 
             type="submit" 
-            className="w-full bg-red-600 hover:bg-red-700 text-white py-3 text-lg font-bold shadow-lg font-montserrat animate-scale-in"
+            className="w-full bg-gray-800 hover:bg-gray-900 text-white py-3 text-lg font-bold shadow-lg font-montserrat animate-scale-in"
           >
             Send Message 🚀
           </Button>
