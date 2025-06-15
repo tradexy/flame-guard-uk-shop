@@ -1,9 +1,10 @@
 
 import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
 
 const MissionHero = () => {
   return (
-    <section className="text-center bg-white dark:bg-gray-800/50 rounded-2xl shadow-subtle border py-16 px-6">
+    <Card as="section" className="text-center py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-display mb-6">
           Our Mission
@@ -23,7 +24,7 @@ const MissionHero = () => {
           </Badge>
         </div>
       </div>
-    </section>
+    </Card>
   );
 };
 

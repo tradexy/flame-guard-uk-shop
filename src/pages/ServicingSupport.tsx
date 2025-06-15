@@ -9,7 +9,7 @@ import ServicingNetwork from '@/components/servicing/ServicingNetwork';
 
 const ServicingSupport = () => {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen">
       <Header />
       
       <main className="container mx-auto px-4 py-12 md:py-24 space-y-24">
