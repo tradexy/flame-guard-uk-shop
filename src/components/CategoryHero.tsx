@@ -28,7 +28,7 @@ const CategoryHero = () => {
   };
 
   return (
-    <section className="relative py-20 bg-white overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-gray-800">
@@ -60,7 +60,7 @@ const CategoryHero = () => {
           </div>
           
           <div className="relative flex items-center justify-center">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border w-full flex flex-col items-center">
+            <div className="bg-white/60 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/70 w-full flex flex-col items-center">
               <img
                 src="/lovable-uploads/5c679836-b525-4fdb-b3d0-a422b4fc4896.png"
                 alt="Little Fire Heroes logo showing two child firefighters"
