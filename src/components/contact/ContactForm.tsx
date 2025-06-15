@@ -49,11 +49,11 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit}>
           <CardHeader>
             <div className="flex items-center">
-              <div className="w-16 h-16 mr-4 flex items-center justify-center shadow-lg bg-secondary rounded-full flex-shrink-0">
+              <div className="w-16 h-16 mr-4 flex items-center justify-center shadow-lg rounded-full flex-shrink-0 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/356e71d1-edfd-4980-b017-784222eb87ff.png" 
+                  src="/lovable-uploads/e687bc41-9c4c-4a9a-9963-face55c1be52.png" 
                   alt="Fire Safety Assistant" 
-                  className="p-2"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div>

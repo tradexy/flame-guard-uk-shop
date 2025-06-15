@@ -43,14 +43,14 @@ const Header = () => {
             <div className="flex items-center flex-shrink-0">
               <Link to="/" className="hidden sm:block">
                 <img 
-                  src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
+                  src="/lovable-uploads/fdd96bf5-6da7-4a16-9eb4-684db3fd1767.png" 
                   alt="Little Fire Heroes Logo" 
                   className="h-14 w-auto object-contain"
                 />
               </Link>
               <Link to="/" className="sm:hidden">
                 <img 
-                  src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
+                  src="/lovable-uploads/fdd96bf5-6da7-4a16-9eb4-684db3fd1767.png" 
                   alt="Little Fire Heroes Logo" 
                   className="h-10 w-auto object-contain"
                 />
