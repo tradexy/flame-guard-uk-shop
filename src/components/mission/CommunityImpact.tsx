@@ -23,7 +23,7 @@ const CommunityImpact = () => (
             </p>
           </div>
           <div className="mt-6">
-            <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3">
+            <Button variant="destructive" size="lg">
               Apply for School Support
             </Button>
           </div>
@@ -43,7 +43,7 @@ const CommunityImpact = () => (
         </div>
         <h3 className="font-bold text-yellow-900 text-lg mb-2">Sofia</h3>
         <p className="text-yellow-700 text-sm mb-3">Community Expert</p>
-        <Badge className="bg-gradient-to-r from-gray-300 via-yellow-400 to-gray-400 text-yellow-900 text-xs border border-yellow-300 shadow">
+        <Badge variant="secondary">
           Community
         </Badge>
       </div>

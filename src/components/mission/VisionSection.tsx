@@ -1,4 +1,6 @@
 
+import { Card, CardContent } from '@/components/ui/card';
+
 const VisionSection = () => (
   <section className="py-16 bg-gray-50 text-gray-900">
     <div className="container mx-auto px-4 text-center">
@@ -10,21 +12,27 @@ const VisionSection = () => (
           We envision a world where every child is a fire safety hero, every home is protected, and every community has access to life-saving education and equipment.
         </p>
         <div className="grid md:grid-cols-3 gap-8 mt-12">
-          <div className="bg-white rounded-xl p-6 border border-gray-200">
-            <div className="text-4xl mb-4">🎓</div>
-            <h3 className="font-bold text-xl mb-2">Education First</h3>
-            <p className="text-gray-700">Making fire safety education engaging and accessible for all ages</p>
-          </div>
-          <div className="bg-white rounded-xl p-6 border border-gray-200">
-            <div className="text-4xl mb-4">🌍</div>
-            <h3 className="font-bold text-xl mb-2">Global Impact</h3>
-            <p className="text-gray-700">Expanding our reach to protect communities worldwide</p>
-          </div>
-          <div className="bg-white rounded-xl p-6 border border-gray-200">
-            <div className="text-4xl mb-4">🔬</div>
-            <h3 className="font-bold text-xl mb-2">Innovation</h3>
-            <p className="text-gray-700">Continuously developing better, safer, and more sustainable solutions</p>
-          </div>
+          <Card>
+            <CardContent className="p-6">
+              <div className="text-4xl mb-4">🎓</div>
+              <h3>Education First</h3>
+              <p>Making fire safety education engaging and accessible for all ages</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-6">
+              <div className="text-4xl mb-4">🌍</div>
+              <h3>Global Impact</h3>
+              <p>Expanding our reach to protect communities worldwide</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-6">
+              <div className="text-4xl mb-4">🔬</div>
+              <h3>Innovation</h3>
+              <p>Continuously developing better, safer, and more sustainable solutions</p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

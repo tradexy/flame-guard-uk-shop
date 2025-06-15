@@ -1,4 +1,6 @@
+
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 const cardAnimations = [
   "animate-fade-in animate-delay-100",
@@ -8,47 +10,32 @@ const cardAnimations = [
 ];
 
 const ContactInfoCards = () => {
+  const cardInfo = [
+    { icon: Mail, title: "Email Us", lines: ["info@littlefireheroes.co.uk"] },
+    { icon: Phone, title: "Call Us", lines: ["01844 208308"] },
+    { icon: MapPin, title: "Visit Us", lines: ["Unit 5 Ridge Way", "Crendon Industrial Park", "Long Crendon, HP18 9BF"] },
+    { icon: Clock, title: "Business Hours", lines: ["Mon-Fri: 9:00-17:00", "Sat-Sun: Closed"] }
+  ];
+
   return (
     <section className="mb-16">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className={`bg-white hover:bg-gray-50 transition-colors rounded-2xl p-6 shadow-xl border border-gray-200 text-center ${cardAnimations[0]}`}>
-          <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <Mail className="h-9 w-9 text-gray-700" />
-          </div>
-          <h3 className="font-bold text-gray-900 mb-2 font-montserrat">Email Us</h3>
-          <p className="text-gray-700 text-sm">info@littlefireheroes.co.uk</p>
-        </div>
-
-        <div className={`bg-white hover:bg-gray-50 transition-colors rounded-2xl p-6 shadow-xl border border-gray-200 text-center ${cardAnimations[1]}`}>
-          <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <Phone className="h-9 w-9 text-gray-700" />
-          </div>
-          <h3 className="font-bold text-gray-900 mb-2 font-montserrat">Call Us</h3>
-          <p className="text-gray-700 text-sm">01844 208308</p>
-        </div>
-
-        <div className={`bg-white hover:bg-gray-50 transition-colors rounded-2xl p-6 shadow-xl border border-gray-200 text-center ${cardAnimations[2]}`}>
-          <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <MapPin className="h-9 w-9 text-gray-700" />
-          </div>
-          <h3 className="font-bold text-gray-900 mb-2 font-montserrat">Visit Us</h3>
-          <p className="text-gray-700 text-sm">
-            Unit 5 Ridge Way<br />
-            Crendon Industrial Park<br />
-            Long Crendon, HP18 9BF
-          </p>
-        </div>
-
-        <div className={`bg-white hover:bg-gray-50 transition-colors rounded-2xl p-6 shadow-xl border border-gray-200 text-center ${cardAnimations[3]}`}>
-          <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <Clock className="h-9 w-9 text-gray-700" />
-          </div>
-          <h3 className="font-bold text-gray-900 mb-2 font-montserrat">Business Hours</h3>
-          <p className="text-gray-700 text-sm">
-            Mon-Fri: 9:00-17:00<br />
-            Sat-Sun: Closed
-          </p>
-        </div>
+        {cardInfo.map((info, index) => {
+          const Icon = info.icon;
+          return (
+            <Card key={info.title} className={`text-center ${cardAnimations[index]} hover:bg-accent transition-colors`}>
+              <CardContent className="p-6">
+                <div className="bg-secondary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
+                  <Icon className="h-9 w-9 text-secondary-foreground" />
+                </div>
+                <h3 className="mb-2">{info.title}</h3>
+                <div className="text-muted-foreground text-sm">
+                  {info.lines.map((line, i) => <p key={i} className="m-0 p-0 leading-normal">{line}</p>)}
+                </div>
+              </CardContent>
+            </Card>
+          )
+        })}
       </div>
     </section>
   );

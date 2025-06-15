@@ -18,7 +18,7 @@ const InnovationSection = () => (
         </div>
         <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben & Sofia</h3>
         <p className="text-gray-600 text-sm mb-3">Innovation Team</p>
-        <Badge className="bg-gradient-to-r from-gray-300 via-gray-500 to-gray-700 text-white text-xs border border-gray-400 shadow">
+        <Badge variant="secondary">
           Innovation
         </Badge>
       </div>

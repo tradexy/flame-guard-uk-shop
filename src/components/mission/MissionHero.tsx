@@ -13,13 +13,13 @@ const MissionHero = () => {
             Empowering communities through fire safety education and creating little heroes
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Badge variant="secondary" className="bg-gray-100 text-gray-800 border-gray-200 text-lg px-4 py-2">
+            <Badge variant="secondary" className="text-lg px-4 py-2">
               🔥 Safety First
             </Badge>
-            <Badge variant="secondary" className="bg-gray-100 text-gray-800 border-gray-200 text-lg px-4 py-2">
+            <Badge variant="secondary" className="text-lg px-4 py-2">
               🎓 Education Focus
             </Badge>
-            <Badge variant="secondary" className="bg-gray-100 text-gray-800 border-gray-200 text-lg px-4 py-2">
+            <Badge variant="secondary" className="text-lg px-4 py-2">
               🌟 Community Impact
             </Badge>
           </div>

@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Heart, Users, Award } from 'lucide-react';
 
@@ -38,10 +39,10 @@ const ValuesSection = () => {
           {values.map((value, index) => {
             const IconComponent = value.icon;
             return (
-              <Card key={index} className="group transition-all duration-300 bg-gray-50 border rounded-2xl animate-fade-in hover:border-gray-300">
+              <Card key={index} className="group transition-all duration-300 border rounded-2xl animate-fade-in hover:border-gray-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-300 transition-colors">
-                    <IconComponent className="w-8 h-8 text-gray-700" />
+                  <div className="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-accent transition-colors">
+                    <IconComponent className="w-8 h-8 text-secondary-foreground" />
                   </div>
                   <h3 className="text-lg font-bold mb-3 text-gray-800 font-montserrat">{value.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>

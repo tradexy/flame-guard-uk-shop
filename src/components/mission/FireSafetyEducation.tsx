@@ -15,7 +15,7 @@ const FireSafetyEducation = () => (
         </div>
         <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben</h3>
         <p className="text-gray-700 text-sm mb-3">Fire Safety Expert</p>
-        <Badge className="bg-gradient-to-r from-gray-400 via-red-600 to-gray-700 text-white text-xs border border-red-400 shadow">
+        <Badge variant="default">
           Expert
         </Badge>
       </div>

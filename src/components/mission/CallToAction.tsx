@@ -12,10 +12,10 @@ const CallToAction = () => (
           Every purchase helps us create safer communities and empower the next generation of fire safety heroes.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3 font-semibold shadow-lg">
+          <Button variant="secondary" size="lg">
             Shop Safety Products
           </Button>
-          <Button variant="outline" className="border-gray-300 text-gray-800 hover:bg-gray-100 px-8 py-3 font-semibold">
+          <Button variant="outline" size="lg">
             Learn About Our Programmes
           </Button>
         </div>

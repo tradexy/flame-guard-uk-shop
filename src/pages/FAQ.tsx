@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { 
@@ -7,6 +8,7 @@ import {
   AccordionTrigger 
 } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const FAQ = () => {
   const faqCategories = [
@@ -97,10 +99,10 @@ const FAQ = () => {
               Get answers to your fire safety questions from our experts
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Badge variant="secondary" className="bg-gray-100 text-gray-800 border-gray-200 text-lg px-4 py-2">
+              <Badge variant="secondary">
                 🔥 Fire Safety Experts
               </Badge>
-              <Badge variant="secondary" className="bg-gray-100 text-gray-800 border-gray-200 text-lg px-4 py-2">
+              <Badge variant="secondary">
                 💡 Quick Answers
               </Badge>
             </div>
@@ -127,7 +129,7 @@ const FAQ = () => {
                   </div>
                   <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben</h3>
                   <p className="text-gray-700 text-sm mb-3">Fire Safety Expert</p>
-                  <Badge className="bg-gray-200 text-gray-800 text-xs border border-gray-300 shadow">
+                  <Badge variant="secondary">
                     Expert
                   </Badge>
                 </div>
@@ -139,7 +141,7 @@ const FAQ = () => {
                   <div className="bg-gray-50 p-6 border-b">
                     <div className="flex items-center gap-3">
                       <h2 className="text-2xl font-bold text-gray-800">{faqCategories[0].title}</h2>
-                      <Badge variant="outline" className="bg-gray-100 text-gray-700 border-gray-200">
+                      <Badge variant="secondary">
                         {faqCategories[0].badge}
                       </Badge>
                     </div>
@@ -171,7 +173,7 @@ const FAQ = () => {
               <div className="bg-gray-50 p-6 border-b">
                 <div className="flex items-center gap-3">
                   <h2 className="text-2xl font-bold text-gray-800">{faqCategories[1].title}</h2>
-                  <Badge variant="outline" className="bg-gray-100 text-gray-700 border-gray-200">
+                  <Badge variant="secondary">
                     {faqCategories[1].badge}
                   </Badge>
                 </div>
@@ -204,7 +206,7 @@ const FAQ = () => {
                   <div className="bg-gray-50 p-6 border-b">
                     <div className="flex items-center gap-3">
                       <h2 className="text-2xl font-bold text-gray-800">{faqCategories[2].title}</h2>
-                      <Badge variant="outline" className="bg-gray-100 text-gray-700 border-gray-200">
+                      <Badge variant="secondary">
                         {faqCategories[2].badge}
                       </Badge>
                     </div>
@@ -242,7 +244,7 @@ const FAQ = () => {
                   </div>
                   <h3 className="font-bold text-gray-800 text-lg mb-2">Sofia</h3>
                   <p className="text-gray-700 text-sm mb-3">Community Expert</p>
-                  <Badge className="bg-gray-200 text-gray-800 text-xs border border-gray-300 shadow">
+                  <Badge variant="secondary">
                     Community
                   </Badge>
                 </div>
@@ -263,12 +265,12 @@ const FAQ = () => {
               Our fire safety experts are here to help. Get in touch with us for personalised advice and support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg">
+              <Button variant="secondary" size="lg">
                 Contact Our Experts
-              </button>
-              <button className="bg-white hover:bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-semibold border border-gray-300 transition-colors">
+              </Button>
+              <Button variant="outline" size="lg">
                 Browse Products
-              </button>
+              </Button>
             </div>
           </div>
         </div>
