@@ -20,7 +20,7 @@ const OurRole = () => {
           </div>
         </div>
         <div className="lg:w-1/2">
-          <div className="bg-gradient-to-br from-red-100 via-orange-100 to-gray-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+          <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
             <img 
               src="/lovable-uploads/ac2f5bee-fd22-4f72-b2aa-c89edc5674ef.png"
               alt="Ruben - Little Fire Heroes"

@@ -34,7 +34,7 @@ const ServicingNetwork = () => {
           </div>
         </div>
         <div className="lg:w-1/2">
-          <div className="bg-gradient-to-br from-orange-100 via-gray-100 to-red-50 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+          <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
             <img 
               src="/lovable-uploads/5ad85333-4e3f-4432-8ec4-e1a693b5bf73.png"
               alt="Little Fire Heroes - Keeping Us Safe"
