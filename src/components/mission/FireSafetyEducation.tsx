@@ -6,7 +6,7 @@ const FireSafetyEducation = () => (
   <div className="grid md:grid-cols-12 gap-8 items-start">
     {/* Left Column - Ruben's Image */}
     <div className="md:col-span-3">
-      <Card className="text-center p-6">
+      <Card className="text-center p-6 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
         <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
           <img 
             src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
@@ -14,9 +14,9 @@ const FireSafetyEducation = () => (
             className="w-full h-full object-contain"
           />
         </div>
-        <h3 className="font-bold text-foreground text-lg mb-2">Ruben</h3>
-        <p className="text-muted-foreground text-sm mb-3">Fire Safety Expert</p>
-        <Badge variant="default">
+        <h3 className="font-bold text-white text-lg mb-2">Ruben</h3>
+        <p className="text-gray-300 text-sm mb-3">Fire Safety Expert</p>
+        <Badge variant="default" className="bg-primary text-primary-foreground">
           Expert
         </Badge>
       </Card>
@@ -24,12 +24,12 @@ const FireSafetyEducation = () => (
 
     {/* Right Column - Content */}
     <div className="md:col-span-9">
-      <Card className="overflow-hidden">
-        <div className="bg-secondary p-6 border-b">
-          <h2 className="text-2xl font-bold text-foreground">Fire Safety Education for All Ages</h2>
+      <Card className="overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
+        <div className="p-6 border-b border-white/20">
+          <h2 className="text-2xl font-bold text-white">Fire Safety Education for All Ages</h2>
         </div>
-        <CardContent>
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
+        <CardContent className="p-6">
+          <div className="space-y-4 text-gray-300 leading-relaxed">
             <p>
               At Little Heroes, we believe that fire safety education should be accessible, engaging, and fun for everyone. Our mission begins with empowering children, families, and communities with the knowledge they need to stay safe.
             </p>
