@@ -20,17 +20,19 @@ const ContactInfoCards = () => {
           <p className="text-gray-700 text-sm">info@littlefireheroes.co.uk</p>
         </div>
 
-        <div className={`bg-white/70 hover:bg-blue-100/90 transition-colors backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-blue-200/50 text-center ${cardAnimations[1]}`}>
-          <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <Phone className="h-9 w-9 text-blue-600" />
+        {/* Updated: Call Us card emphasizes theme red/orange */}
+        <div className={`bg-white/70 hover:bg-red-100/90 transition-colors backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-red-200/60 text-center ${cardAnimations[1]}`}>
+          <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+            <Phone className="h-9 w-9 text-red-500" />
           </div>
           <h3 className="font-bold text-gray-900 mb-2 font-montserrat">Call Us</h3>
           <p className="text-gray-700 text-sm">01844 208308</p>
         </div>
 
-        <div className={`bg-white/70 hover:bg-green-100/90 transition-colors backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-green-200/50 text-center ${cardAnimations[2]}`}>
-          <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <MapPin className="h-9 w-9 text-green-600" />
+        {/* Updated: Visit Us card uses soft orange/grey and theme icon */}
+        <div className={`bg-white/70 hover:bg-orange-50/90 transition-colors backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-orange-200/50 text-center ${cardAnimations[2]}`}>
+          <div className="bg-orange-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+            <MapPin className="h-9 w-9 text-orange-500" />
           </div>
           <h3 className="font-bold text-gray-900 mb-2 font-montserrat">Visit Us</h3>
           <p className="text-gray-700 text-sm">
@@ -56,3 +58,4 @@ const ContactInfoCards = () => {
 };
 
 export default ContactInfoCards;
+
