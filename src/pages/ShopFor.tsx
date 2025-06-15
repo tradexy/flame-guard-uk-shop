@@ -8,30 +8,40 @@ import SectionDivider from '@/components/SectionDivider';
 
 const ShopFor = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main className="container mx-auto px-4 py-12 space-y-16">
-        <section className="text-center">
-          <h1 className="mb-4">
-            Shop For Your Environment
-          </h1>
-          <p className="text-subtitle max-w-3xl mx-auto">
-            Find the perfect fire safety solutions tailored to your specific environment. From homes to industrial facilities, we have the right products to keep you safe.
-          </p>
-        </section>
+    <div className="bg-gray-50">
+      <div 
+        className="fixed inset-0 bg-cover bg-center z-0"
+        style={{
+          backgroundImage: "url('/lovable-uploads/a2b75342-9e36-46b9-bb00-f6eab034fc9d.png')",
+        }}
+      >
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+      </div>
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Header />
+        <main className="container mx-auto px-4 py-12 space-y-16">
+          <section className="text-center">
+            <h1 className="mb-4 text-foreground">
+              Shop For Your Environment
+            </h1>
+            <p className="text-subtitle max-w-3xl mx-auto text-foreground/80">
+              Find the perfect fire safety solutions tailored to your specific environment. From homes to industrial facilities, we have the right products to keep you safe.
+            </p>
+          </section>
 
-        <section className="bg-white p-8 rounded-xl shadow-subtle">
-          <FacilityGrid />
-        </section>
+          <section className="bg-white/40 backdrop-blur-lg rounded-2xl shadow-lg border border-white/50 p-8">
+            <FacilityGrid />
+          </section>
 
-        <SectionDivider />
+          <SectionDivider />
 
-        <section className="bg-white p-8 rounded-xl shadow-subtle">
-          <BestSellingCarousel />
-        </section>
-      </main>
-      <Footer />
-      <QuickShopBar />
+          <section className="bg-white/40 backdrop-blur-lg rounded-2xl shadow-lg border border-white/50 p-8">
+            <BestSellingCarousel />
+          </section>
+        </main>
+        <Footer />
+        <QuickShopBar />
+      </div>
     </div>
   );
 };

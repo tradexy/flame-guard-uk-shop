@@ -1,5 +1,4 @@
 
-import { Card, CardContent, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Home, Ship, Car, GraduationCap, Factory, Building2 } from 'lucide-react';
 
@@ -49,8 +48,7 @@ const FacilityGrid = () => (
         const IconComponent = facility.icon;
         return (
           <Link key={index} to={facility.path}>
-            <Card className="group h-full text-center">
-              <CardContent className="p-6">
+            <div className="group h-full text-center p-6 bg-white/60 rounded-2xl border border-white/70 shadow-lg transition-all duration-300 hover:bg-white/80 hover:shadow-xl hover:-translate-y-1">
                 <div className="mb-4 flex justify-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <IconComponent className="w-8 h-8 text-primary" />
@@ -61,8 +59,7 @@ const FacilityGrid = () => (
                 <div className="text-sm font-semibold text-primary group-hover:underline">
                   Shop Now
                 </div>
-              </CardContent>
-            </Card>
+            </div>
           </Link>
         );
       })}
