@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -81,9 +80,9 @@ const ServicingSupport = () => {
             <div className="lg:w-1/2">
               <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&h=300&fit=crop&crop=center"
-                  alt="Professional Fire Safety Products"
-                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                  src="/lovable-uploads/ac2f5bee-fd22-4f72-b2aa-c89edc5674ef.png"
+                  alt="Ruben - Little Fire Heroes"
+                  className="w-full h-full object-contain rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -114,9 +113,9 @@ const ServicingSupport = () => {
             <div className="lg:w-1/2">
               <div className="bg-gradient-to-br from-yellow-100 to-red-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop&crop=center"
-                  alt="Overcoming Industry Challenges"
-                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                  src="/lovable-uploads/de18821f-2094-43b1-b890-3e25572194d0.png"
+                  alt="Sofia - Little Fire Heroes"
+                  className="w-full h-full object-contain rounded-lg shadow-lg"
                 />
               </div>
             </div>
