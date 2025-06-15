@@ -38,8 +38,8 @@ const WhyChooseUs = () => {
                 className={`flex items-start space-x-4 animate-fade-in`}
                 style={{ animationDelay: `${100 + i * 100}ms` }}
               >
-                <div className={`bg-secondary rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1 shadow-md`}>
-                  <span className={`text-secondary-foreground font-bold text-lg`}>{r.number}</span>
+                <div className={`bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1 shadow-md`}>
+                  <span className={`font-bold text-lg`}>{r.number}</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">{r.title}</h4>

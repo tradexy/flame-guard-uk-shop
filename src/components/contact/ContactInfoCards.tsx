@@ -23,10 +23,10 @@ const ContactInfoCards = () => {
         {cardInfo.map((info, index) => {
           const Icon = info.icon;
           return (
-            <Card key={info.title} className={`text-center ${cardAnimations[index]} hover:bg-accent transition-colors`}>
+            <Card key={info.title} className={`group text-center ${cardAnimations[index]} hover:bg-accent transition-colors`}>
               <CardContent className="p-6">
-                <div className="bg-secondary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
-                  <Icon className="h-9 w-9 text-secondary-foreground" />
+                <div className="bg-secondary group-hover:bg-primary/10 transition-colors duration-300 ease-in-out rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
+                  <Icon className="h-9 w-9 text-secondary-foreground group-hover:text-primary transition-colors duration-300 ease-in-out" />
                 </div>
                 <h3 className="mb-2">{info.title}</h3>
                 <div className="text-muted-foreground text-sm">
