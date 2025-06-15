@@ -3,18 +3,15 @@ import { Badge } from '@/components/ui/badge';
 
 const InnovationSection = () => (
   <div className="grid md:grid-cols-12 gap-8 items-start">
-    {/* Left Column - Both Characters Placeholder */}
+    {/* Left Column - Ruben & Sofia */}
     <div className="md:col-span-3">
-      <div className="bg-gradient-to-br from-gray-300 via-gray-100 to-gray-400 rounded-xl p-6 text-center shadow-lg border border-gray-200">
+      <div className="bg-gray-50 rounded-xl p-6 text-center shadow-lg border border-gray-200">
         <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-          <div className="flex justify-center gap-1">
-            <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-              <span className="text-xs">👨‍🚒</span>
-            </div>
-            <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-              <span className="text-xs">👩‍🚒</span>
-            </div>
-          </div>
+          <img 
+            src="/lovable-uploads/615994ef-6180-4154-a52d-861b5c783a6d.png" 
+            alt="Ruben & Sofia, the Little Fire Heroes"
+            className="w-full h-full object-contain"
+          />
         </div>
         <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben & Sofia</h3>
         <p className="text-gray-600 text-sm mb-3">Innovation Team</p>
