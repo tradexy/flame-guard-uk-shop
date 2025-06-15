@@ -43,7 +43,7 @@ const OurMission = () => {
             <div className="grid md:grid-cols-12 gap-8 items-start">
               {/* Left Column - Ruben's Image */}
               <div className="md:col-span-3">
-                <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                <div className="bg-gradient-to-br from-gray-200 via-gray-50 to-gray-400 rounded-xl p-6 text-center shadow-lg border border-gray-300">
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/d91b57ba-fd4d-4279-996d-318c136c54af.png" 
@@ -51,9 +51,11 @@ const OurMission = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="font-bold text-blue-800 text-lg mb-2">Ruben</h3>
-                  <p className="text-blue-600 text-sm mb-3">Fire Safety Expert</p>
-                  <Badge className="bg-blue-500 text-white text-xs">Expert</Badge>
+                  <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben</h3>
+                  <p className="text-gray-700 text-sm mb-3">Fire Safety Expert</p>
+                  <Badge className="bg-gradient-to-r from-gray-400 via-red-600 to-gray-700 text-white text-xs border border-red-400 shadow">
+                    Expert
+                  </Badge>
                 </div>
               </div>
 
@@ -111,7 +113,7 @@ const OurMission = () => {
 
               {/* Right Column - Sofia's Image */}
               <div className="md:col-span-3">
-                <div className="bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-6 text-center shadow-lg border border-white">
+                <div className="bg-gradient-to-br from-gray-200 via-yellow-50 to-gray-300 rounded-xl p-6 text-center shadow-lg border border-gray-200">
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                     <img 
                       src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
@@ -119,9 +121,11 @@ const OurMission = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="font-bold text-purple-800 text-lg mb-2">Sofia</h3>
-                  <p className="text-purple-600 text-sm mb-3">Community Expert</p>
-                  <Badge className="bg-purple-500 text-white text-xs">Community</Badge>
+                  <h3 className="font-bold text-yellow-900 text-lg mb-2">Sofia</h3>
+                  <p className="text-yellow-700 text-sm mb-3">Community Expert</p>
+                  <Badge className="bg-gradient-to-r from-gray-300 via-yellow-400 to-gray-400 text-yellow-900 text-xs border border-yellow-300 shadow">
+                    Community
+                  </Badge>
                 </div>
               </div>
             </div>
@@ -130,20 +134,22 @@ const OurMission = () => {
             <div className="grid md:grid-cols-12 gap-8 items-start">
               {/* Left Column - Both Characters Placeholder */}
               <div className="md:col-span-3">
-                <div className="bg-gradient-to-br from-gray-200 via-gray-50 to-white rounded-xl p-6 text-center shadow-lg border border-gray-200">
+                <div className="bg-gradient-to-br from-gray-300 via-gray-100 to-gray-400 rounded-xl p-6 text-center shadow-lg border border-gray-200">
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                     <div className="flex justify-center gap-1">
-                      <div className="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center">
+                      <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
                         <span className="text-xs">👨‍🚒</span>
                       </div>
-                      <div className="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center">
+                      <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
                         <span className="text-xs">👩‍🚒</span>
                       </div>
                     </div>
                   </div>
                   <h3 className="font-bold text-gray-800 text-lg mb-2">Ruben & Sofia</h3>
                   <p className="text-gray-600 text-sm mb-3">Innovation Team</p>
-                  <Badge className="bg-green-500 text-white text-xs">Innovation</Badge>
+                  <Badge className="bg-gradient-to-r from-gray-300 via-gray-500 to-gray-700 text-white text-xs border border-gray-400 shadow">
+                    Innovation
+                  </Badge>
                 </div>
               </div>
 
