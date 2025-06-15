@@ -28,19 +28,19 @@ const SupportOptions = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-3 gap-6 mb-12">
+    <div className="grid md:grid-cols-3 gap-6">
       {supportOptions.map((option, index) => (
-        <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+        <Card key={index} className="text-center bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
           <CardHeader>
-            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <option.icon className="h-8 w-8 text-red-600" />
+            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <option.icon className="h-8 w-8 text-white" />
             </div>
-            <CardTitle className="text-xl">{option.title}</CardTitle>
-            <CardDescription>{option.description}</CardDescription>
+            <CardTitle className="text-xl text-white">{option.title}</CardTitle>
+            <CardDescription className="text-gray-300">{option.description}</CardDescription>
           </CardHeader>
           <CardContent>
-            <p className="font-semibold text-red-600 mb-2">{option.contact}</p>
-            <p className="text-sm text-gray-500">{option.hours}</p>
+            <p className="font-semibold text-primary mb-2">{option.contact}</p>
+            <p className="text-sm text-gray-400">{option.hours}</p>
           </CardContent>
         </Card>
       ))}

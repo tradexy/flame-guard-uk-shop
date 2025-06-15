@@ -9,18 +9,28 @@ import EmergencyNotice from '@/components/help/EmergencyNotice';
 
 const HelpAdvice = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      <main className="container mx-auto px-4 py-12 space-y-16">
-        <HelpHeader />
-        <SupportOptions />
-        <QuickTips />
-        <FaqSection />
-        <EmergencyNotice />
-      </main>
+    <div className="bg-gray-900 text-white">
+      <div 
+        className="fixed inset-0 bg-cover bg-center z-0"
+        style={{
+          backgroundImage: "url('/lovable-uploads/e924d747-f3c4-4325-a8f1-00e158611916.png')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+      </div>
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Header />
+        
+        <main className="container mx-auto px-4 py-12 md:py-24 space-y-16">
+          <HelpHeader />
+          <SupportOptions />
+          <QuickTips />
+          <FaqSection />
+          <EmergencyNotice />
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 };

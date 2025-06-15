@@ -59,21 +59,21 @@ const FaqSection = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 text-white">Frequently Asked Questions</h2>
       
       {helpTopics.map((topic, topicIndex) => (
-        <Card key={topicIndex} className="mb-6">
+        <Card key={topicIndex} className="mb-6 bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl text-red-600">{topic.category}</CardTitle>
+            <CardTitle className="text-2xl text-primary">{topic.category}</CardTitle>
           </CardHeader>
           <CardContent>
             <Accordion type="single" collapsible className="w-full">
               {topic.questions.map((qa, qaIndex) => (
-                <AccordionItem key={qaIndex} value={`item-${topicIndex}-${qaIndex}`}>
-                  <AccordionTrigger className="text-left">
+                <AccordionItem key={qaIndex} value={`item-${topicIndex}-${qaIndex}`} className="border-b-white/20">
+                  <AccordionTrigger className="text-left text-white hover:no-underline">
                     {qa.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
+                  <AccordionContent className="text-gray-300">
                     {qa.answer}
                   </AccordionContent>
                 </AccordionItem>
