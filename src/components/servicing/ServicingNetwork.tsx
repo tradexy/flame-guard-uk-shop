@@ -1,3 +1,4 @@
+
 import { Network, CheckCircle2 } from 'lucide-react';
 
 const ServicingNetwork = () => {
@@ -35,8 +36,8 @@ const ServicingNetwork = () => {
         <div className="lg:w-1/2">
           <div className="bg-red-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
             <img 
-              src="/lovable-uploads/5ad85333-4e3f-4432-8ec4-e1a693b5bf73.png"
-              alt="Little Fire Heroes - Keeping Us Safe"
+              src="/lovable-uploads/7781a704-f3c4-4d33-a829-ecb7708b5c17.png"
+              alt="Little Fire Hero keeping us safe"
               className="w-full h-full object-contain rounded-lg"
             />
           </div>
