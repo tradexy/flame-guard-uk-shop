@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -96,7 +95,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
-				montserrat: ['Montserrat', 'sans-serif'],
+				heading: ['Lora', 'serif'],
 				serif: ['var(--font-serif)', 'ui-serif', 'serif'],
 				mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
 			},

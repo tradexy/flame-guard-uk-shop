@@ -1,9 +1,10 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@700&display=swap');
 
 /* Design tokens */
 @layer base {
@@ -97,16 +98,16 @@
   }
 
   h1 {
-    @apply text-4xl font-bold font-montserrat text-foreground md:text-5xl;
+    @apply text-4xl font-bold font-heading text-foreground md:text-5xl;
   }
   h2 {
-    @apply text-3xl font-bold font-montserrat text-foreground md:text-4xl;
+    @apply text-3xl font-bold font-heading text-foreground md:text-4xl;
   }
   h3 {
-    @apply text-2xl font-bold font-montserrat text-foreground;
+    @apply text-2xl font-bold font-heading text-foreground;
   }
   h4 {
-    @apply text-xl font-semibold font-montserrat text-foreground;
+    @apply text-xl font-semibold font-heading text-foreground;
   }
   p {
     @apply leading-relaxed text-muted-foreground;
@@ -116,6 +117,6 @@
     @apply text-lg text-muted-foreground;
   }
   .text-display {
-     @apply text-5xl font-extrabold font-montserrat text-foreground md:text-6xl;
+     @apply text-5xl font-extrabold font-heading text-foreground md:text-6xl;
   }
 }
