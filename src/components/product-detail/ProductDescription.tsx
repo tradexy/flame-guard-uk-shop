@@ -5,8 +5,8 @@ interface ProductDescriptionProps {
 
 const ProductDescription = ({ description }: ProductDescriptionProps) => (
   <div>
-    <h3 className="text-lg font-semibold mb-2 text-foreground">Description</h3>
-    <p className="text-muted-foreground leading-relaxed">{description}</p>
+    <h3 className="mb-2">Description</h3>
+    <p>{description}</p>
   </div>
 );
 

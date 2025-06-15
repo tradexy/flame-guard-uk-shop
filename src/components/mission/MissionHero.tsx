@@ -6,10 +6,10 @@ const MissionHero = () => {
     <section className="py-16 bg-white text-gray-900 relative overflow-hidden border-b">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-display mb-6">
             Our Mission
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
             Empowering communities through fire safety education and creating little heroes
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

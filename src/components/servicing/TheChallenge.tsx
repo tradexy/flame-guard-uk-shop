@@ -9,12 +9,12 @@ const TheChallenge = () => {
           <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-subtle border border-white/20">
             <div className="flex items-center mb-6">
               <AlertTriangle className="h-12 w-12 text-orange-500 mr-4 flex-shrink-0" />
-              <h2 className="text-2xl font-bold text-gray-900">The Challenge</h2>
+              <h2 className="text-2xl font-bold">The Challenge</h2>
             </div>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Many traditional service providers rely on selling more units and locking clients into expensive maintenance contracts. Since our products reduce the number of extinguishers required, some providers may be reluctant to offer them.
             </p>
-            <p className="text-gray-700">
+            <p>
               However, to ensure safety and compliance, professional service is essential. That's why we aim to introduce a Servicing & Support Network.
             </p>
           </div>

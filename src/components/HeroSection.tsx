@@ -11,17 +11,17 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-white py-20 overflow-hidden" style={{minHeight:'540px'}}>
-      <div className="container mx-auto px-4 relative z-10 fade-in-up">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 font-montserrat drop-shadow-sm">
+            <h1 className="text-display drop-shadow-sm">
               Welcome to <span>Little Fire Heroes</span>
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+            <p className="text-subtitle max-w-xl">
               Empowering individuals, children, and business communities through fire safety awareness, 
               innovative fire-safe products, and a promise to keep us all safe.
             </p>
-            <p className="text-md text-gray-700">
+            <p>
               Explore life-saving products, join our mission, and shop with purpose.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

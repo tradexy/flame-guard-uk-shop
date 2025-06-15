@@ -96,4 +96,27 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
+
+  h1 {
+    @apply text-4xl font-bold font-montserrat text-foreground md:text-5xl;
+  }
+  h2 {
+    @apply text-3xl font-bold font-montserrat text-foreground md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl font-bold font-montserrat text-foreground;
+  }
+  h4 {
+    @apply text-xl font-semibold font-montserrat text-foreground;
+  }
+  p {
+    @apply leading-relaxed text-muted-foreground;
+  }
+
+  .text-subtitle {
+    @apply text-lg text-muted-foreground;
+  }
+  .text-display {
+     @apply text-5xl font-extrabold font-montserrat text-foreground md:text-6xl;
+  }
 }

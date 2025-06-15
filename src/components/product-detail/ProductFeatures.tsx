@@ -12,7 +12,7 @@ const ProductFeatures = ({ tags }: ProductFeaturesProps) => {
 
   return (
     <div>
-      <h3 className="text-lg font-semibold mb-2 text-foreground">Features</h3>
+      <h3 className="mb-2">Features</h3>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <Badge key={tag} variant="secondary">

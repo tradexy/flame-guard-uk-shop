@@ -12,10 +12,10 @@ const ShopFor = () => {
       <Header />
       <main className="container mx-auto px-4 py-12 space-y-16">
         <section className="text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 font-montserrat">
+          <h1 className="mb-4">
             Shop For Your Environment
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-subtitle max-w-3xl mx-auto">
             Find the perfect fire safety solutions tailored to your specific environment. From homes to industrial facilities, we have the right products to keep you safe.
           </p>
         </section>

@@ -10,7 +10,7 @@ interface ProductHeaderProps {
 const ProductHeader = ({ product }: ProductHeaderProps) => (
   <div>
     <Badge variant="outline" className="mb-2">{product.category}</Badge>
-    <h1 className="text-3xl md:text-4xl font-extrabold text-foreground font-montserrat mb-2">{product.name}</h1>
+    <h1 className="mb-2">{product.name}</h1>
     <div className="flex items-center space-x-4 mb-4">
       <div className="flex items-center">
         {[...Array(5)].map((_, i) => (

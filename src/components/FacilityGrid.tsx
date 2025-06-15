@@ -1,4 +1,5 @@
-import { Card, CardContent } from '@/components/ui/card';
+
+import { Card, CardContent, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Home, Ship, Car, GraduationCap, Factory, Building2 } from 'lucide-react';
 

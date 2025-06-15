@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const MissionSection = () => {
   return (
-    <section className="py-20 bg-gray-900 text-white relative overflow-hidden fade-in-up">
+    <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
        <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: "url('/lovable-uploads/ac2f5bee-fd22-4f72-b2aa-c89edc5674ef.png')" }}
@@ -12,10 +12,10 @@ const MissionSection = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
           <p className="text-primary font-extrabold uppercase mb-2 tracking-wide">At Little Heroes</p>
-          <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-6">
+          <h2 className="mb-6 text-white">
             Fire safety goes beyond products — it's about impact.
           </h2>
-          <p className="text-lg mb-8 text-gray-300">
+          <p className="text-subtitle mb-8 text-gray-300">
             We proudly donate 3% of our profits to help schools in the UK access sports kits, uniforms, and safety education tools
           </p>
           <Button size="lg">

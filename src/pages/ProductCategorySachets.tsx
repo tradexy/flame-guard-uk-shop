@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CategoryBreadcrumb from '@/components/CategoryBreadcrumb';
@@ -35,7 +34,7 @@ const ProductCategorySachets = () => {
             </div>
             <div className="lg:col-span-3">
               <div className="flex justify-between items-center mb-6">
-                <h1 className="text-3xl font-bold text-gray-800 font-montserrat">
+                <h1 className="text-3xl">
                   Fire Suppression Sachets
                 </h1>
                 <ProductSorting sortBy={sortBy} setSortBy={setSortBy} />

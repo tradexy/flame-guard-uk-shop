@@ -9,12 +9,12 @@ const OurRole = () => {
           <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-subtle border border-white/20">
             <div className="flex items-center mb-6">
               <LifeBuoy className="h-12 w-12 text-red-600 mr-4 flex-shrink-0" />
-              <h2 className="text-2xl font-bold text-gray-900">Our Role</h2>
+              <h2 className="text-2xl font-bold">Our Role</h2>
             </div>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Little Heroes provides access to high-quality, innovative fire safety products such as multi-purpose extinguishers and alarms. However, we do not directly offer installation or maintenance services.
             </p>
-            <p className="text-gray-700">
+            <p>
               Our mission is to make fire safety accessible and affordable, especially for schools, small businesses, and communities. Because of the versatility and coverage of our products, fewer units are often required — saving money and reducing clutter.
             </p>
           </div>
