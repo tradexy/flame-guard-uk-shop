@@ -26,7 +26,7 @@ const OurStorySection = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl overflow-hidden shadow-xl border border-white/50 w-80 h-80 animate-fade-in transition-all duration-300 hover:shadow-2xl hover:scale-105">
+            <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl overflow-hidden shadow-subtle border border-white/50 w-80 h-80 animate-fade-in transition-all duration-300 hover:shadow-lg hover:scale-105">
               <img 
                 src="/lovable-uploads/622fe07f-7ce1-44de-9deb-04e04590a732.png" 
                 alt="Sofia & Ruben - Co-Founders of Little Fire Heroes"
@@ -46,4 +46,3 @@ const OurStorySection = () => {
 };
 
 export default OurStorySection;
-

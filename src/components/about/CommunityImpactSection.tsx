@@ -1,4 +1,6 @@
 
+import { GraduationCap } from 'lucide-react';
+
 const CommunityImpactSection = () => {
   return (
     <section className="py-16 bg-gray-900 text-white relative overflow-hidden fade-in-up">
@@ -9,8 +11,10 @@ const CommunityImpactSection = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <div className="bg-black/20 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/10 shadow-2xl animate-fade-in">
-            <div className="text-6xl mb-6 animate-bounce">🎓</div>
+          <div className="bg-black/20 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/10 shadow-subtle animate-fade-in">
+            <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <GraduationCap className="h-10 w-10 text-white" />
+            </div>
             <h2 className="text-3xl font-bold mb-6 font-montserrat text-white">Making a Difference - Sofia & Ruben's Promise</h2>
             <p className="text-lg mb-8 text-gray-300 leading-relaxed">
               True to <strong>Sofia and Ruben's</strong> commitment to community, we're proud to donate 3% 
@@ -40,4 +44,3 @@ const CommunityImpactSection = () => {
 };
 
 export default CommunityImpactSection;
-

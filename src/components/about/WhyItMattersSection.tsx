@@ -1,4 +1,3 @@
-
 const WhyItMattersSection = () => {
   return (
     <section className="py-16 bg-white fade-in-up relative">
@@ -6,7 +5,7 @@ const WhyItMattersSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center animate-fade-in">
-            <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl overflow-hidden shadow-xl border border-white/50 w-80 h-80 transition-all duration-300 hover:shadow-2xl hover:scale-105">
+            <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl overflow-hidden shadow-subtle border border-white/50 w-80 h-80 transition-all duration-300 hover:shadow-lg hover:scale-105">
               <img 
                 src="/lovable-uploads/4d4752d2-ef63-47c2-a268-81554a68db6f.png" 
                 alt="Fire safety in action - Why it matters"
@@ -43,4 +42,3 @@ const WhyItMattersSection = () => {
 };
 
 export default WhyItMattersSection;
-
