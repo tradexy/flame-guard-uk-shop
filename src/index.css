@@ -9,7 +9,7 @@
 /* Design tokens */
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 98%; /* Softer off-white background */
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -94,7 +94,7 @@
   }
 
   body {
-    @apply bg-gray-50 dark:bg-gray-900 text-foreground font-sans;
+    @apply bg-background text-foreground font-sans;
   }
 
   h1 {
