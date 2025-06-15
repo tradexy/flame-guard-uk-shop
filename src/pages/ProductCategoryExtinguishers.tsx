@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CategoryBreadcrumb from '@/components/CategoryBreadcrumb';
@@ -14,10 +15,9 @@ const ProductCategoryExtinguishers = () => {
   const [inStockOnly, setInStockOnly] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-100 via-white to-red-50 animate-fade-in">
+    <div className="min-h-screen bg-gray-50 animate-fade-in">
       <Header />
-      <section className="fade-in-up relative py-12 bg-gradient-to-tr from-orange-100/30 via-white/80 to-red-100/30 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-200/10 via-yellow-50/10 to-orange-200/10 animate-pulse pointer-events-none" />
+      <section className="fade-in-up relative py-12 bg-white">
         <div className="container mx-auto px-4 relative z-10">
           <CategoryBreadcrumb category="Extinguishers" />
           <div className="grid lg:grid-cols-4 gap-8 mt-8">
@@ -35,7 +35,7 @@ const ProductCategoryExtinguishers = () => {
             </div>
             <div className="lg:col-span-3 fade-in-up delay-200">
               <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-red-600 via-orange-500 to-red-500 bg-clip-text text-transparent font-montserrat animate-fade-in">
+                <h1 className="text-3xl font-bold text-gray-800 font-montserrat animate-fade-in">
                   Fire Extinguishers
                 </h1>
                 <ProductSorting sortBy={sortBy} setSortBy={setSortBy} />
@@ -58,3 +58,4 @@ const ProductCategoryExtinguishers = () => {
 };
 
 export default ProductCategoryExtinguishers;
+

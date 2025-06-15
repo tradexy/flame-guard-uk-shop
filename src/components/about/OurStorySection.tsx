@@ -1,7 +1,7 @@
 
 const OurStorySection = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-yellow-50 to-orange-50 fade-in-up">
+    <section className="py-16 bg-gradient-to-br from-orange-50 via-white to-red-50 fade-in-up">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -26,15 +26,15 @@ const OurStorySection = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="relative bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl border border-white/50 w-80 h-80 animate-fade-in">
+            <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl overflow-hidden shadow-xl border border-white/50 w-80 h-80 animate-fade-in transition-all duration-300 hover:shadow-2xl hover:scale-105">
               <img 
                 src="/lovable-uploads/622fe07f-7ce1-44de-9deb-04e04590a732.png" 
                 alt="Sofia & Ruben - Co-Founders of Little Fire Heroes"
                 className="w-full h-full object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <p className="font-semibold text-lg">Sofia & Ruben</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-white p-2 bg-black/20 rounded-lg backdrop-blur-sm">
+                <p className="font-semibold text-lg drop-shadow-md">Sofia & Ruben</p>
                 <p className="text-sm opacity-90">Co-Founders of Little Fire Heroes</p>
               </div>
             </div>
@@ -46,3 +46,4 @@ const OurStorySection = () => {
 };
 
 export default OurStorySection;
+

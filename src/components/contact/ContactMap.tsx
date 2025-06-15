@@ -2,9 +2,9 @@
 const ContactMap = () => {
   return (
     <section className="mb-16 animate-fade-in">
-      <div className="bg-gradient-to-br from-white/90 to-orange-100/65 backdrop-blur-xl rounded-2xl p-8 shadow-2xl border border-orange-200/40">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center font-montserrat drop-shadow">Find Us</h2>
-        <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl h-96 flex items-center justify-center overflow-hidden mb-2 border border-orange-100 shadow-lg">
+      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/50">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center font-montserrat">Find Us</h2>
+        <div className="bg-gray-100 rounded-xl h-96 flex items-center justify-center overflow-hidden mb-2 border border-gray-200 shadow-inner">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.123456789!2d-0.9876543210987654!3d51.76543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQ1JzU1LjYiTiAwwrA1OSczOC4yIlc!5e0!3m2!1sen!2suk!4v1234567890123"
             width="100%"
@@ -28,3 +28,4 @@ const ContactMap = () => {
 };
 
 export default ContactMap;
+
