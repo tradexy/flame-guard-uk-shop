@@ -15,18 +15,18 @@ interface ProductSortingProps {
 const ProductSorting = ({ sortBy, setSortBy }: ProductSortingProps) => {
   return (
     <div className="flex items-center space-x-2">
-      <span className="text-sm text-gray-600">Sort by:</span>
+      <span className="text-sm text-muted-foreground">Sort by:</span>
       <Select value={sortBy} onValueChange={setSortBy}>
-        <SelectTrigger className="w-48 bg-white/70 backdrop-blur-sm border border-white/50">
-          <SelectValue />
+        <SelectTrigger className="w-48">
+          <SelectValue placeholder="Default Sorting" />
         </SelectTrigger>
-        <SelectContent className="bg-white/90 backdrop-blur-md border border-white/20">
+        <SelectContent>
           <SelectItem value="default">Default Sorting</SelectItem>
-          <SelectItem value="popularity">Sort by Popularity</SelectItem>
-          <SelectItem value="rating">Sort by Average Rating</SelectItem>
-          <SelectItem value="latest">Sort by Latest</SelectItem>
-          <SelectItem value="price-low">Sort by Price: Low to High</SelectItem>
-          <SelectItem value="price-high">Sort by Price: High to Low</SelectItem>
+          <SelectItem value="popularity">Popularity</SelectItem>
+          <SelectItem value="rating">Average Rating</SelectItem>
+          <SelectItem value="latest">Latest</SelectItem>
+          <SelectItem value="price-low">Price: Low to High</SelectItem>
+          <SelectItem value="price-high">Price: High to Low</SelectItem>
         </SelectContent>
       </Select>
     </div>

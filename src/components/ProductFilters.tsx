@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
@@ -51,26 +50,26 @@ const ProductFilters = ({
   };
 
   return (
-    <div className="space-y-4">
-      <h2 className="text-lg font-semibold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent mb-4">
+    <div className="space-y-6">
+      <h2 className="text-xl font-bold text-foreground font-montserrat">
         Filters
       </h2>
       
       {/* Price Filter */}
-      <Card className="bg-white/70 backdrop-blur-sm border border-white/50">
+      <Card>
         <Collapsible open={isPriceOpen} onOpenChange={setIsPriceOpen}>
           <CollapsibleTrigger asChild>
-            <CardHeader className="cursor-pointer hover:bg-white/30 transition-colors">
-              <CardTitle className="text-sm flex items-center justify-between">
-                Filter by Price
+            <CardHeader className="cursor-pointer p-4">
+              <CardTitle className="text-base flex items-center justify-between font-semibold">
+                Price
                 <ChevronDown className={`h-4 w-4 transition-transform ${isPriceOpen ? 'rotate-180' : ''}`} />
               </CardTitle>
             </CardHeader>
           </CollapsibleTrigger>
           <CollapsibleContent>
-            <CardContent>
+            <CardContent className="p-4 pt-0">
               <div className="space-y-2">
-                <div className="flex items-center justify-between text-sm text-gray-600">
+                <div className="flex items-center justify-between text-sm text-muted-foreground">
                   <span>£{priceRange[0]}</span>
                   <span>£{priceRange[1]}</span>
                 </div>
@@ -80,10 +79,7 @@ const ProductFilters = ({
                   max="1000"
                   value={priceRange[1]}
                   onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
-                  className="w-full accent-gradient-to-r accent-from-red-500 accent-to-orange-500"
-                  style={{
-                    background: `linear-gradient(to right, #ef4444 0%, #f97316 100%)`
-                  }}
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
                 />
               </div>
             </CardContent>
@@ -92,18 +88,18 @@ const ProductFilters = ({
       </Card>
 
       {/* Tags Filter */}
-      <Card className="bg-white/70 backdrop-blur-sm border border-white/50">
+      <Card>
         <Collapsible open={isTagsOpen} onOpenChange={setIsTagsOpen}>
           <CollapsibleTrigger asChild>
-            <CardHeader className="cursor-pointer hover:bg-white/30 transition-colors">
-              <CardTitle className="text-sm flex items-center justify-between">
-                Filter by Tags
+            <CardHeader className="cursor-pointer p-4">
+              <CardTitle className="text-base flex items-center justify-between font-semibold">
+                Tags
                 <ChevronDown className={`h-4 w-4 transition-transform ${isTagsOpen ? 'rotate-180' : ''}`} />
               </CardTitle>
             </CardHeader>
           </CollapsibleTrigger>
           <CollapsibleContent>
-            <CardContent>
+            <CardContent className="p-4 pt-0">
               <div className="space-y-3">
                 {tags.map((tag) => (
                   <div key={tag} className="flex items-center space-x-2">
@@ -111,9 +107,8 @@ const ProductFilters = ({
                       id={tag}
                       checked={selectedTags.includes(tag)}
                       onCheckedChange={(checked) => handleTagChange(tag, checked as boolean)}
-                      className="data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-red-500 data-[state=checked]:to-orange-500 border-red-300"
                     />
-                    <label htmlFor={tag} className="text-sm text-gray-700 cursor-pointer">
+                    <label htmlFor={tag} className="text-sm text-muted-foreground font-medium cursor-pointer">
                       {tag}
                     </label>
                   </div>
@@ -125,18 +120,18 @@ const ProductFilters = ({
       </Card>
 
       {/* Category Filter */}
-      <Card className="bg-white/70 backdrop-blur-sm border border-white/50">
+      <Card>
         <Collapsible open={isCategoryOpen} onOpenChange={setIsCategoryOpen}>
           <CollapsibleTrigger asChild>
-            <CardHeader className="cursor-pointer hover:bg-white/30 transition-colors">
-              <CardTitle className="text-sm flex items-center justify-between">
-                Filter by Category
+            <CardHeader className="cursor-pointer p-4">
+              <CardTitle className="text-base flex items-center justify-between font-semibold">
+                Category
                 <ChevronDown className={`h-4 w-4 transition-transform ${isCategoryOpen ? 'rotate-180' : ''}`} />
               </CardTitle>
             </CardHeader>
           </CollapsibleTrigger>
           <CollapsibleContent>
-            <CardContent>
+            <CardContent className="p-4 pt-0">
               <div className="space-y-3">
                 {categories.map((category) => (
                   <div key={category} className="flex items-center space-x-2">
@@ -144,9 +139,8 @@ const ProductFilters = ({
                       id={category}
                       checked={selectedCategories.includes(category)}
                       onCheckedChange={(checked) => handleCategoryChange(category, checked as boolean)}
-                      className="data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-red-500 data-[state=checked]:to-orange-500 border-red-300"
                     />
-                    <label htmlFor={category} className="text-sm text-gray-700 cursor-pointer">
+                    <label htmlFor={category} className="text-sm text-muted-foreground font-medium cursor-pointer">
                       {category}
                     </label>
                   </div>
@@ -158,26 +152,25 @@ const ProductFilters = ({
       </Card>
 
       {/* Availability Filter */}
-      <Card className="bg-white/70 backdrop-blur-sm border border-white/50">
+      <Card>
         <Collapsible open={isAvailabilityOpen} onOpenChange={setIsAvailabilityOpen}>
           <CollapsibleTrigger asChild>
-            <CardHeader className="cursor-pointer hover:bg-white/30 transition-colors">
-              <CardTitle className="text-sm flex items-center justify-between">
-                Filter by Availability
+            <CardHeader className="cursor-pointer p-4">
+              <CardTitle className="text-base flex items-center justify-between font-semibold">
+                Availability
                 <ChevronDown className={`h-4 w-4 transition-transform ${isAvailabilityOpen ? 'rotate-180' : ''}`} />
               </CardTitle>
             </CardHeader>
           </CollapsibleTrigger>
           <CollapsibleContent>
-            <CardContent>
+            <CardContent className="p-4 pt-0">
               <div className="flex items-center space-x-2">
                 <Checkbox
                   id="inStock"
                   checked={inStockOnly}
                   onCheckedChange={(checked) => setInStockOnly(checked as boolean)}
-                  className="data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-red-500 data-[state=checked]:to-orange-500 border-red-300"
                 />
-                <label htmlFor="inStock" className="text-sm text-gray-700 cursor-pointer">
+                <label htmlFor="inStock" className="text-sm text-muted-foreground font-medium cursor-pointer">
                   In Stock Only
                 </label>
               </div>

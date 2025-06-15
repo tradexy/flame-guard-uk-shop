@@ -27,20 +27,20 @@ const ProductGrid = memo(({ category, sortBy, priceRange, selectedTags, selected
 
   return (
     <div>
-      <div className="mb-4 text-sm text-gray-600">
-        Showing {filteredProducts.length} results
+      <div className="mb-4 text-sm text-muted-foreground">
+        Showing {filteredProducts.length} of {products.length} products
       </div>
       
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
       
       {filteredProducts.length === 0 && (
-        <div className="text-center py-12">
-          <p className="text-gray-500">No products match your current filters.</p>
-          <p className="text-sm text-gray-400 mt-2">Try adjusting your filter criteria.</p>
+        <div className="text-center py-20 bg-gray-50 rounded-lg">
+          <h3 className="text-xl font-semibold text-foreground">No Products Found</h3>
+          <p className="text-muted-foreground mt-2">Try adjusting your filter criteria to find what you're looking for.</p>
         </div>
       )}
     </div>
