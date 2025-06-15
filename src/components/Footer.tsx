@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold mb-4">Product Information & Support</h3>
-              <div className="space-y-2 text-sm opacity-90">
+              <h3 className="font-bold mb-4 text-white">Product Information & Support</h3>
+              <div className="space-y-2 text-sm text-gray-300">
                 <p>Little Heroes Unit 5 Ridge Way</p>
                 <p>Crendon Industrial Park Long</p>
                 <p>Crendon Buckinghamshire HP18 9BF</p>
@@ -28,40 +28,40 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="font-bold mb-4">Quick Links</h3>
+              <h3 className="font-bold mb-4 text-white">Quick Links</h3>
               <div className="space-y-2 text-sm">
-                <Link to="/shop-by-category" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Shop By Category</Link>
-                <Link to="/shop-for" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Shop For</Link>
-                <Link to="/about-us" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">About Us</Link>
-                <Link to="/faqs" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">FAQs</Link>
-                <Link to="/our-mission" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Our Mission</Link>
-                <Link to="/servicing-support" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Servicing Support</Link>
-                <Link to="/contact-us" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Contact Us</Link>
+                <Link to="/shop-by-category" className="block text-gray-300 hover:text-primary transition-colors">Shop By Category</Link>
+                <Link to="/shop-for" className="block text-gray-300 hover:text-primary transition-colors">Shop For</Link>
+                <Link to="/about-us" className="block text-gray-300 hover:text-primary transition-colors">About Us</Link>
+                <Link to="/faqs" className="block text-gray-300 hover:text-primary transition-colors">FAQs</Link>
+                <Link to="/our-mission" className="block text-gray-300 hover:text-primary transition-colors">Our Mission</Link>
+                <Link to="/servicing-support" className="block text-gray-300 hover:text-primary transition-colors">Servicing Support</Link>
+                <Link to="/contact-us" className="block text-gray-300 hover:text-primary transition-colors">Contact Us</Link>
               </div>
             </div>
 
             <div>
-              <h3 className="font-bold mb-4">Information</h3>
+              <h3 className="font-bold mb-4 text-white">Information</h3>
               <div className="space-y-2 text-sm">
-                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Privacy Policy</a>
-                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Cookie Policy</a>
-                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Terms and Conditions</a>
-                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Data Protection</a>
-                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Site Map</a>
-                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Portal</a>
+                <a href="#" className="block text-gray-300 hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="#" className="block text-gray-300 hover:text-primary transition-colors">Cookie Policy</a>
+                <a href="#" className="block text-gray-300 hover:text-primary transition-colors">Terms and Conditions</a>
+                <a href="#" className="block text-gray-300 hover:text-primary transition-colors">Data Protection</a>
+                <a href="#" className="block text-gray-300 hover:text-primary transition-colors">Site Map</a>
+                <a href="#" className="block text-gray-300 hover:text-primary transition-colors">Portal</a>
               </div>
             </div>
 
             <div>
-              <h3 className="font-bold mb-4">WANT TO BE SAFER?</h3>
-              <p className="text-sm mb-4 opacity-90">
+              <h3 className="font-bold mb-4 text-white">WANT TO BE SAFER?</h3>
+              <p className="text-sm mb-4 text-gray-300">
                 Subscribe to our newsletter to receive regular Firexo, industry and safety updates.
               </p>
               <div className="space-y-2">
                 <Input 
                   type="email" 
                   placeholder="Email Address *" 
-                  className="bg-white/90 text-gray-800 border-white/20 placeholder:text-gray-500 focus:bg-white"
+                  className="bg-white/5 text-white border-white/20 placeholder:text-gray-400 focus:bg-white/10"
                 />
                 <Button className="w-full">
                   SUBSCRIBE
