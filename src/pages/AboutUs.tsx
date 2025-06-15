@@ -11,7 +11,7 @@ import ContactCTA from '@/components/about/ContactCTA';
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50">
       <Header />
       <AboutHero />
       <OurStorySection />

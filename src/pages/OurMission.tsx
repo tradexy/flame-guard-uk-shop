@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
@@ -6,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const OurMission = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50">
       <Header />
       
       {/* Hero Section */}
@@ -239,4 +238,3 @@ const OurMission = () => {
 };
 
 export default OurMission;
-
