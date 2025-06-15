@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const ContactCTA = () => {
   return (
-    <section className="bg-white relative">
+    <section className="relative">
       <div className="text-center relative z-10">
         <h2 className="text-3xl font-bold text-gray-800 mb-4 font-montserrat">Ready to Join Our Mission?</h2>
         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">

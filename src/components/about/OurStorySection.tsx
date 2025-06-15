@@ -1,7 +1,7 @@
 
 const OurStorySection = () => {
   return (
-    <section className="bg-white fade-in-up">
+    <section className="fade-in-up">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-6 font-montserrat animate-fade-in">Our Story</h2>
@@ -25,7 +25,7 @@ const OurStorySection = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="relative bg-gray-100 rounded-2xl overflow-hidden shadow-subtle border w-80 h-80 animate-fade-in transition-all duration-300 hover:shadow-lg hover:scale-105">
+          <div className="relative bg-white/40 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg border border-white/50 w-80 h-80 animate-fade-in transition-all duration-300 hover:shadow-xl hover:scale-105">
             <img 
               src="/lovable-uploads/622fe07f-7ce1-44de-9deb-04e04590a732.png" 
               alt="Sofia & Ruben - Co-Founders of Little Fire Heroes"

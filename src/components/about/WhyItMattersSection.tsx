@@ -1,10 +1,11 @@
+
 const WhyItMattersSection = () => {
   return (
-    <section className="bg-white fade-in-up relative">
+    <section className="fade-in-up relative">
       <div className="relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center animate-fade-in">
-            <div className="relative bg-gray-100 rounded-2xl overflow-hidden shadow-subtle border w-80 h-80 transition-all duration-300 hover:shadow-lg hover:scale-105">
+            <div className="relative bg-white/40 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg border border-white/50 w-80 h-80 transition-all duration-300 hover:shadow-xl hover:scale-105">
               <img 
                 src="/lovable-uploads/4d4752d2-ef63-47c2-a268-81554a68db6f.png" 
                 alt="Fire safety in action - Why it matters"

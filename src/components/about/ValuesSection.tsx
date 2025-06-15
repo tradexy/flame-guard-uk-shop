@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Heart, Users, Award } from 'lucide-react';
 
@@ -27,7 +26,7 @@ const ValuesSection = () => {
   ];
 
   return (
-    <section className="bg-white relative fade-in-up">
+    <section className="relative fade-in-up">
       <div className="relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-montserrat animate-fade-in">Our Values</h2>
@@ -39,7 +38,7 @@ const ValuesSection = () => {
           {values.map((value, index) => {
             const IconComponent = value.icon;
             return (
-              <Card key={index} className="group transition-all duration-300 border rounded-2xl animate-fade-in hover:border-gray-300">
+              <Card key={index} className="group transition-all duration-300 animate-fade-in bg-white/40 backdrop-blur-lg rounded-2xl shadow-lg border border-white/50 hover:shadow-xl">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-accent transition-colors">
                     <IconComponent className="w-8 h-8 text-secondary-foreground" />

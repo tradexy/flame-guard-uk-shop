@@ -3,10 +3,10 @@ import { GraduationCap } from 'lucide-react';
 
 const CommunityImpactSection = () => {
   return (
-    <section className="bg-white text-gray-800 relative overflow-hidden fade-in-up">
+    <section className="text-gray-800 relative overflow-hidden fade-in-up">
       <div className="relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <div className="bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-200 shadow-subtle animate-fade-in">
+          <div className="bg-white/40 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-lg border border-white/50 animate-fade-in">
             <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
               <GraduationCap className="h-10 w-10 text-gray-700" />
             </div>

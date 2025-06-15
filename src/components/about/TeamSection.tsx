@@ -24,7 +24,7 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="bg-white fade-in-up">
+    <section className="fade-in-up">
       <div>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-montserrat animate-fade-in">Meet Sofia & Ruben</h2>
@@ -34,7 +34,7 @@ const TeamSection = () => {
           </p>
         </div>
         <div className="mb-12 flex justify-center animate-fade-in">
-          <div className="relative bg-gray-100 rounded-2xl overflow-hidden shadow-subtle border w-96 h-96">
+          <div className="relative bg-white/40 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg border border-white/50 w-96 h-96">
             <img 
               src="/lovable-uploads/9558bcf3-3d6b-4fa6-b6a0-c9879452038c.png" 
               alt="Sofia and Ruben - The Little Fire Heroes Team"
@@ -49,7 +49,7 @@ const TeamSection = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 bg-gray-50 border hover:bg-gray-100 rounded-2xl animate-fade-in">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 bg-white/40 backdrop-blur-lg border border-white/50 rounded-2xl animate-fade-in">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
                   <member.icon className="h-8 w-8" />
