@@ -20,11 +20,11 @@ const OurRole = () => {
           </div>
         </div>
         <div className="lg:w-1/2">
-          <div className="bg-red-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+          <div className="rounded-2xl h-64 flex items-center justify-center overflow-hidden">
             <img 
-              src="/lovable-uploads/ac2f5bee-fd22-4f72-b2aa-c89edc5674ef.png"
-              alt="Ruben - Little Fire Heroes"
-              className="w-full h-full object-contain rounded-lg shadow-lg"
+              src="/lovable-uploads/3fa59730-2527-4419-9da0-01f935ecb729.png"
+              alt="Little Fire Hero keeping us safe"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
