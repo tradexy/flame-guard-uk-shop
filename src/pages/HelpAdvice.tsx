@@ -5,7 +5,6 @@ import HelpHeader from '@/components/help/HelpHeader';
 import SupportOptions from '@/components/help/SupportOptions';
 import QuickTips from '@/components/help/QuickTips';
 import FaqSection from '@/components/help/FaqSection';
-import EmergencyNotice from '@/components/help/EmergencyNotice';
 
 const HelpAdvice = () => {
   return (
@@ -26,7 +25,6 @@ const HelpAdvice = () => {
           <SupportOptions />
           <QuickTips />
           <FaqSection />
-          <EmergencyNotice />
         </main>
 
         <Footer />

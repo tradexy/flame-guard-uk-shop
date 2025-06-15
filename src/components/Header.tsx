@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-white/20">
+      <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -67,7 +67,7 @@ const Header = () => {
                   <span>Shop By Category</span>
                   <ChevronDown className="h-4 w-4" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-white/90 backdrop-blur-md border border-white/20 shadow-lg">
+                <DropdownMenuContent className="bg-white border-gray-200 shadow-lg">
                   <DropdownMenuItem asChild>
                     <Link
                       to="/shop-by-category"
@@ -102,7 +102,7 @@ const Header = () => {
               <Button
                 variant="ghost"
                 size="sm"
-                className="hover:bg-white/50 backdrop-blur-sm"
+                className="hover:bg-gray-100"
                 onClick={handleSearchClick}
               >
                 <Search className="h-5 w-5" />
@@ -118,7 +118,7 @@ const Header = () => {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2 rounded-lg hover:bg-white/50 backdrop-blur-sm transition-colors flex-shrink-0"
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors flex-shrink-0"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -127,7 +127,7 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t border-white/20 bg-white/90 backdrop-blur-md rounded-b-lg">
+            <div className="md:hidden py-4 border-t border-gray-200 bg-white rounded-b-lg">
               <nav className="flex flex-col space-y-2">
                 <div className="px-4 py-2">
                   <Link
