@@ -34,11 +34,11 @@ const ServicingNetwork = () => {
           </div>
         </div>
         <div className="lg:w-1/2">
-          <div className="bg-red-100 rounded-2xl p-8 h-64 flex items-center justify-center overflow-hidden">
+          <div className="rounded-2xl h-64 flex items-center justify-center overflow-hidden">
             <img 
-              src="/lovable-uploads/7781a704-f3c4-4d33-a829-ecb7708b5c17.png"
-              alt="Little Fire Hero keeping us safe"
-              className="w-full h-full object-contain rounded-lg"
+              src="/lovable-uploads/c5487974-5898-415e-a18b-c185657d0b78.png"
+              alt="Little Fire Heroes SAFE logo"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
