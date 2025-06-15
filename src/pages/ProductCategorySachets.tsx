@@ -17,37 +17,39 @@ const ProductCategorySachets = () => {
   return (
     <div className="min-h-screen bg-gray-50 animate-fade-in">
       <Header />
-      <section className="fade-in-up relative py-12 bg-white">
+      <section className="fade-in-up relative py-12">
         <div className="container mx-auto px-4 relative z-10">
-          <CategoryBreadcrumb category="Sachets" />
-          <div className="grid lg:grid-cols-4 gap-8 mt-8">
-            <div className="lg:col-span-1 fade-in-up delay-100">
-              <ProductFilters 
-                priceRange={priceRange}
-                setPriceRange={setPriceRange}
-                selectedTags={selectedTags}
-                setSelectedTags={setSelectedTags}
-                selectedCategories={selectedCategories}
-                setSelectedCategories={setSelectedCategories}
-                inStockOnly={inStockOnly}
-                setInStockOnly={setInStockOnly}
-              />
-            </div>
-            <div className="lg:col-span-3 fade-in-up delay-200">
-              <div className="flex justify-between items-center mb-6">
-                <h1 className="text-3xl font-bold text-gray-800 font-montserrat animate-fade-in">
-                  Fire Suppression Sachets
-                </h1>
-                <ProductSorting sortBy={sortBy} setSortBy={setSortBy} />
+          <div className="bg-white p-8 rounded-xl shadow-subtle">
+            <CategoryBreadcrumb category="Sachets" />
+            <div className="grid lg:grid-cols-4 gap-8 mt-8">
+              <div className="lg:col-span-1 fade-in-up delay-100">
+                <ProductFilters 
+                  priceRange={priceRange}
+                  setPriceRange={setPriceRange}
+                  selectedTags={selectedTags}
+                  setSelectedTags={setSelectedTags}
+                  selectedCategories={selectedCategories}
+                  setSelectedCategories={setSelectedCategories}
+                  inStockOnly={inStockOnly}
+                  setInStockOnly={setInStockOnly}
+                />
               </div>
-              <ProductGrid 
-                category="sachets"
-                sortBy={sortBy}
-                priceRange={priceRange}
-                selectedTags={selectedTags}
-                selectedCategories={selectedCategories}
-                inStockOnly={inStockOnly}
-              />
+              <div className="lg:col-span-3 fade-in-up delay-200">
+                <div className="flex justify-between items-center mb-6">
+                  <h1 className="text-3xl font-bold text-gray-800 font-montserrat animate-fade-in">
+                    Fire Suppression Sachets
+                  </h1>
+                  <ProductSorting sortBy={sortBy} setSortBy={setSortBy} />
+                </div>
+                <ProductGrid 
+                  category="sachets"
+                  sortBy={sortBy}
+                  priceRange={priceRange}
+                  selectedTags={selectedTags}
+                  selectedCategories={selectedCategories}
+                  inStockOnly={inStockOnly}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -58,4 +60,3 @@ const ProductCategorySachets = () => {
 };
 
 export default ProductCategorySachets;
-

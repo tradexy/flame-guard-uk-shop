@@ -11,7 +11,7 @@ const ShopFor = () => {
     <div className="min-h-screen bg-gray-50 animate-fade-in">
       <Header />
       {/* Hero Section */}
-      <section className="py-20 md:py-24 text-center bg-white border-b border-border">
+      <section className="py-20 md:py-24 text-center">
         <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 font-montserrat animate-fade-in">
                 Shop For Your Environment
@@ -23,15 +23,23 @@ const ShopFor = () => {
       </section>
 
       {/* Facilities Grid */}
-      <section className="py-16 fade-in-up delay-200">
-        <FacilityGrid />
+      <section className="pb-16">
+        <div className="container mx-auto px-4">
+            <div className="bg-white p-8 rounded-xl shadow-subtle fade-in-up delay-200">
+                <FacilityGrid />
+            </div>
+        </div>
       </section>
 
       <SectionDivider />
 
       {/* Best Selling Products */}
-      <div className="py-16 bg-white border-t border-border fade-in-up delay-300">
-        <BestSellingCarousel />
+      <div className="pb-16">
+        <div className="container mx-auto px-4">
+            <div className="bg-white p-8 rounded-xl shadow-subtle fade-in-up delay-300">
+                <BestSellingCarousel />
+            </div>
+        </div>
       </div>
       <Footer />
       <QuickShopBar />

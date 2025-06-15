@@ -16,12 +16,20 @@ const ShopByCategory = () => {
         </div>
       </section>
       {/* Category Grid */}
-      <div className="fade-in-up delay-200">
-        <CategoryGrid />
+      <div className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="bg-white p-8 rounded-xl shadow-subtle fade-in-up delay-200">
+            <CategoryGrid />
+          </div>
+        </div>
       </div>
       {/* Best Selling Carousel */}
-      <div className="fade-in-up delay-300">
-        <BestSellingCarousel />
+      <div className="pb-16">
+        <div className="container mx-auto px-4">
+          <div className="bg-white p-8 rounded-xl shadow-subtle fade-in-up delay-300">
+            <BestSellingCarousel />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
@@ -29,4 +37,3 @@ const ShopByCategory = () => {
 };
 
 export default ShopByCategory;
-
