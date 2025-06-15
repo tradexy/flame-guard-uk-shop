@@ -8,23 +8,23 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BasketProvider } from "@/contexts/BasketContext";
 
 // Lazy load pages for better performance
-const Index = lazy(() => import("./pages/Index"));
-const ShopByCategory = lazy(() => import("./pages/ShopByCategory"));
-const ShopFor = lazy(() => import("./pages/ShopFor"));
-const AboutUs = lazy(() => import("./pages/AboutUs"));
-const OurMission = lazy(() => import("./pages/OurMission"));
-const ServicingSupport = lazy(() => import("./pages/ServicingSupport"));
-const ContactUs = lazy(() => import("./pages/ContactUs"));
-const HelpAdvice = lazy(() => import("./pages/HelpAdvice"));
-const ProductCategoryAerosol = lazy(() => import("./pages/ProductCategoryAerosol"));
-const ProductCategoryAlarms = lazy(() => import("./pages/ProductCategoryAlarms"));
-const ProductCategorySachets = lazy(() => import("./pages/ProductCategorySachets"));
-const ProductCategoryExtinguishers = lazy(() => import("./pages/ProductCategoryExtinguishers"));
-const ProductCategoryAncillaryProducts = lazy(() => import("./pages/ProductCategoryAncillaryProducts"));
-const ProductCategoryServicingProducts = lazy(() => import("./pages/ProductCategoryServicingProducts"));
-const ProductDetail = lazy(() => import("./pages/ProductDetail"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const FAQ = lazy(() => import("./pages/FAQ"));
+const Index = lazy(() => import("./pages/Index.tsx"));
+const ShopByCategory = lazy(() => import("./pages/ShopByCategory.tsx"));
+const ShopFor = lazy(() => import("./pages/ShopFor.tsx"));
+const AboutUs = lazy(() => import("./pages/AboutUs.tsx"));
+const OurMission = lazy(() => import("./pages/OurMission.tsx"));
+const ServicingSupport = lazy(() => import("./pages/ServicingSupport.tsx"));
+const ContactUs = lazy(() => import("./pages/ContactUs.tsx"));
+const HelpAdvice = lazy(() => import("./pages/HelpAdvice.tsx"));
+const ProductCategoryAerosol = lazy(() => import("./pages/ProductCategoryAerosol.tsx"));
+const ProductCategoryAlarms = lazy(() => import("./pages/ProductCategoryAlarms.tsx"));
+const ProductCategorySachets = lazy(() => import("./pages/ProductCategorySachets.tsx"));
+const ProductCategoryExtinguishers = lazy(() => import("./pages/ProductCategoryExtinguishers.tsx"));
+const ProductCategoryAncillaryProducts = lazy(() => import("./pages/ProductCategoryAncillaryProducts.tsx"));
+const ProductCategoryServicingProducts = lazy(() => import("./pages/ProductCategoryServicingProducts.tsx"));
+const ProductDetail = lazy(() => import("./pages/ProductDetail.tsx"));
+const NotFound = lazy(() => import("./pages/NotFound.tsx"));
+const FAQ = lazy(() => import("./pages/FAQ.tsx"));
 
 const queryClient = new QueryClient({
   defaultOptions: {
