@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const VisionSection = () => (
   <section>
-    <Card variant="transparent" className="py-16 px-6 text-center">
+    <Card className="bg-transparent border-none shadow-none py-16 px-6 text-center">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8">
           Our Vision for the Future

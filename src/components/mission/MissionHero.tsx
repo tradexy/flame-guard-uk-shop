@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 const MissionHero = () => {
   return (
     <section>
-      <Card variant="transparent" className="text-center py-16 px-6">
+      <Card className="bg-transparent border-none shadow-none text-center py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-display mb-6">
             Our Mission
