@@ -6,7 +6,7 @@ const ContactHero = () => {
     <section className="py-16 bg-transparent relative fade-in-up overflow-hidden">
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-4xl md:text-5xl mb-4">
-          Contact <span>Us</span>
+          Contact <span className="text-primary">Us</span>
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
           Get in touch with our team for expert fire safety advice and support

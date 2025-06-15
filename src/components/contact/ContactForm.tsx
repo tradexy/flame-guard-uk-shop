@@ -57,7 +57,7 @@ const ContactForm = () => {
                 />
               </div>
               <div>
-                <CardTitle>Get In Touch</CardTitle>
+                <CardTitle>Get In <span className="text-primary">Touch</span></CardTitle>
                 <CardDescription>Hi! I'm here to assist you.</CardDescription>
               </div>
             </div>

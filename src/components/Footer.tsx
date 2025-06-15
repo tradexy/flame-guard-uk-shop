@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -29,25 +30,25 @@ const Footer = () => {
             <div>
               <h3 className="font-bold mb-4">Quick Links</h3>
               <div className="space-y-2 text-sm">
-                <Link to="/shop-by-category" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Shop By Category</Link>
-                <Link to="/shop-for" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Shop For</Link>
-                <Link to="/about-us" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">About Us</Link>
-                <Link to="/faqs" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">FAQs</Link>
-                <Link to="/our-mission" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Our Mission</Link>
-                <Link to="/servicing-support" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Servicing Support</Link>
-                <Link to="/contact-us" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Contact Us</Link>
+                <Link to="/shop-by-category" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Shop By Category</Link>
+                <Link to="/shop-for" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Shop For</Link>
+                <Link to="/about-us" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">About Us</Link>
+                <Link to="/faqs" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">FAQs</Link>
+                <Link to="/our-mission" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Our Mission</Link>
+                <Link to="/servicing-support" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Servicing Support</Link>
+                <Link to="/contact-us" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Contact Us</Link>
               </div>
             </div>
 
             <div>
               <h3 className="font-bold mb-4">Information</h3>
               <div className="space-y-2 text-sm">
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Privacy Policy</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Cookie Policy</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Terms and Conditions</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Data Protection</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Site Map</a>
-                <a href="#" className="block hover:text-red-400 transition-colors opacity-90 hover:opacity-100">Portal</a>
+                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Privacy Policy</a>
+                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Cookie Policy</a>
+                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Terms and Conditions</a>
+                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Data Protection</a>
+                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Site Map</a>
+                <a href="#" className="block hover:text-primary transition-colors opacity-90 hover:opacity-100">Portal</a>
               </div>
             </div>
 
@@ -62,7 +63,7 @@ const Footer = () => {
                   placeholder="Email Address *" 
                   className="bg-white/90 text-gray-800 border-white/20 placeholder:text-gray-500 focus:bg-white"
                 />
-                <Button className="w-full" variant="destructive">
+                <Button className="w-full">
                   SUBSCRIBE
                 </Button>
               </div>
