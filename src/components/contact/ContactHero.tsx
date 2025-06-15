@@ -5,7 +5,7 @@ const ContactHero = () => {
   return (
     <section 
       className="py-24 bg-cover bg-center relative fade-in-up overflow-hidden rounded-3xl" 
-      style={{ backgroundImage: "url('/lovable-uploads/4d4752d2-ef63-47c2-a268-81554a68db6f.png')" }}
+      style={{ backgroundImage: "url('/lovable-uploads/597fe628-2a8e-4591-a65e-2ca771300b42.png')" }}
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       <div className="container mx-auto px-4 text-center relative z-10">
