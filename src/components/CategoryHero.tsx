@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -62,16 +61,18 @@ const CategoryHero = () => {
             </DropdownMenu>
           </div>
           
-          <div className="relative">
-            <div className="bg-gradient-to-br from-red-500/90 to-orange-500/90 backdrop-blur-sm rounded-2xl p-8 text-white shadow-2xl border border-white/20">
-              <div className="text-center">
-                <h2 className="text-2xl font-bold mb-6">Choose your Category</h2>
-                <div className="flex justify-center space-x-4 mb-6">
-                  <div className="text-6xl">👨‍🚒</div>
-                  <div className="text-6xl">👩‍🚒</div>
-                </div>
-                <div className="text-4xl">🚒</div>
-              </div>
+          <div className="relative flex items-center justify-center">
+            <div className="bg-gradient-to-br from-red-500/90 to-orange-500/90 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/20 w-full flex flex-col items-center">
+              <img
+                src="/lovable-uploads/5c679836-b525-4fdb-b3d0-a422b4fc4896.png"
+                alt="Little Fire Heroes logo showing two child firefighters"
+                className="w-40 h-40 md:w-56 md:h-56 object-contain rounded-xl shadow-lg border-4 border-white mb-6 bg-white"
+                style={{ background: 'linear-gradient(135deg, #fff, #f5f6fa 60%, #faf4ea)' }}
+              />
+              <h2 className="text-2xl font-bold text-white mb-2 text-center drop-shadow-md">Choose your Category</h2>
+              <p className="text-white/90 opacity-90 text-center">
+                Explore our range of products to keep your little fire heroes safe!
+              </p>
             </div>
           </div>
         </div>
