@@ -10,10 +10,12 @@ const OurMission = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <MissionHero />
-      <MainContent />
-      <VisionSection />
-      <CallToAction />
+      <main className="container mx-auto px-4 py-12 space-y-16">
+        <MissionHero />
+        <MainContent />
+        <VisionSection />
+        <CallToAction />
+      </main>
       <Footer />
     </div>
   );

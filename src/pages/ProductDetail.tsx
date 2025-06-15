@@ -23,7 +23,7 @@ const ProductDetail = () => {
     return (
       <div className="min-h-screen bg-white">
         <Header />
-        <div className="container mx-auto px-4 py-16 text-center">
+        <main className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
           <p className="text-gray-600 mb-8">The product you're looking for doesn't exist.</p>
           <Link to="/shop-by-category">
@@ -32,7 +32,7 @@ const ProductDetail = () => {
               Back to Shop
             </Button>
           </Link>
-        </div>
+        </main>
         <Footer />
       </div>
     );
@@ -77,7 +77,7 @@ const ProductDetail = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <div className="container mx-auto px-4 py-8 md:py-12">
+      <main className="container mx-auto px-4 py-8 md:py-12">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
           <Link to="/" className="hover:text-gray-900">Home</Link>
@@ -203,7 +203,7 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       
       <Footer />
     </div>

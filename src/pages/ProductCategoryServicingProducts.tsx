@@ -15,14 +15,14 @@ const ProductCategoryServicingProducts = () => {
   const [inStockOnly, setInStockOnly] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white animate-fade-in">
+    <div className="min-h-screen bg-white">
       <Header />
-      <section className="fade-in-up relative py-12 bg-white">
-        <div className="container mx-auto px-4 relative z-10">
+      <main className="container mx-auto px-4 py-12">
+        <div className="bg-white p-8 rounded-xl shadow-subtle">
           <CategoryBreadcrumb category="Servicing Products" />
           <div className="grid lg:grid-cols-4 gap-8 mt-8">
-            <div className="lg:col-span-1 fade-in-up delay-100">
-              <ProductFilters 
+            <div className="lg:col-span-1">
+              <ProductFilters
                 priceRange={priceRange}
                 setPriceRange={setPriceRange}
                 selectedTags={selectedTags}
@@ -33,14 +33,14 @@ const ProductCategoryServicingProducts = () => {
                 setInStockOnly={setInStockOnly}
               />
             </div>
-            <div className="lg:col-span-3 fade-in-up delay-200">
+            <div className="lg:col-span-3">
               <div className="flex justify-between items-center mb-6">
-                <h1 className="text-3xl font-bold text-gray-800 font-montserrat animate-fade-in">
+                <h1 className="text-3xl font-bold text-gray-800 font-montserrat">
                   Fire Safety Servicing Products
                 </h1>
                 <ProductSorting sortBy={sortBy} setSortBy={setSortBy} />
               </div>
-              <ProductGrid 
+              <ProductGrid
                 category="servicingProducts"
                 sortBy={sortBy}
                 priceRange={priceRange}
@@ -51,11 +51,10 @@ const ProductCategoryServicingProducts = () => {
             </div>
           </div>
         </div>
-      </section>
+      </main>
       <Footer />
     </div>
   );
 };
 
 export default ProductCategoryServicingProducts;
-

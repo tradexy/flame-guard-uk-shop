@@ -8,39 +8,28 @@ import SectionDivider from '@/components/SectionDivider';
 
 const ShopFor = () => {
   return (
-    <div className="min-h-screen bg-white animate-fade-in">
+    <div className="min-h-screen bg-white">
       <Header />
-      {/* Hero Section */}
-      <section className="py-20 md:py-24 text-center">
-        <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 font-montserrat animate-fade-in">
-                Shop For Your Environment
-            </h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in animate-delay-200">
-                Find the perfect fire safety solutions tailored to your specific environment. From homes to industrial facilities, we have the right products to keep you safe.
-            </p>
-        </div>
-      </section>
+      <main className="container mx-auto px-4 py-12 space-y-16">
+        <section className="text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 font-montserrat">
+            Shop For Your Environment
+          </h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Find the perfect fire safety solutions tailored to your specific environment. From homes to industrial facilities, we have the right products to keep you safe.
+          </p>
+        </section>
 
-      {/* Facilities Grid */}
-      <section className="pb-16">
-        <div className="container mx-auto px-4">
-            <div className="bg-white p-8 rounded-xl shadow-subtle fade-in-up delay-200">
-                <FacilityGrid />
-            </div>
-        </div>
-      </section>
+        <section className="bg-white p-8 rounded-xl shadow-subtle">
+          <FacilityGrid />
+        </section>
 
-      <SectionDivider />
+        <SectionDivider />
 
-      {/* Best Selling Products */}
-      <div className="pb-16">
-        <div className="container mx-auto px-4">
-            <div className="bg-white p-8 rounded-xl shadow-subtle fade-in-up delay-300">
-                <BestSellingCarousel />
-            </div>
-        </div>
-      </div>
+        <section className="bg-white p-8 rounded-xl shadow-subtle">
+          <BestSellingCarousel />
+        </section>
+      </main>
       <Footer />
       <QuickShopBar />
     </div>
