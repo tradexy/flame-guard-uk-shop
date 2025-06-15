@@ -8,9 +8,9 @@ import CallToAction from '@/components/mission/CallToAction';
 
 const OurMission = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Header />
-      <main className="container mx-auto px-4 py-12 space-y-16">
+      <main className="container mx-auto px-4 py-12 md:py-24 space-y-24">
         <MissionHero />
         <MainContent />
         <VisionSection />

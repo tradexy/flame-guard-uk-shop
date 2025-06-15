@@ -6,12 +6,12 @@ const CommunityImpact = () => (
   <div className="grid md:grid-cols-12 gap-8 items-start">
     {/* Left Column - Content */}
     <div className="md:col-span-9">
-      <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-        <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b">
-          <h2 className="text-2xl font-bold text-gray-800">Supporting Schools & Communities</h2>
+      <div className="bg-white dark:bg-gray-800/50 rounded-2xl shadow-subtle border overflow-hidden">
+        <div className="bg-secondary p-6 border-b">
+          <h2 className="text-2xl font-bold text-foreground">Supporting Schools & Communities</h2>
         </div>
         <div className="p-6">
-          <div className="space-y-4 text-gray-600 leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               We're proud to donate 3% of our profits to help schools across the UK access essential safety equipment, sports kits, and educational resources. This isn't just business for us – it's about building stronger, safer communities.
             </p>
@@ -33,7 +33,7 @@ const CommunityImpact = () => (
 
     {/* Right Column - Sofia's Image */}
     <div className="md:col-span-3">
-      <div className="bg-gradient-to-br from-gray-200 via-yellow-50 to-gray-300 rounded-xl p-6 text-center shadow-lg border border-gray-200">
+      <div className="bg-white dark:bg-gray-800/50 rounded-2xl p-6 text-center shadow-subtle border">
         <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
           <img 
             src="/lovable-uploads/8c298eac-ace5-4c14-99a7-683522bb0ac3.png" 
@@ -41,8 +41,8 @@ const CommunityImpact = () => (
             className="w-full h-full object-contain"
           />
         </div>
-        <h3 className="font-bold text-yellow-900 text-lg mb-2">Sofia</h3>
-        <p className="text-yellow-700 text-sm mb-3">Community Expert</p>
+        <h3 className="font-bold text-foreground text-lg mb-2">Sofia</h3>
+        <p className="text-muted-foreground text-sm mb-3">Community Expert</p>
         <Badge variant="secondary">
           Community
         </Badge>

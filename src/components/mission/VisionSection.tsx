@@ -2,13 +2,13 @@
 import { Card, CardContent } from '@/components/ui/card';
 
 const VisionSection = () => (
-  <section className="py-16 bg-gray-50 text-gray-900">
-    <div className="container mx-auto px-4 text-center">
+  <section>
+    <div className="bg-white dark:bg-gray-800/50 rounded-2xl shadow-subtle border py-16 px-6 text-center">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8">
           Our Vision for the Future
         </h2>
-        <p className="text-xl mb-8 text-gray-700">
+        <p className="text-xl mb-8 text-muted-foreground">
           We envision a world where every child is a fire safety hero, every home is protected, and every community has access to life-saving education and equipment.
         </p>
         <div className="grid md:grid-cols-3 gap-8 mt-12">
