@@ -1,8 +1,9 @@
+import { MapPin } from 'lucide-react';
 
 const ContactMap = () => {
   return (
     <section className="mb-16 animate-fade-in">
-      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/50">
+      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-subtle border border-white/50">
         <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center font-montserrat">Find Us</h2>
         <div className="bg-gray-100 rounded-xl h-96 flex items-center justify-center overflow-hidden mb-2 border border-gray-200 shadow-inner">
           <iframe
@@ -28,4 +29,3 @@ const ContactMap = () => {
 };
 
 export default ContactMap;
-

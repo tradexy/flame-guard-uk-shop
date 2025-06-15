@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 
@@ -40,7 +39,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="relative flex justify-center items-center">
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/50 w-full max-w-md">
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-subtle border border-white/50 w-full max-w-md">
                 <h2 className="text-2xl font-montserrat font-bold mb-4 text-center text-gray-800">Your Safety Partner</h2>
                 <div className="flex justify-center">
                   <img 

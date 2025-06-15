@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,10 +19,10 @@ const Footer = () => {
                 <p>📞 01844 208308</p>
               </div>
               <div className="flex space-x-4 mt-4">
-                <span className="text-2xl hover:scale-110 transition-transform cursor-pointer">📘</span>
-                <span className="text-2xl hover:scale-110 transition-transform cursor-pointer">🐦</span>
-                <span className="text-2xl hover:scale-110 transition-transform cursor-pointer">💼</span>
-                <span className="text-2xl hover:scale-110 transition-transform cursor-pointer">🎵</span>
+                <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition-colors"><Facebook size={20} /></a>
+                <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white transition-colors"><Twitter size={20} /></a>
+                <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={20} /></a>
+                <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition-colors"><Instagram size={20} /></a>
               </div>
             </div>
 
@@ -54,14 +57,14 @@ const Footer = () => {
                 Subscribe to our newsletter to receive regular Firexo, industry and safety updates.
               </p>
               <div className="space-y-2">
-                <input 
+                <Input 
                   type="email" 
                   placeholder="Email Address *" 
-                  className="w-full px-3 py-2 text-gray-800 rounded-lg bg-white/90 backdrop-blur-sm border border-white/20 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="bg-white/90 text-gray-800 border-white/20 placeholder:text-gray-500 focus:bg-white"
                 />
-                <button className="w-full bg-red-600/90 backdrop-blur-sm hover:bg-red-700/90 px-4 py-2 rounded-lg text-white shadow-lg border border-white/20 transition-colors">
+                <Button className="w-full" variant="destructive">
                   SUBSCRIBE
-                </button>
+                </Button>
               </div>
             </div>
           </div>

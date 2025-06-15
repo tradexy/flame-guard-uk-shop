@@ -1,4 +1,3 @@
-
 const WhyChooseUs = () => {
   const reasons = [
     {
@@ -24,7 +23,7 @@ const WhyChooseUs = () => {
   ];
   return (
     <div className="lg:w-1/2 animate-fade-in animate-delay-200">
-      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/50 h-full transition-all duration-300 hover:shadow-xl hover:border-primary/20">
+      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-subtle border border-white/50 h-full transition-all duration-300 hover:shadow-lg hover:border-primary/20">
         <h3 className="text-2xl font-bold text-gray-900 mb-6 font-montserrat">
           Why Choose <span className="text-primary">Little Fire Heroes?</span>
         </h3>
@@ -51,4 +50,3 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
-

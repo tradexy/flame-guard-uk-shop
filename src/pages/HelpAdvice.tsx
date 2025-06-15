@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Phone, Mail, MessageCircle, Clock, Shield, Truck } from 'lucide-react';
+import { Phone, Mail, MessageCircle, Clock, Shield, Truck, Siren } from 'lucide-react';
 
 const HelpAdvice = () => {
   const supportOptions = [
@@ -194,7 +194,10 @@ const HelpAdvice = () => {
         {/* Emergency Notice */}
         <Card className="bg-red-50 border-red-200 mt-12 max-w-4xl mx-auto">
           <CardHeader>
-            <CardTitle className="text-red-900 text-center">🚨 Emergency Notice</CardTitle>
+            <CardTitle className="text-red-900 text-center flex items-center justify-center gap-2">
+              <Siren className="h-6 w-6" />
+              Emergency Notice
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-red-800 text-center">
