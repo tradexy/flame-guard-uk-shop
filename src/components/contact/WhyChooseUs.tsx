@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
       <Card className="h-full">
         <CardContent className="p-8">
           <h3 className="mb-6">
-            Why Choose <span>Little Fire Heroes?</span>
+            Why Choose <span className="text-primary">Little Fire Heroes?</span>
           </h3>
           <div className="space-y-6">
             {reasons.map((r, i) => (
@@ -38,12 +38,12 @@ const WhyChooseUs = () => {
                 className={`flex items-start space-x-4 animate-fade-in`}
                 style={{ animationDelay: `${100 + i * 100}ms` }}
               >
-                <div className={`bg-secondary rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1 shadow-md border-2 border-white`}>
+                <div className={`bg-secondary rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1 shadow-md`}>
                   <span className={`text-secondary-foreground font-bold text-lg`}>{r.number}</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">{r.title}</h4>
-                  <p className="text-gray-600 text-sm">{r.desc}</p>
+                  <h4 className="font-semibold text-foreground mb-1">{r.title}</h4>
+                  <p className="text-sm text-muted-foreground">{r.desc}</p>
                 </div>
               </div>
             ))}
