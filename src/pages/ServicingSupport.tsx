@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import { LifeBuoy, AlertTriangle, Network, CheckCircle2, Mail } from 'lucide-react';
 
 const ServicingSupport = () => {
   const [formData, setFormData] = useState({
@@ -60,13 +61,9 @@ const ServicingSupport = () => {
         <section className="mb-16">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
+              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-subtle border border-white/20">
                 <div className="flex items-center mb-6">
-                  <img 
-                    src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
-                    alt="Little Fire Heroes Logo" 
-                    className="h-12 w-auto mr-4"
-                  />
+                  <LifeBuoy className="h-12 w-12 text-red-600 mr-4 flex-shrink-0" />
                   <h2 className="text-2xl font-bold text-gray-900">Our Role</h2>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -94,13 +91,9 @@ const ServicingSupport = () => {
         <section className="mb-16">
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
+              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-subtle border border-white/20">
                 <div className="flex items-center mb-6">
-                  <img 
-                    src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
-                    alt="Little Fire Heroes Logo" 
-                    className="h-12 w-auto mr-4"
-                  />
+                  <AlertTriangle className="h-12 w-12 text-orange-500 mr-4 flex-shrink-0" />
                   <h2 className="text-2xl font-bold text-gray-900">The Challenge</h2>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -127,9 +120,12 @@ const ServicingSupport = () => {
         {/* Contact Form Section */}
         <section className="mb-16">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
+            <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-subtle border border-white/20">
               <div className="text-center mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <div className="flex justify-center items-center gap-3 mb-4">
+                   <Mail className="h-8 w-8 text-red-600" />
+                   <h2 className="text-3xl font-bold text-gray-900">Get in Touch</h2>
+                </div>
                 <p className="text-gray-600">
                   Contact us about your servicing and support needs
                 </p>
@@ -212,30 +208,26 @@ const ServicingSupport = () => {
         <section className="mb-16">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
+              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-subtle border border-white/20">
                 <div className="flex items-center mb-6">
-                  <img 
-                    src="/lovable-uploads/e03fea4f-9182-42f7-972f-4a2708198d02.png" 
-                    alt="Little Fire Heroes Logo" 
-                    className="h-12 w-auto mr-4"
-                  />
+                  <Network className="h-12 w-12 text-red-600 mr-4 flex-shrink-0" />
                   <h2 className="text-2xl font-bold text-gray-900">Our Servicing & Support Network</h2>
                 </div>
                 <p className="text-gray-700 mb-4">
                   We will invite certified, independent fire safety service providers to join our network. Through this, customers can:
                 </p>
-                <ul className="text-gray-700 space-y-2">
+                <ul className="text-gray-700 space-y-3">
                   <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    Get professional advice on how many extinguishers they need.
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                    <span>Get professional advice on how many extinguishers they need.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    Arrange certified installation or placement checks.
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                    <span>Arrange certified installation or placement checks.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    Schedule ongoing maintenance and compliance checks.
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                    <span>Schedule ongoing maintenance and compliance checks.</span>
                   </li>
                 </ul>
                 <p className="text-gray-700 mt-4 font-medium">
