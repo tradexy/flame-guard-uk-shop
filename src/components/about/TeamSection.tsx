@@ -25,7 +25,7 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-50 via-orange-50 to-pink-100 fade-in-up">
+    <section className="py-16 bg-white fade-in-up">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-montserrat animate-fade-in">Meet Sofia & Ruben</h2>
@@ -35,7 +35,7 @@ const TeamSection = () => {
           </p>
         </div>
         <div className="mb-12 flex justify-center animate-fade-in">
-          <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl overflow-hidden shadow-subtle border border-white/50 w-96 h-96">
+          <div className="relative bg-gray-100 rounded-2xl overflow-hidden shadow-subtle border w-96 h-96">
             <img 
               src="/lovable-uploads/9558bcf3-3d6b-4fa6-b6a0-c9879452038c.png" 
               alt="Sofia and Ruben - The Little Fire Heroes Team"
@@ -50,13 +50,13 @@ const TeamSection = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 bg-white/80 backdrop-blur-md border border-white/60 hover:bg-orange-100/40 rounded-2xl animate-fade-in">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 bg-gray-50 border hover:bg-gray-100 rounded-2xl animate-fade-in">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-orange-100 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
                   <member.icon className="h-8 w-8" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-gray-800 font-montserrat">{member.name}</h3>
-                <p className="text-red-600 font-medium mb-3">{member.role}</p>
+                <p className="text-gray-600 font-medium mb-3">{member.role}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
               </CardContent>
             </Card>
